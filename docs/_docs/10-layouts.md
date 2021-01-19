@@ -25,7 +25,7 @@ The base layout all other layouts inherit from. There's not much to this layout 
 * page footer
 * scripts
 
-**Note:** You won't ever assign this layout directly to a post or page. Instead all other layouts will build off of it by setting `layout: default` in their YAML Front Matter.
+**Note:** You won't ever assign this layout directly to a post or page. Instead all other layouts will build off of it by setting `layout: single` in their YAML Front Matter.
 {: .notice--warning}
 
 ### Layout based and user-defined classes
