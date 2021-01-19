@@ -1,5 +1,11 @@
 ---
-layout: home
+layout: single
+toc: true
+toc_label: "Tabla de Contenidos"
+toc_icon: "list"
+sidebar:
+  title: "Prueba de barra"
+  nav: sidebar-sample
 ---
 
   {%- assign previousMonth = "0" %}
