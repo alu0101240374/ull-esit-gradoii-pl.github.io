@@ -1,10 +1,8 @@
----
-title: "Introducción a JavaScript"
----
+# {{site.temas[1].title}}
 
 ## [IAAS](iaas)
 
-## [Editors](editors)
+## [Editores](editors)
 
 ## [The Event Loop](event-loop)
 

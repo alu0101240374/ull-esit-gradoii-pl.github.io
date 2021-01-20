@@ -1,5 +1,9 @@
 ---
+layout: single
 title: "Introduccion a Procesadores de Lenguajes"
+date: 0000-01-01
+published: true
+hover:
 toc: true
 toc_label: "Tabla de Contenidos"
 toc_icon: "list"

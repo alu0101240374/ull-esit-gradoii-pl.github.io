@@ -1,9 +1,6 @@
 ---
 layout: single
 title: Introducción a PL
-sidebar:
-  title: "Prueba de barra"
-  nav: sidebar-sample
 toc: true
 toc_label: "Tabla de Contenidos"
 toc_icon: "list"
@@ -11,6 +8,11 @@ toc_icon: "list"
 
 # Temas
 
+{% comment %}
+{% for page in site.pages %}
+{{ page.categories }} - {{ page.url }}
+{% endfor %}
+{% endcomment %}
 {% assign temas = site.categories["temas"] | sort %}
 <ul>
   {% for tema in temas %}
