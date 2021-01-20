@@ -14,44 +14,28 @@ main:
     url: /resources
   - title: "Horarios"
     url: /timetables
+  - title: "Referencias"
+    url: /references
+  - title: "Search"
+    url: /search
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-sample:
-  - title: "Parent Page A"
+  - title: "GITHUB"
     children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
+      - title: "Organization"
+        url: https://github.com/ULL-ESIT-PL-2021
+      - title: "Classroom"
+        url: https://classroom.github.com/classrooms/68184024-ull-esit-pl-2021
+  - title: "CAMPUS VIRTUAL"
     children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
+      - title: "PL en el Campus Virtual"
+        url: https://campusingenieriaytecnologia.ull.es/course/view.php?id=2020090040
+  - title: "RECURSOS"
     children:
       - title: "Child Page C1"
         url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
+  - title: "HORARIOS"
     children:
       - title: "Child Page D1"
         url: /
