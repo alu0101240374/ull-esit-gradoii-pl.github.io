@@ -10,7 +10,7 @@ title: "Introducción a JavaScript"
 
 ## [Promises]({{site.baseurl}}/temas/introduccion-a-javascript/promises)
 
-### [Promise Examples]({{site.baseurl}}//introduccion-a-javascript/promise-examples)
+### [Promise Examples]({{site.baseurl}}/temas/introduccion-a-javascript/promise-examples)
 
 ## [Jekyll](jekyll)
 
