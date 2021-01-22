@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Introducción a PL
+title: Temas
 toc: true
 toc_label: "Tabla de Contenidos"
 toc_icon: "list"
