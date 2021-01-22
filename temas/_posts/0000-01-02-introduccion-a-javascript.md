@@ -8,7 +8,7 @@ title: "Introducción a JavaScript"
 
 ## [The Event Loop](event-loop)
 
-## [Promises](promises)
+## [Promises]({{site.baseurl}}/introduccion-a-javascript/promises)
 
 ### [Promise Examples](promise-examples)
 
