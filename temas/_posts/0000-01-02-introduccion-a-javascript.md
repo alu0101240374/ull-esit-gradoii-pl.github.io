@@ -8,9 +8,9 @@ title: "Introducción a JavaScript"
 
 ## [The Event Loop](event-loop)
 
-## [Promises]({{site.baseurl}}/introduccion-a-javascript/promises)
+## [Promises]({{site.baseurl}}/temas/introduccion-a-javascript/promises)
 
-### [Promise Examples]({{site.baseurl}}/introduccion-a-javascript/promise-examples)
+### [Promise Examples]({{site.baseurl}}//introduccion-a-javascript/promise-examples)
 
 ## [Jekyll](jekyll)
 
