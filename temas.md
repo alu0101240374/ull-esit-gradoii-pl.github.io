@@ -6,8 +6,6 @@ toc_label: "Tabla de Contenidos"
 toc_icon: "list"
 ---
 
-# Temas
-
 {% comment %}
 {% for page in site.pages %}
 {{ page.categories }} - {{ page.url }}
