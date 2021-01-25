@@ -1,7 +1,6 @@
 ---
 layout: single
 ---
-# Recursos
 
 ## Campus Virtual y UDV
 
