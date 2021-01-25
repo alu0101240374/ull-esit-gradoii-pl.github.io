@@ -1,6 +1,7 @@
 ---
 layout: single
 permalink: practicas
+title: Prácticas
 sidebar:
   title: "Prueba de barra"
   nav: sidebar-sample
