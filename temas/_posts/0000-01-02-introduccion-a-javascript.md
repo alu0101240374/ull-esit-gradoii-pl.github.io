@@ -1,39 +1,40 @@
 ---
+layout: single
 title: "Introducción a JavaScript"
 ---
 
-## [IAAS](iaas)
+## [IAAS]({{site.baseurl}}/assets/temas/introduccion-a-javascript/iaas)
 
-## [Editors](editors)
+## [Editors]({{site.baseurl}}/assets/temas/introduccion-a-javascript/editors)
 
-## [The Event Loop](event-loop)
+## [The Event Loop]({{site.baseurl}}/assets/temas/introduccion-a-javascript/event-loop)
 
-## [Promises]({{site.baseurl}}/temas/introduccion-a-javascript/promises)
+## [Promises]({{site.baseurl}}/assets/temas/introduccion-a-javascript/promises)
 
-### [Promise Examples]({{site.baseurl}}/temas/introduccion-a-javascript/promise-examples)
+### [Promise Examples]({{site.baseurl}}/assets/temas/introduccion-a-javascript/promise-examples)
 
-## [Jekyll](jekyll)
+## [Jekyll]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jekyll)
 
-## [JAM](jam)
+## [JAM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jam)
 
-## [TypeScript](typescript)
+## [TypeScript]({{site.baseurl}}/assets/temas/introduccion-a-javascript/typescript)
 
-## [Node.JS](node)
+## [Node.JS]({{site.baseurl}}/assets/temas/introduccion-a-javascript/node)
 
-## [Pruebas, Integración y Calidad](pruebas)
+## [Pruebas, Integración y Calidad]({{site.baseurl}}/assets/temas/introduccion-a-javascript/pruebas)
 
-## [Build Tools](build-tools)
+## [Build Tools]({{site.baseurl}}/assets/temas/introduccion-a-javascript/build-tools)
 
-## [GitHub Apps](github-apps)
+## [GitHub Apps]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-apps)
 
-## [GitHub Actions](github-actions)
+## [GitHub Actions]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-actions)
 
-## [Object Oriented Programming: OOP](oop)
+## [Object Oriented Programming: OOP]({{site.baseurl}}/assets/temas/introduccion-a-javascript/oop)
 
-## [Módulos](modulos)
+## [Módulos]({{site.baseurl}}/assets/temas/introduccion-a-javascript/modulos)
 
-## [Functional Programming](functional)
+## [Functional Programming]({{site.baseurl}}/assets/temas/introduccion-a-javascript/functional)
 
-## [Diseño, Principios](design)
+## [Diseño, Principios]({{site.baseurl}}/assets/temas/introduccion-a-javascript/design)
 
-## [Azure](azure)
+## [Azure]({{site.baseurl}}/assets/temas/introduccion-a-javascript/azure)

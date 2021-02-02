@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 # Pruebas, Integración y Calidad
 
 ## Mocha 

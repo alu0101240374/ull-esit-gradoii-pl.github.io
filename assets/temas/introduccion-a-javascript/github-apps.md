@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 # GitHub Apps
 
 Follow the github.lab course by githubtraining:

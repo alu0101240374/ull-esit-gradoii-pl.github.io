@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 ## About GitHub Packages
 
 * [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)

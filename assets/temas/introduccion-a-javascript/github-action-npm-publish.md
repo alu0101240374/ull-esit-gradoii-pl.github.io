@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 # A quick demo showing how to use GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries.
 
 This [repo ULL-ESIT-PL-1920/lexer-generator](https://github.com/ULL-ESIT-PL-1920/lexer-generator) contains the solution code for

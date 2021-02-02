@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 ## Capítulo. Programación Funcional
 
 - [Eloquent JS](http://eloquentjavascript.net/index.html): [High Order Functions](http://eloquentjavascript.net/05_higher_order.html)

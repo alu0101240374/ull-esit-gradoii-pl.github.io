@@ -1,3 +1,6 @@
+---
+layout: single
+---
 # CommonJS Modules. Importación y Exportación
 
 * [NODE.JS module patterns using simple examples](https://darrenderidder.github.io/talks/ModulePatterns). Trasparencias. Muestra ejemplos/patrones de exportación-importación (Reveal Slides)

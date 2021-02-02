@@ -1,3 +1,6 @@
+---
+layout: single
+---
 # Node.js
 
 ## nvm

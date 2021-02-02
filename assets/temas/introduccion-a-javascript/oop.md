@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 ### ECMA5 OOP
 
 #### The Secret Life of Objects

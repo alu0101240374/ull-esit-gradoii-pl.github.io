@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 # Gulp: a tool to Automate and Enhance your Workflow
 
 ## Gulp Tutorial Getting Started
