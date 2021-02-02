@@ -14,7 +14,7 @@ sidebar:
      {%- assign currentMonth = post.date | date: "%B" %}
       {%- if currentMonth != previousMonth %}
 
-### Clases durante the month of {{ currentMonth }}
+### Classes during the month of {{ currentMonth }}
 
       {%- endif %}
 * [{{ post.title }}]({{site.baseurl}}{{ post.url }})  [📝]({{site.organization.master}}/{{post.path}})
