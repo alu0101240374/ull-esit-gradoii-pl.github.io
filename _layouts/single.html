@@ -49,7 +49,9 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
+        {% comment %}
         {% include page__date.html %}
+        {% endcomment %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
@@ -62,7 +64,10 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+  {% comment %}
+  <!-- only show related on a post page when `related: true` -->
+  {% endcomment %}
+  {% comment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
@@ -86,4 +91,5 @@ layout: default
       </div>
     </div>
   {% endif %}
+  {% endcomment %}
 </div>
