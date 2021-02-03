@@ -284,6 +284,20 @@ defaults:
       sidebar:
         title: ""
         nav: sidebar-sample
+  - scope:
+      path: practicas
+      type: posts
+    values:
+      layout: single
+      permalink: practicas/:title
+      toc: true
+      toc_label: "Tabla de Contenidos"
+      toc_icon: "list"
+      sidebar:
+        title: ""
+        nav: sidebar-sample
+      
+
   # _posts
   - scope:
       path: ""
