@@ -276,11 +276,13 @@ defaults:
     values:
       layout: single
       permalink: temas/:title
+      comments: true
 
   - scope:
       path: temas
     values:
       layout: single
+      comments: true
       sidebar:
         title: ""
         nav: sidebar-sample
@@ -293,6 +295,7 @@ defaults:
       toc: true
       toc_label: "Tabla de Contenidos"
       toc_icon: "list"
+      comments: true
       sidebar:
         title: ""
         nav: sidebar-sample
