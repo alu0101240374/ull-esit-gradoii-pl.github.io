@@ -46,6 +46,7 @@ title: Recursos
 
 * [Actualizar tus organizaciones de acuerdo al Free Plan concedido](https://education.github.com/benefits) Vieja
 
+
 ### GitHub Classroom Help
 
 * [GitHub Classroom en YouTube](https://www.youtube.com/playlist?list=PLIRjfNq867bewk3ZGV6Z7a16YDNRCpK3u)
@@ -58,6 +59,12 @@ title: Recursos
 * [GitHub Support Community](https://github.community/)
 * [GitHub Education Community](https://education.github.community/)
 * [Create Icon avatar for the organization](https://graduaat-iconizr.herokuapp.com/)
+
+### Authorithing Apps to access your GitHub Orgs and Repos
+
+
+* [Authorize an OAuth App: settings/applications](https://github.com/settings/connections/applications/) Go to **user settings and from there to applications**
+
 
 ### GitHub 19/20
 
