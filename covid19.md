@@ -18,15 +18,15 @@ En el caso de las tutorías, estamos utilizando las herramientas de chat y meet 
 
 ### Videos
 
-Compartidos via Google Drive, el Campus (Kaltura) y Youtube.
+Compartidos via Google Drive y Youtube.
 
 ### Sesiones virtuales/clases 
 
-Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos las clases mediante videoconferencias (Google Meet). Las de teoría están siendo grabadas y publicadas en el campus virtual mediante Kaltura.
+Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos las clases mediante videoconferencias (Google Meet). Las de teoría están siendo grabadas y publicadas en el campus virtual.
 
 ### Inclusión de documentación sobre cada tema
 
-Tanto en el Campus como en la [organización GitHub ULL-ESIT-PL-1920](https://github.com/ULL-ESIT-PL-1920) se puede acceder a la información de la asignatura. Los apuntes se encuentran en [https://ull-esit-pl-1819.github.io/introduccion/](https://ull-esit-pl-1819.github.io/introduccion/)
+Tanto en el Campus como en la [organización GitHub ULL-ESIT-PL-2021](https://github.com/ULL-ESIT-PL-2021) se puede acceder a la información de la asignatura. Los apuntes se encuentran en [https://ull-esit-gradoii-pl.github.io/](https://ull-esit-gradoii-pl.github.io)
 
 ### Foros/debate 
 
@@ -67,6 +67,7 @@ Los alumnos que no puedan (por no haber seguido el curso) o que decidan no acoge
 La práctica de evaluación consistirá en la entrega en GitHub Classroom de un ejercicio intensivo que se deben entregar en un tiempo limitado y su posterior  defensa que permitirá
 evaluar los conocimientos del alumno de las competencias de la asignatura.  
 
+<!--
 ## Calendario Apróximado
 
 ### Entregas de Prácticas Junio
@@ -92,7 +93,7 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 * Fecha tentativa para la Publicación de notas definitivas para Septiembre: 10 de Septiembre
 * Fecha última de entrega de Prácticas para Septiembre: 5 de Septiembre
 * Fecha de examen: 10 de Septiembre
-
+-->
 
 ## Referencias
 
@@ -105,4 +106,3 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 * <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
 * <a href="{{site.horarios_examenes}}" target="_blank">Horarios de Ingeniería Informática para el curso 19/20</a>
 * <a href="{{site.horarios_tutorias}}" target="_blank">Horarios de tutorías del Departamento de Ingeniería Informática</a>
-
