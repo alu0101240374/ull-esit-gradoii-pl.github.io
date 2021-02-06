@@ -5,6 +5,7 @@ myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=187733
 name: p0-t0-esprima-logging
 permalink: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging/
 category: practicas
+published: false
 ---
 
 # Práctica {{ page.title }}
