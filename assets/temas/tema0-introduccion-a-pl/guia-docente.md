@@ -3,7 +3,7 @@ layout: single
 ---
 # Guia Docente
 
-* [Guía Docente]({{site.baseurl}}/tema0-introduccion-a-pl/guia-docente.html)
+* [Guía Docente]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/guia-docente.html)
 
 ## Organización GitHub
 

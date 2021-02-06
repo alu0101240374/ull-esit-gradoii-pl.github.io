@@ -271,35 +271,17 @@ compress_html:
 # Defaults
 defaults:
   - scope:
-      path: temas/_posts
-      type: posts
-    values:
-      layout: single
-      permalink: temas/:title
-      comments: true
-
-  - scope:
-      path: temas
+      path: ""
     values:
       layout: single
       comments: true
       sidebar:
         title: ""
         nav: sidebar-sample
-  - scope:
-      path: practicas
-      type: posts
-    values:
-      layout: single
-      permalink: practicas/:title
       toc: true
       toc_label: "Tabla de Contenidos"
       toc_icon: "list"
       comments: true
-      sidebar:
-        title: ""
-        nav: sidebar-sample
-      
 
   # _posts
   - scope:
@@ -309,9 +291,25 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true # true
       share: true
       related: true
+  - scope:
+      path: temas
+    values:
+      comments: true
+  - scope:
+      path: temas/_posts
+      type: posts
+    values:
+      permalink: temas/:title
+  - scope:
+      path: practicas
+      type: posts
+    values:
+      layout: single
+      permalink: practicas/:title
+      
+
 
 ## PL repasar
 
