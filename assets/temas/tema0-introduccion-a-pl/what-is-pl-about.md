@@ -1,7 +1,8 @@
 ---
-layout: single
+title: What is PL about?
 ---
-# What is a Compiler
+
+## What is a Compiler by Eelco Visser
 
 * [What is a Compiler?]({{site.baseurl}}/assets/pdfs/cs4200-2018-1-introduction-180905091549.pdf) slides by Eelco Visser. TU Delft. September 2018
 
