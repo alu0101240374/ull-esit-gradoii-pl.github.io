@@ -11,10 +11,12 @@ published: true
 2. Siga los tutoriales de VSCode
 2. Instale el plugin Remote SSH  y aprenda a usarlo
 3. Use Live Share para colaborar con un compañero
-4. Elabore un informe con la experiencia adquirida en el repositorio asignado
-5. Eche un vistazo a las secciones en esta página sobre [stackedit.io](https://stackedit.io/) (un editor en la nube) y [Repl.it](https://docs.repl.it/repls/quick-start) (un entorno de desarrollo en la nube). Ambos se integran bien con GitHub y pueden ayudarle en esta y otras asignaturas
+4. Eche un vistazo a las secciones en esta página sobre [stackedit.io](https://stackedit.io/) (un editor en la nube) y [Repl.it](https://docs.repl.it/repls/quick-start) (un entorno de desarrollo en la nube). Ambos se integran bien con GitHub y pueden ayudarle en esta y otras asignaturas
+5. Elabore un informe con la experiencia adquirida en el repositorio asignado
 
-## Guía de Usuario de VSCode
+## VSCode
+
+### Guía de Usuario de VSCode
 
 <ul id="editor-articles" class="collapse ">
     <li >
@@ -75,12 +77,12 @@ published: true
   
 </ul>
 
-##  Collaboration con Visual Studio Share
+###  Collaboration con Visual Studio Share
 
 - [Introducing Visual Studio Live Share](https://code.visualstudio.com/blogs/2017/11/15/live-share)
 - <a href="https://youtu.be/fWXe1HQ1wVA" target="_blank">Vídeo Visual Studio Live Share Demo on VS Code</a>
 
-## Remote - SSH: Editando con VSCode en una máquina remota via SSH 
+### Remote - SSH: Editando con VSCode en una máquina remota via SSH 
 
 {% include remote-ssh.md %}
 
