@@ -12,6 +12,7 @@ Al aceptar la asignación se le pedirá el nombre del equipo. Deberá darle como
 
 Estas son las tareas a realizar:
 
+
 1. [Realice el curso *Become a Campus Expert*](https://githubcampus.expert/training) de GitHub. Si está cerrado subscríbase a la lista y siga el curso cuando se abra.
 2. Solicite su [Student Developer Pack](https://education.github.com/pack)
 3. Opcional: [Solicite una GitHub Internship](https://internships.github.com/). Si está cerrada subscríbase para recibir las actualizaciones. No es necesario que acepte si es elegido
