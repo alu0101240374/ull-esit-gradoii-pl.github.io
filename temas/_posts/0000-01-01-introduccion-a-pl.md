@@ -10,9 +10,9 @@ toc_icon: "list"
 ---
 # Introducción a la Asignatura
 
-## Organización de PL
+## PL: Guía del Estudiante
 
-* [Organización de PL]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/guia-docente.html)
+* [Guía del Estudiante]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/guia-docente.html)
 
 ## What is PL About?
 
