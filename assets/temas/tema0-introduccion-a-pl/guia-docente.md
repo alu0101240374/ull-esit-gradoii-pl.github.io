@@ -1,5 +1,7 @@
 ---
 layout: single
+github_alu: https://docs.google.com/forms/d/e/1FAIpQLSfZvLIKzw3Fq55EQUuyDMJdbKfvA4p4yBdYmBsKXggnfPuBDA/viewform
+google_plus: https://currents.google.com/u/1/communities/101901734024125937720
 ---
 
 ## Organización GitHub
