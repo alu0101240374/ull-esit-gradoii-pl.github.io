@@ -314,20 +314,19 @@ defaults:
 ## PL repasar
 
 calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
-horarios_examenes: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/
-calendario_examenes: https://docs.google.com/document/d/1j5rJyULD1c42UV4o-g85puuPlbO-DNFmaobn_vnKgKw/edit#
-horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0
-cita_previa: https://campusingenieriaytecnologia.ull.es/mod/url/view.php?id=256662
+horarios_tercero: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/#tercero
+horarios_tutorias: https://www.ull.es/apps/guias/guias/view_guide/24127/
+cita_previa: https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUd1YlJSLURtcE5JfGRlZmF1bHR8ZmNiMWNmMTE4MjNjNzk1MWQwZGQyYTI4ZjZjYjZjY2E
 google_plus: https://plus.google.com/u/1/communities/101901734024125937720
 organization: 
   url: https://github.com/ULL-ESIT-PL-2021
   name: ULL-ESIT-PL-2021
   master: https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/tree/master/
-apuntes_repo: https://github.com/ULL-ESIT-PL-1819/introduccion/
-campus_virtual: https://campusvirtual.ull.es/ingenieriaytecnologia/course/view.php?id=201911070
-calificador: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/grade/report/grader/index.php?id=201911070
+apuntes_repo: https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io
+campus_virtual: https://campusingenieriaytecnologia.ull.es/course/view.php?id=2020090040
+calificador: https://campusingenieriaytecnologia.ull.es/grade/report/user/index.php?id=2020090040
 tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
-profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
+profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/745/(%3FPcrguezl.*)/
 profesor_github: crguezl
 chat: https://chat.google.com/u/1/room/AAAANx1edCg
 bull_permanente: https://puntoq.ull.es/permalink/f
@@ -340,7 +339,7 @@ disqus:
   url: https://procesadores-de-lenguajes.disqus.com/embed.js
   comments: true
 classroom: 
-  url: https://classroom.github.com/classrooms/53047670-ull-esit-pl-1920
-  name: ULL-ESIT-PL-1920
+  url: https://classroom.github.com/classrooms/68184024-ull-esit-pl-2021
+  name: ULL-ESIT-PL-2021
 
 

@@ -1,48 +1,39 @@
 ---
 layout: single
-toc: true
-toc_label: "Tabla de Contenidos"
-toc_icon: "list"
+title: Calendarios, Horarios y Exámenes
 ---
-# Calendarios, Horarios y Exámenes
-
-## Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial
-
-* [Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial](covid19)
 
 
-## Calendario Académico
+## Horario
 
-- <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
-
-## Horarios
-
-- <a href="{{site.horarios_examenes}}" target="_blank">Horarios de Ingeniería Informática para el curso 19/20</a>
-- <a href="{{site.horarios_tutorias}}" target="_blank">Horarios de tutorías del Departamento de Ingeniería Informática</a>
-* [Cita Previa (Google Appointments)]({{site.cita_previa}})
-
-<br/>
-<hr>
-<br/>
-<p>
 <iframe 
-src="https://calendar.google.com/calendar/b/2/embed?mode=AGENDA&amp;height=500&amp;wkst=2&amp;hl=es&amp;bgcolor=%23cc33cc&amp;src=ull.edu.es_8hcqtfr5u2h3o1v2smnmcqqu50%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Atlantic%2FCanary" 
+src="https://calendar.google.com/calendar/b/2/embed?mode=WEEK&amp;height=500&amp;wkst=2&amp;hl=es&amp;bgcolor=%23cc33cc&amp;src=ull.edu.es_8hcqtfr5u2h3o1v2smnmcqqu50%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Atlantic%2FCanary" 
 style="border-width:0" 
-width="800" 
+width="600" 
 height="500" 
 frameborder="0" 
 scrolling="yes">
 </iframe>
-</p>
-<br/>
-<hr>
-<br/>
+
+## Calendario Académico
+
+[![](https://www.ull.es/estudios-docencia/wp-content/uploads/sites/7/2020/07/calendarios-2020-21.jpg)]({{site.calendario_academico}})
+
+<!--
+## Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial
+
+* [Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial](covid19)
+-->
 
 ## Normativa de Evaluación
 
-* [Normativa](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
-* [Normativa de Compensación](https://riull.ull.es/xmlui/bitstream/handle/915/8580/acuerdo12.pdf?sequence=1&isAllowed=y)
+* [Resolución de 8 de enero de 2016, por la que se dispone la publicación del
+Reglamento de Evaluación y Calificación de la Universidad de La Laguna (BOC de 19
+de enero de 2016)](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
+* [Acuerdo 12/CG 27-06-2017 por el que se aprueba el Reglamento de la
+Evaluación Curricular por Compensación de la Universidad de La Laguna](https://riull.ull.es/xmlui/bitstream/handle/915/8580/acuerdo12.pdf?sequence=1&isAllowed=y)
 
+<!--
 ## Exámenes de convocatoria
 
 * <a href="{{site.calendario_examenes}}" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
@@ -73,10 +64,10 @@ Se mantienen las fechas y las horas.
 
 En una primera publicación de calificaciones aparecerá una lista con los alumnos que tienen las prácticas **APTAS** o **NO APTAS**.
 
-<!--
+
 Para los alumnos que tienen las prácticas **NO APTAS** y que han estado asistiendo y entregando prácticas y cuentan con la valoración favorable del profesor para ampliaciones de plazo en la entrega: 
 este estado puede cambiar si entregan posteriormente al examen de convocatoria al que se presenten - en el plazo citado de cinco días antes del cierre de actas - prácticas que son evaluadas favorablemente.
--->
+
 
 Los exámenes de convocatoria incluyen una serie de apartados especiales para los alumnos que no tienen las prácticas aptas en el momento de la convocatoria.
 
@@ -86,6 +77,8 @@ Los exámenes de convocatoria incluyen una serie de apartados especiales para lo
 * Respuesta:
   1. La nota del TFA es independiente de la de prácticas y hay que superar el TFA para aprobar la asignatura.
   2. Las notas de practicas no están aún cerradas. Se pueden entregar y mejorar las prácticas para obtener una mejor calificación. La calificación de APTO significa que no es necesario hacer la parte práctica de los exámenes de convocatoria.
+
+-->
 
 <!--
 ## Instrucciones para los exámenes de Convocatoria
