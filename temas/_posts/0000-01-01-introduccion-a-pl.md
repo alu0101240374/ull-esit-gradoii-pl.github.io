@@ -1,17 +1,12 @@
 ---
 layout: single
 title: "Introduccion a Procesadores de Lenguajes"
-date: 0000-01-01
 published: true
-hover:
-toc: true
-toc_label: "Tabla de Contenidos"
-toc_icon: "list"
 ---
 
-## PL: Guía del Estudiante
+## PL: Primeros Pasos
 
-* [Guía del Estudiante]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/guia-docente.html)
+* [Organización de PL y Primeros Pasos]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/guia-docente.html)
 
 ## What is PL About?
 

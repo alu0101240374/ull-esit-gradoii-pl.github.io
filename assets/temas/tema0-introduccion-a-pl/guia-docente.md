@@ -43,6 +43,10 @@ Date de alta en la comunidad [Google + de PL]({{page.google_plus}}).
 
 * [Visual Studio Code]({{site.baseurl}}/practicas/visual-studio-code)
 
+## Práctica: IAAS
+
+* [IAAS]({{site.baseurl}}/practicas/iaas)
+
 ## La Bibliografía
 
 La mayor parte de los [libros]({{site.baseurl}}/references) están accesible via el [PuntoQ de la BULL](/resources#bull).
@@ -57,7 +61,6 @@ En el repo GH:
 * [Recursos de Bibliografía]({{site.books_shared}})
 
 encontrarás recursos adicionales.
-
 
 
 ## Normativa de Evaluación
