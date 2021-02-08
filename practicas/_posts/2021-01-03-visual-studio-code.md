@@ -12,7 +12,7 @@ published: true
 2. Instale el plugin Remote SSH  y aprenda a usarlo
 3. Use Live Share para colaborar con un compañero
 4. Elabore un informe con la experiencia adquirida en el repositorio asignado
-5. Eche un vistazo a las secciones sobre [stackedit.io](https://stackedit.io/) (un editor en la nube) y [Repl.it](https://docs.repl.it/repls/quick-start) (un entorno de desarrollo en la nube). Ambos se integran bien con GitHub y pueden ayudarle en esta y otras asignaturas
+5. Eche un vistazo a las secciones en esta página sobre [stackedit.io](https://stackedit.io/) (un editor en la nube) y [Repl.it](https://docs.repl.it/repls/quick-start) (un entorno de desarrollo en la nube). Ambos se integran bien con GitHub y pueden ayudarle en esta y otras asignaturas
 
 ## Guía de Usuario de VSCode
 
