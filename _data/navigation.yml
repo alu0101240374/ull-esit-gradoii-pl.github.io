@@ -36,7 +36,9 @@ sidebar-sample:
       - title: "Guia Docente"
         url: https://www.ull.es/apps/guias/guias/view_guide_course/1920/139263121 
       - title: Horario de Tutorías
-        url: https://www.ull.es/apps/guias/guias/view_guide_course/1920/139263121/3/      
+        url: https://www.ull.es/apps/guias/guias/view_guide_course/1920/139263121/3/
+      - title: Cita Previa
+        url: https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUd1YlJSLURtcE5JfGRlZmF1bHR8ZmNiMWNmMTE4MjNjNzk1MWQwZGQyYTI4ZjZjYjZjY2E      
       - title: BULL PuntoQ
         url: https://www.ull.es/servicios/biblioteca/servicios/puntoq/
       - title: Calendario Académico
