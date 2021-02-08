@@ -25,6 +25,8 @@ scrolling="yes">
 * [Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial](covid19)
 -->
 
+<!--
+
 ## Normativa de Evaluación
 
 * [Resolución de 8 de enero de 2016, por la que se dispone la publicación del
@@ -32,6 +34,7 @@ Reglamento de Evaluación y Calificación de la Universidad de La Laguna (BOC de
 de enero de 2016)](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
 * [Acuerdo 12/CG 27-06-2017 por el que se aprueba el Reglamento de la
 Evaluación Curricular por Compensación de la Universidad de La Laguna](https://riull.ull.es/xmlui/bitstream/handle/915/8580/acuerdo12.pdf?sequence=1&isAllowed=y)
+-->
 
 <!--
 ## Exámenes de convocatoria

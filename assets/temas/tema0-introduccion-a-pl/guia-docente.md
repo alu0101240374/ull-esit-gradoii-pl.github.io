@@ -70,7 +70,9 @@ de enero de 2016)](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamen
 * [Acuerdo 12/CG 27-06-2017 por el que se aprueba el Reglamento de la
 Evaluación Curricular por Compensación de la Universidad de La Laguna](https://riull.ull.es/xmlui/bitstream/handle/915/8580/acuerdo12.pdf?sequence=1&isAllowed=y)
 
-* Para participar en la evaluación continua, es obligatorio hacer uso de los recursos proveídos (apuntes, vídeos, repositorios, foros, wikis, etc.) y realizar los ejercicios y actividades señaladas como obligatorios. Se realizará control de asistencia a las clases prácticas.
+## Evaluación Contínua
+
+* Para participar en la evaluación continua, es obligatorio hacer uso de los recursos proveídos (apuntes, vídeos, repositorios, foros, wikis, etc.) y realizar los ejercicios y actividades señaladas como obligatorios. Se realizará control de asistencia.
 
 <!--
 * Se realizarán micro-exámenes a lo largo del curso que incluyen cuestiones de desarrollo de conceptos y ejercicios prácticos. Una parte de estos ejercicios está destinada a autentificar los conocimientos que se han adquirido durante la elaboración de los proyectos mencionados en los otros apartados. Antes de las pruebas de evaluación continua se invierte cierto tiempo en la preparación mediante cuestionarios. Los estudiantes deberán superar los micro-exámenes para aprobar la asignatura con una nota mínima de 5 (sobre 10) en cada uno de ellos.
@@ -78,36 +80,31 @@ Evaluación Curricular por Compensación de la Universidad de La Laguna](https:/
 * Estos exámenes se realizan en inglés y en ellos se valora la capacidad lingüística en este idioma.
 -->
 
+### Prácticas
+
 * Se llevarán a cabo micro-proyectos/prácticas. Los estudiantes deberán superar los micro-proyectos para aprobar la asignatura con una nota mínima de 5.
-  * Acepte la asignación Classroom
+
+  * Acepte la asignación Classroom y estudie la descripción de la práctica
   * Entregue la tarea en el Repo creado asignado dentro de la organización {{site.organization.name}}
-  * Cuando termine cree una incidencia/issue mencionando al profesor `@{{site.profesor_github}}`
-  * El profesor le proveera de retroalimentación con una incidencia indicándole que puntos mejorar o que la entrega está apta
+  * Cree incidencias para los problemas que encuentra y las dudas. Añádalas a su tablero.
+  * Cuando termine cree una incidencia/issue mencionando al profesor `@{{site.profesor_github}}`. Mueva la incidencia a la columna `done`de su tablero
+  * El profesor le proveerá de retroalimentación con una incidencia indicándole que puntos mejorar o que la entrega está apta y cerrando la incidencia
+
+### TFA
 
 * Se desarrolla un Trabajo Fin de Asignatura (TFA) consistente en el diseño e implementación de un lenguaje (en algunos casos, un lenguaje de dominio específico, Domain Specific Language o DSL) que se presenta al final del curso. El proyecto se comienza tan pronto como el estudiante tiene los conocimientos mínimos para diseñarlo e implantarlo. Es necesario superar el proyecto para aprobar la asignatura con una nota mínima de 5.
 
+### Cálculo de la Calificación
+
 * Superadas las partes (prácticas individuales y en grupo y proyecto colaborativo), la nota es la media ponderada de las partes.
+
+### Alumnos que no participan en la Evaluación Continua
 
 * Los estudiantes que no participen en la evaluación continua se evalúan a través de los exámenes oficiales y convocatorias fijados por la Universidad de La Laguna.
 Estos exámenes constan de una parte teórica y una parte práctica. Es necesario aprobar las dos partes para superar la asignatura. La nota final es la media ponderada de ambas.
 
-## [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
+## Referencias
 
-## [Los apuntes de PL]({{site.baseurl}}/index.html)
-
-## Comunicación
-
+* [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
 * [Hangouts Chat](practicas/hangoutschat/)
-
-## Que es [GitHub Classroom](https://classroom.github.com)
-
-[GitHub Classroom](https://classroom.github.com) is a GitHub service
-for education allowing teachers to distribute assignments with starter code.
-
-* Students work on assignments individually or in groups using public or private GitHub repositories.
-* Students gain access to assignments using unique invitation URLs.
-* Teachers and teaching assistants can browse submissions by assignment.
-
-## Instrucciones para el Estudiante para las tareas asignadas via GitHub ClassRoom
-
-{% include ghclassroom-instrucciones.md %}
+* [GitHub Classroom Intro]({{ site.baseurl}}/assets/temas/tema0-introduccion-a-pl/github-classroom)
