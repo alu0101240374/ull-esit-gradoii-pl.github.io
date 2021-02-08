@@ -17,12 +17,14 @@ title: Recursos
 
 * [Modificación Perfíl del Profesor](https://www.ull.es/apps/guias/teachers/view_profile/)
 
+<!--
+
 ## Corona Virus
 
 * [Adaptación de la Asignatura al Formato No Presencial](covid19)
 * [Grabación y monitorización durante pruebas no presenciales
 ](https://campusvirtual.ull.es/facultades/mod/forum/discuss.php?d=33894)
-
+-->
 
 ## BULL
 
