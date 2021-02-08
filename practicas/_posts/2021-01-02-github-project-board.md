@@ -2,7 +2,7 @@
 title: GitHub Project Board
 ---
 
-# Práctica: gh-project-board
+# Práctica: github-project-board
 
 Cree un project board automated kanban para el seguimiento de sus prácticas durante el curso.
 
