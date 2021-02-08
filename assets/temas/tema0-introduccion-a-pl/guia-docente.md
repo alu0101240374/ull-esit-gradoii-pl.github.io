@@ -4,6 +4,10 @@ github_alu: https://docs.google.com/forms/d/e/1FAIpQLSfZvLIKzw3Fq55EQUuyDMJdbKfv
 google_plus: https://currents.google.com/u/1/communities/101901734024125937720
 ---
 
+## Horarios
+
+* [Horarios]({{ site.baseurl }}/timetables)
+
 ## Organización GitHub
 
 En la metodología que seguiremos este curso trabajará usando esta organización GitHub:

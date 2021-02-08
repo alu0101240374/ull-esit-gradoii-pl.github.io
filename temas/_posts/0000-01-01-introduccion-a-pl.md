@@ -8,7 +8,6 @@ toc: true
 toc_label: "Tabla de Contenidos"
 toc_icon: "list"
 ---
-# Introducción a la Asignatura
 
 ## PL: Guía del Estudiante
 
