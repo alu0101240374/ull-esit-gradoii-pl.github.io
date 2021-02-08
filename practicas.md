@@ -2,12 +2,6 @@
 layout: single
 permalink: practicas
 title: Prácticas
-sidebar:
-  title: "Prueba de barra"
-  nav: sidebar-sample
-toc: true
-toc_label: "Tabla de Contenidos"
-toc_icon: "list"
 ---
 
 ## Enlaces

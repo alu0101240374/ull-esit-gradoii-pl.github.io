@@ -7,10 +7,10 @@ title: Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No P
 
 Medios para realizar las tutorías:
 
-* Chat virtual ([chat.google.com](https://chat.google.com) aula ULL-ESIT-PL) y 
-* videoconferencia (Google Meet).
+* GitHub Issues (Student Project Board)
+* Chat virtual ([chat.google.com](https://chat.google.com) aula ULL-ESIT-PL) 
+* Videoconferencias (Google Meet).
 * Campus Virtual
-* GitHub Issues
  
 En el caso de las tutorías, estamos utilizando las herramientas de chat y meet de Google para dudas y preguntas relacionadas con los contenidos teóricos, la asignatura y las prácticas. También utilizamos los issues de GitHub para resolver cuestiones sobre las prácticas. Bajo demanda se realizan tutorías mediante videoconferencia.
 
@@ -22,7 +22,7 @@ Compartidos via Google Drive y Youtube.
 
 ### Sesiones virtuales/clases 
 
-Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos las clases mediante videoconferencias (Google Meet). Las de teoría están siendo grabadas y publicadas en el campus virtual.
+Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos las clases de teoría mediante videoconferencias (Google Meet). Las de teoría están siendo grabadas y publicadas en el campus virtual.
 
 ### Inclusión de documentación sobre cada tema
 
