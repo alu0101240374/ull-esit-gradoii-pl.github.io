@@ -2,7 +2,7 @@
 title: GitHub Campus Expert
 ---
 
-# Práctica: gh-campus-expert
+# Práctica: github-campus-expert
 
 Esta práctica tiene por objetivo mejorar las competencias transversales. 
 La realización es opcional. No cuenta en la calificación final.

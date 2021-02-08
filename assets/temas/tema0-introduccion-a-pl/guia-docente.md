@@ -21,6 +21,18 @@ Rellena el Cuestionario DSI: Relación GitHub-AluXXXX dentro de <a href="{{page.
 * Puedes poner un correo distinto del de la ULL si lo prefieres
 * Pon los usuarios GitHub (si tienes mas de uno) con los que vayas a hacer los commits en las prácticas de la asignatura
 
+## Google Plus: Comunidad PL
+
+Date de alta en la comunidad [Google + de PL]({{page.google_plus}}). 
+
+* Cuando lo hagas asegúrate de estar usando tu cuenta de gmail ull (*aluXXX@ull.edu.es*)
+
+## Prácticas Iniciales
+
+* [Práctica Opcional: GitHub Campus Expert (github-campus-expert)]({{site.baseurl}}/practicas/github-campus-expert)
+
+* [GitHub Project Board: github-project-board]({{site.baseurl}}/practicas/github-project-board)
+
 ## Que es [GitHub Classroom](https://classroom.github.com)
 
 [GitHub Classroom](https://classroom.github.com) is a GitHub service
@@ -34,11 +46,6 @@ for education allowing teachers to distribute assignments with starter code.
 
 {% include ghclassroom-instrucciones.md %}
 
-## Google Plus: Comunidad PL
-
-Date de alta en la comunidad [Google + de PL]({{page.google_plus}}). 
-
-* Cuando lo hagas asegúrate de estar usando tu cuenta de gmail ull (*aluXXX@ull.edu.es*)
 
 ## La Bibliografía
 
@@ -79,10 +86,6 @@ La Evaluación de la asignatura se rige por el Reglamento de Evaluación y Calif
 
 * Los estudiantes que no participen en la evaluación continua se evalúan a través de los exámenes oficiales y convocatorias fijados por la Universidad de La Laguna.
 Estos exámenes constan de una parte teórica y una parte práctica. Es necesario aprobar las dos partes para superar la asignatura. La nota final es la media ponderada de ambas.
-
-## Práctica Opcional
-
-* [Práctica Opcional: GitHub Campus Expert (pb-gh-campus-expert)]({{site.baseurl}}/tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/)
 
 
 ## [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
