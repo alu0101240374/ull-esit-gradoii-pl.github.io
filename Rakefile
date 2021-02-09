@@ -87,5 +87,5 @@ end
 
 desc "Publicar en GitHub ULL-ESIT-PL-2021/ull-esit-pl-2021.github.io"
 task :push2021 do
-  sh "git ci -am 'PL 2020/2021' && git push pl2021 main"
+  sh "git push pl2021 main"
 end
