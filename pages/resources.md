@@ -153,4 +153,5 @@ permalink: /resources
   
 ## Recursos Google
 
+* [Google group de PL ](https://groups.google.com/u/1/a/ull.edu.es/g/asignatura_139263121)
 * [Comunidad Google+ PL](https://plus.google.com/u/2/communities/101901734024125937720)

@@ -33,6 +33,10 @@ sidebar-sample:
     children:
       - title: "PL en el Campus Virtual"
         url: https://campusingenieriaytecnologia.ull.es/course/view.php?id=2020090040
+      - title: Foros
+        url: https://campusingenieriaytecnologia.ull.es/mod/forum/index.php?id=2020090040
+      - title: Tareas
+        url: https://campusingenieriaytecnologia.ull.es/mod/assign/index.php?id=2020090040
       - title: "Guia Docente"
         url: https://www.ull.es/apps/guias/guias/view_guide_course/1920/139263121 
       - title: Horario de Tutorías
@@ -45,4 +49,5 @@ sidebar-sample:
         url: https://www.ull.es/servicios/biblioteca/servicios/puntoq/
       - title: Calendario Académico
         url: https://www.ull.es/estudios-docencia/calendario-academico/
+
   
