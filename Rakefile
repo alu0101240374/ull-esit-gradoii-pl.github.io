@@ -89,3 +89,6 @@ desc "Publicar en GitHub ULL-ESIT-PL-2021/ull-esit-pl-2021.github.io"
 task :push2021 do
   sh "git push pl2021 main"
 end
+
+desc "Publicar en GitHub ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl-github.io and ULL-ESIT-PL-2021/ull-esit-pl-2021.github.io"
+task :publish => [:default, :push2021]
