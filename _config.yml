@@ -293,6 +293,8 @@ defaults:
       read_time: true
       share: true
       related: true
+      read_time: false
+
   - scope:
       path: temas
     values:
