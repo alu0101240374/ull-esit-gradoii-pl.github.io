@@ -6,17 +6,17 @@ permalink: /resources
 
 ## Campus Virtual y UDV
 
-* [PL 18/19](https://campusvirtual.ull.es/1819/course/view.php?id=1110)
-* [Participantes](https://campusvirtual.ull.es/1819/user/index.php?page=0&perpage=20&contextid=0&id=1110&newcourse)
-* [Calificaciones](https://campusvirtual.ull.es/1819/grade/report/grader/index.php?id=1110)
-* [Tareas](https://campusvirtual.ull.es/1819/mod/assign/index.php?id=1110)
-* [Foros](https://campusvirtual.ull.es/1819/mod/forum/index.php?id=1110)
+* [PL]({{site.campus_virtual}})
+* [Participantes]({{site.participantes}})
+* [Calificaciones]({{site.calificador}})
+* [Tareas]({{site.tareas}})
+* [Foros]({{site.foros}})
 * Aula de [Recursos Disponibles para Realizar ACTIVIDAD DOCENTE NO PRESENCIAL]({{site.covid_ull}})
-* [Unidad para la Docencia Virtual. Servicios (UDV)](https://udv.ull.es/servicios)
+* [Unidad para la Docencia Virtual. Servicios (UDV)]({{ site.udv }})
 
 ## Guias Docentes
 
-* [Modificación Perfíl del Profesor](https://www.ull.es/apps/guias/teachers/view_profile/)
+* [Modificación Perfíl del Profesor]({{ site.teacher_profile_edit }}) (deberá estar autenticado)
 
 <!--
 
@@ -29,17 +29,15 @@ permalink: /resources
 
 ## BULL
 
-* [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
+* [BULL PuntoQ]({{ site.bull_puntoq }})
 * [Video tutoriales de ayuda sobre PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/videotutoriales-de-puntoq/)
 
 ## Antiplagio
 
-* [Solicitud de informe de similitud](https://docs.google.com/forms/d/e/1FAIpQLSfEyKnNYAXH5lH9eTh6de6qu5dP-lp33ul4QE8PrFLqeXT66A/viewform) Turnitin
+* [Solicitud de informe de similitud]({{ site.turnitin }}) Turnitin
 
 
 ## GitHub
-
-* [Página Web de PL](https://ull-esit-pl-1819.github.io/introduccion/)
 
 ### GitHub Benefits
 
@@ -104,6 +102,7 @@ permalink: /resources
 - [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
   *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs)
   *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Mac OSX](https://drive.google.com/file/d/0B3mzWpxzbJD1VTZhUkFVbUI2NWc/view?usp=sharing)
+  * [Instrucciones para acceder a la VPN de la ULL en un Mac sin usar GlobalProtect]({{site.baseurl}}/pages/vpn-ull)
   *   [Guía de configuración del cliente VPN para Linux, Android e IOS (Ipad, Iphone) con IPSEC](https://drive.google.com/open?id=0B3mzWpxzbJD1Z1p4OWtQSFFzOGs)
 
 ### Mapa de Recursos

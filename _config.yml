@@ -327,12 +327,18 @@ organization:
 apuntes_repo: https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io
 campus_virtual: https://campusingenieriaytecnologia.ull.es/course/view.php?id=2020090040
 calificador: https://campusingenieriaytecnologia.ull.es/grade/report/user/index.php?id=2020090040
+participantes: https://campusingenieriaytecnologia.ull.es/user/index.php?id=2020090040
 tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
+foros: https://campusingenieriaytecnologia.ull.es/mod/forum/index.php?id=2020090040
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/745/(%3FPcrguezl.*)/
+teacher_profile_edit: https://www.ull.es/apps/guias/teachers/view_profile/
+udv: https://udv.ull.es/portal/
 profesor_github: crguezl
 chat: https://chat.google.com/u/1/room/AAAANx1edCg
+bull_puntoq: https://www.ull.es/servicios/biblioteca/servicios/puntoq/
 bull_permanente: https://puntoq.ull.es/permalink/f
 covid_ull: https://campusvirtual.ull.es/doctoradoyposgrado/course/view.php?id=201913946
+turnitin: https://docs.google.com/forms/d/e/1FAIpQLSfEyKnNYAXH5lH9eTh6de6qu5dP-lp33ul4QE8PrFLqeXT66A/viewform
 dsi:
   apuntes: https://ull-esit-dsi-1819.github.io/dsi-1819/
 sytws:

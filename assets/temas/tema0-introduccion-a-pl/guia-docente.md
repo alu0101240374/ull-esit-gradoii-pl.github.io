@@ -47,6 +47,12 @@ Date de alta en la comunidad [Google + de PL]({{page.google_plus}}).
 
 * [IAAS]({{site.baseurl}}/practicas/iaas)
 
+## Vías de Comunicación
+
+* [Google chat and VideoConferences]({{site.chat}})
+* [GitHub Discussions in the repo ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io](https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/discussions)
+
+
 ## La Bibliografía
 
 La mayor parte de los [libros]({{site.baseurl}}/references) están accesible via el [PuntoQ de la BULL](/resources#bull).
@@ -108,6 +114,4 @@ Estos exámenes constan de una parte teórica y una parte práctica. Es necesari
 
 ## Referencias
 
-* [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
-* [Hangouts Chat](practicas/hangoutschat/)
 * [GitHub Classroom Intro]({{ site.baseurl}}/assets/temas/tema0-introduccion-a-pl/github-classroom)
