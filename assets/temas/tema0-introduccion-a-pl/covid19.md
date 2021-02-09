@@ -28,9 +28,6 @@ Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos l
 
 Tanto en el Campus como en la [organización GitHub ULL-ESIT-PL-2021](https://github.com/ULL-ESIT-PL-2021) se puede acceder a la información de la asignatura. Los apuntes se encuentran en [https://ull-esit-gradoii-pl.github.io/](https://ull-esit-gradoii-pl.github.io)
 
-### Foros/debate 
-
-Utilizamos los recursos del aula virtual (Moodle), Sala ULL-ESIT-PL de Google Chat (chat.google.com) y Google Meets para incentivar la participación, resolver dudas y profundizar en temas.
 
 ### Realización de pruebas evaluativas en línea 
 
