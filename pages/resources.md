@@ -53,16 +53,14 @@ permalink: /resources
 * [Presentación del Trabajo Fin de Grado (TFG)](https://sede.ull.es/ecivilis-site/catalog/showProcedure/281)
 * [Procedimiento para entregar el Trabajo Fin de Grado (TFG) a través de la sede electrónica de la ULL](https://youtu.be/foDDM8tQML4)
 
-## App ULL Plan de Ordenación Docente 
+### App ULL Plan de Ordenación Docente 
 
 * [POD ULL App](https://www.ull.es/apps/pod/)
 
-## Portal del Empleado y del Estudiante
+### Portal del Empleado y del Estudiante
 
 * [Portal ull.es](portal.ull.es) Portal del Empleado y del Estudiante
 
-
-## STIC
 
 ### iaas.ull.es
 
@@ -77,12 +75,12 @@ permalink: /resources
   - Certificados SSL para máquinas IaaS de PAS/PDI
 
 
-### Incidencias
+### Incidencias STIC
 
 - [Gestor de incidencias. RT para rt.stic.ull.es](https://usuarios.ull.es/rt/SelfService/)
 - [Tarjeta Universitaria](https://www.ull.es/tarjeta/)
 
-### VPN
+### VPN ULL
 
 - [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
   *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs)
@@ -90,19 +88,17 @@ permalink: /resources
   * [Instrucciones para acceder a la VPN de la ULL en un Mac sin usar GlobalProtect]({{site.baseurl}}/pages/vpn-ull)
   *   [Guía de configuración del cliente VPN para Linux, Android e IOS (Ipad, Iphone) con IPSEC](https://drive.google.com/open?id=0B3mzWpxzbJD1Z1p4OWtQSFFzOGs)
 
-### Mapa de Recursos
+### Mapa de Recursos ULL
 
 - [Mapa de recursos de la ULL](https://www.ull.es/donde/)
 
-### Impresión
+### Servicio de Impresión ULL
 
 * [Datos para el servicio de impresión](https://usuarios.ull.es/autogestion/valores_impresion/)
 
-### Cambio de contraseña
+### Cambio de contraseña en la ULL
 
 * [Cambio de contraseña](https://usuarios.ull.es/autogestion/cambio_password_google/)
-
-
 
 ## Recursos GitHub
 
