@@ -126,7 +126,7 @@ permalink: /resources
 
 ### Authorizing Apps to access your GitHub Orgs and Repos
 
-* [Authorize an OAuth App: settings/applications](https://github.com/settings/connections/applications/) Go to **user settings and from there to applications**
+* [Authorize an OAuth App: settings/applications](https://github.com/settings/connections/applications/) Go to **user** settings and from there to applications
 
 <!--
 
