@@ -1,9 +1,7 @@
 ---
 layout: single
 title: Temas
-toc: true
-toc_label: "Tabla de Contenidos"
-toc_icon: "list"
+permalink: /temas
 ---
 
 {% comment %}
