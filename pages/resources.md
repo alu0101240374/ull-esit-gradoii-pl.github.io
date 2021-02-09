@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Recursos
+permalink: /resources
 ---
 
 ## Campus Virtual y UDV

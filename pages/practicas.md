@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: practicas
+permalink: /practicas
 title: Prácticas
 ---
 

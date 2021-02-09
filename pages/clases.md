@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Clases
+permalink: /clases
 ---
 
   {%- assign previousMonth = "0" %}

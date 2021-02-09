@@ -1,5 +1,6 @@
 ---
 layout: single
+permalink: /references
 ---
 # Referencias y Bibliografía
 
