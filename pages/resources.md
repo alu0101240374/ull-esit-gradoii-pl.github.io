@@ -124,11 +124,11 @@ permalink: /resources
 * [GitHub Education Community](https://education.github.community/)
 * [Create Icon avatar for the organization](https://graduaat-iconizr.herokuapp.com/)
 
-### Authorithing Apps to access your GitHub Orgs and Repos
-
+### Authorizing Apps to access your GitHub Orgs and Repos
 
 * [Authorize an OAuth App: settings/applications](https://github.com/settings/connections/applications/) Go to **user settings and from there to applications**
 
+<!--
 
 ### GitHub 19/20
 
@@ -139,8 +139,9 @@ permalink: /resources
 * [Página Web de PL del curso 18/19(github gitbook)](https://ull-esit-pl-1819.github.io/ull-esit-pl-1819.github.io/_book/)
 * [Organización ULL-ESIT-PL-1819](https://github.com/ULL-ESIT-PL-1819)
   - [Repo ull-esit-pl-1819.github.io](https://github.com/ULL-ESIT-PL-1819/ull-esit-pl-1819.github.io)
+-->
 
-
+<!--
 ## Prácticas
 
 * Herramientas para la Asignación de Tareas
@@ -148,7 +149,7 @@ permalink: /resources
   * [CodeLab TFG de Samuel](https://codelab-tfg1718.herokuapp.com/)
 * [Instrucciones para las entregas de Prácticas y Trabajos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/)
 
-
+-->
   
 ## Recursos Google
 
