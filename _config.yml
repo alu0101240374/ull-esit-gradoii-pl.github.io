@@ -319,7 +319,7 @@ calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
 horarios_tercero: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/#tercero
 horarios_tutorias: https://www.ull.es/apps/guias/guias/view_guide/24127/
 cita_previa: https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUd1YlJSLURtcE5JfGRlZmF1bHR8ZmNiMWNmMTE4MjNjNzk1MWQwZGQyYTI4ZjZjYjZjY2E
-google_plus: https://plus.google.com/u/1/communities/101901734024125937720
+google_plus: https://currents.google.com/u/1/communities/101901734024125937720 # https://plus.google.com/u/1/communities/101901734024125937720
 organization: 
   url: https://github.com/ULL-ESIT-PL-2021
   name: ULL-ESIT-PL-2021
@@ -328,7 +328,7 @@ apuntes_repo: https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.
 campus_virtual: https://campusingenieriaytecnologia.ull.es/course/view.php?id=2020090040
 calificador: https://campusingenieriaytecnologia.ull.es/grade/report/user/index.php?id=2020090040
 participantes: https://campusingenieriaytecnologia.ull.es/user/index.php?id=2020090040
-tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
+tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070/plus
 foros: https://campusingenieriaytecnologia.ull.es/mod/forum/index.php?id=2020090040
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/745/(%3FPcrguezl.*)/
 teacher_profile_edit: https://www.ull.es/apps/guias/teachers/view_profile/

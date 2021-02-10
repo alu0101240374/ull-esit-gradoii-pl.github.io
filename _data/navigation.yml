@@ -52,7 +52,7 @@ sidebar-sample:
   - title: "GOOGLE"
     children:
       - title: Chat
-      - url: https://chat.google.com
+        url: https://chat.google.com/u/1/
         
 
   
