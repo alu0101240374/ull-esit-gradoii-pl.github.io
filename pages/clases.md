@@ -12,10 +12,7 @@ permalink: /clases
 ### Classes during the month of {{ currentMonth }}
 
       {%- endif %}
-* [{{ post.title }}]({{site.baseurl}}{{ post.url }})  [📝]({{site.organization.master}}/{{post.path}})
-  {%- if post.video %} 
-  * [Vídeo]({{post.video}}) 
-  {%- endif %}
+* [{{ post.title }}]({{site.baseurl}}{{ post.url }})  {%- if post.video %} ([Vídeo]({{post.video}})) {%- endif %} [📝]({{site.organization.master}}/{{post.path}})
       {%- assign previousMonth = currentMonth %}
   {%- endfor %}
 
