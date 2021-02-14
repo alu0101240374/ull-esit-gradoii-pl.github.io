@@ -10,7 +10,7 @@ En el [Repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/
 
 ### REPL example
 
-Una vez clonado el módulo, arranque el bucle REPL de Node.JS:
+Una vez clonado el [repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk), arranque el bucle REPL de Node.JS:
 
 ```
 ➜  esprima-pegjs-jsconfeu-talk git:(master) node
