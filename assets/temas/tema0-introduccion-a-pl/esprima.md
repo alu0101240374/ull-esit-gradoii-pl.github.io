@@ -157,10 +157,6 @@ undefined
 
 * [More Advanced examples from the talk *Master the Art of the AST*](master-the-art-of-the-ast)
 
-### PEG.js Example
-
-[altjs.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/altjs.js) is the code for the "AltJS language in 5 minutes" section
-presented in the second half of the [talk Parsing, Compiling, and Static Metaprogramming](http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html) by Patrick Dubroy
 
 ### Extra Example: Searching for Specific Identifiers
 
@@ -187,5 +183,9 @@ if we search for `hack` it produces:
 3:9:      var hack = 3;
 ```
 
+### PEG.js Example
+
+[altjs.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/altjs.js) is the code for the "AltJS language in 5 minutes" section
+presented in the second half of the [talk Parsing, Compiling, and Static Metaprogramming](http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html) by Patrick Dubroy
 
 
