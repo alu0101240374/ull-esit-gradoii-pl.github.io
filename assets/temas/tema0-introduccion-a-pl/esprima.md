@@ -164,7 +164,7 @@ presented in the second half of the [talk Parsing, Compiling, and Static Metapro
 
 ### Extra Example: Searching for Specific Identifiers
 
-`idgrep.coffee` (and [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is another example of using Esprima
+The file `idgrep.coffee` (and [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is another example of using Esprima
 to do static analysis on JavaScript code.
 
 It provides a function `idgrep` that finds the appearances of identifiers matching a search string inside the input code.
