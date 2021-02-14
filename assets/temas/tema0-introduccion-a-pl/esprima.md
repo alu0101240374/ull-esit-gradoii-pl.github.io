@@ -74,7 +74,7 @@ Uncaught [SyntaxError: The keyword 'const' is reserved
   column: 1
 }
 ```
-La versión ECMA de JS usada por defecto por `espree` es la 5 y no admite `const`
+La versión ECMA de JS usada por defecto por `espree` es la 5 y esta no admite `const`
 
 Especifiquemosle la versión ECMA que queremos:
 
