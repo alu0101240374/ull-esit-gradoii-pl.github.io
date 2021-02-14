@@ -162,10 +162,24 @@ undefined
 [altjs.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/altjs.js) is the code for the "AltJS language in 5 minutes" section
 presented in the second half of the [talk Parsing, Compiling, and Static Metaprogramming](http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html) by Patrick Dubroy
 
-### Extra Example: Searching for Identifiers matching a Regexp
+### Extra Example: Searching for Specific Identifiers
 
 `idgrep.coffee` (and [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is another example of using Esprima
 to do static analysis on JavaScript code.
+
+It provides a function `idgrep` that finds the appearances of identifiers matching a search string inside the input code.
+
+Given an input like this:
+
+```js
+   // This is a hack!
+  function hacky_function() {
+     var hack = 3;
+     return 'hacky string';
+   }
+```
+
+if we search for `hack` it produces:
 
 ```
 ➜  esprima-pegjs-jsconfeu-talk git:(master) node idgrep.js 
