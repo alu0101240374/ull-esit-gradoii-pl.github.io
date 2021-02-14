@@ -77,6 +77,3 @@ to do static analysis on JavaScript code.
 
 * [More Advanced examples from the talk *Master the Art of the AST*](master-the-art-of-the-ast)
 
-## AST: Awesome Super Tool - JS Roundabout - April 2019
-
-* [AST: Awesome Super Tool - JS Roundabout - April 2019](https://youtu.be/N5v8Ul6ph90) by Leonardo Crespo
