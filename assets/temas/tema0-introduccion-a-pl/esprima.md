@@ -164,8 +164,14 @@ presented in the second half of the [talk Parsing, Compiling, and Static Metapro
 
 ### Extra Special Bonus!
 
-`idgrep.coffee` (and `[idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js`) is another example of using Esprima
+`idgrep.coffee` (and [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is another example of using Esprima
 to do static analysis on JavaScript code.
+
+```
+➜  esprima-pegjs-jsconfeu-talk git:(master) node idgrep.js 
+2:11:   function hacky_function() {
+3:9:      var hack = 3;
+```
 
 
 
