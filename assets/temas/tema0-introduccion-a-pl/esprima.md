@@ -102,7 +102,7 @@ Node {
 }
 ```
 
-Observe que el Árbol no aparece completo. El log del bucle REPL de Node lo trunca en el hijo `declarations` para que la salida no sea excesivamente larga.
+Observe que el Árbol no aparece completo. El log que usa el bucle REPL de Node lo trunca en el hijo `declarations` (sólo nos muestra que es un array `[Array]` sin expandirlo) para que la salida no sea excesivamente larga.
 
 Para que nos muestre el árbol vamos a usar el método `util.inspect` del módulo `util` 
 que convierte un objeto en una string:
