@@ -5,6 +5,7 @@
 En el [Repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk) encontrará el material de esta lección.
 **Clone este repo**.
 
+The examples in this repo use a couple of JavaScript compiler frameworks: [Esprima](http://esprima.org) and Espree.
 
 [Espree](https://github.com/eslint/espree) started out as a fork of [Esprima](http://esprima.org) v1.2.2, the last stable published released of Esprima before work on ECMAScript 6 began. [Espree](https://github.com/eslint/espree) is now built on top of [Acorn](https://github.com/ternjs/acorn), which has a modular architecture that allows extension of core functionality. The goal of [Espree](https://github.com/eslint/espree) is to produce output that is similar to Esprima with a similar API so that it can be used in place of Esprima.
 
