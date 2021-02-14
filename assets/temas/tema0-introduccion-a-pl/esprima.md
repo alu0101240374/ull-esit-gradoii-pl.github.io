@@ -11,7 +11,13 @@ The examples in this repo use a couple of JavaScript compiler frameworks: [Espri
 
 ### REPL example
 
-Una vez clonado el [repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk), arranque el bucle REPL de Node.JS:
+Una vez clonado el [repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk), instalamos las dependencias:
+
+```
+➜  esprima-pegjs-jsconfeu-talk git:(master) npm i
+```
+
+y arrancamos el bucle REPL de Node.JS:
 
 ```
 ➜  esprima-pegjs-jsconfeu-talk git:(master) node
@@ -74,12 +80,16 @@ Uncaught [SyntaxError: The keyword 'const' is reserved
   column: 1
 }
 ```
+
 La versión ECMA de JS usada por defecto por `espree` es la 5 y esta no admite `const`
 
 Especifiquemosle la versión ECMA que queremos:
 
 ```js
-> espree.parse('const answer = 42', { ecmaVersion: espree.latestEcmaVersion, tokens: true })
+> espree.parse('const answer = 42', 
+              { ecmaVersion: espree.latestEcmaVersion, 
+                tokens: true }
+              )
 Node {
   type: 'Program',
   start: 0,
