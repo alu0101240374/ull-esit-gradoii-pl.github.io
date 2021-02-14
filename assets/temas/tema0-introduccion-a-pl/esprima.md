@@ -111,7 +111,12 @@ que convierte un objeto en una string:
 ```js
 > const util = require('util')
 undefined
-> console.log(util.inspect(espree.parse('const answer = 42',{ecmaVersion: 6}), {depth: null}))
+> console.log(
+    util.inspect(
+        espree.parse('const answer = 42',{ecmaVersion: 6}), 
+        {depth: null}
+    )
+ )
 Node {
   type: 'Program',
   start: 0,
