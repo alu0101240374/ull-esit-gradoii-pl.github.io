@@ -164,9 +164,9 @@ Node {
 undefined
 ```
 
-Usando la herramienta web **astexplorer** podemos navegar el AST producido por varios compiladores JS:
+Usando la herramienta web **[https://astexplorer.net](https://astexplorer.net)** podemos navegar el AST producido por varios compiladores JS:
 
-* <a href="https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest" target="_blank">AST de <code>answer = 42</code></a>
+* <a href="https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest" target="_blank">AST de <code>answer = 42</code></a> en [https://astexplorer.net](https://astexplorer.net)
 
 ### Extra Example: Searching for Specific Identifiers
 
