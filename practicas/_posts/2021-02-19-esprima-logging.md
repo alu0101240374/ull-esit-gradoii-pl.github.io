@@ -5,10 +5,12 @@ published: true
 
 ## Descripción de la Tarea
 
-El programa `logging-espree.js`  implementa una función `addLogging` que cuando se llama 
-modifica el código de entrada 
-produciendo como salida un código que inserta  mensajes de `console.log` a la entrada de cada 
-función. Por ejemplo, cuando se llama con esta entrada:
+En el repo [Repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk) encontrará el programa `logging-espree.js`  el cual implementa una función `addLogging` que:
+
+* cuando se llama analiza el código JS que se la da como entrada 
+* produciendo como salida un código JS equivalente que inserta  mensajes de `console.log` a la entrada de cada función.
+
+Por ejemplo, cuando se llama con esta entrada:
 
 ```js
 addLogging(`
@@ -21,8 +23,6 @@ function foo(a, b) {
 foo(1, 'wut', 3);
 `);
 ```
-
-* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
 
 produce una salida como esta:
 
@@ -86,12 +86,14 @@ foo(1, 'wut', 3);
 `));
 ```
 
-[Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
+Le ayudarán a entender el código estos dos recursos:
 
-Se pide:
+* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
+* [Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
+
+En esta práctica, se pide:
 
 1. Acepte la asignación Classroom de esta tarea
-2. Rellene su entrada en este formulario poniendo su código de github junto a su alu 
 3. En la tarea del Campus basta con entregar el enlace al repositorio
 4. Ejecute paso a paso el código de `logging.js` usando el debugger de chrome, intentando comprender el funcionamiento de la transformación realizada. Haga un resumen de lo que ha aprendido en el fichero Markdown: `README.md` 
 5. Modifique el programa para que los `console.log` insertados informen de los valores de los parámetros pasados a la función.
@@ -314,6 +316,24 @@ Entering <anonymous function>(2) at line 3
 
 ## Recursos
 
+### Material para la Práctica
+
+* En el [Repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk) encontrará material para esta práctica
+* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
+* [Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
+
+### Debugging
+
 * [Debugging Client Code with Chrome](https://javascript.info/debugging-chrome)
 * [Debugging NodeJS with Chrome]({{site.baseurl}}/assets/temas/introduccion-a-javascript/debugging)
+
+### Commander
+
+* El módulo npm [commander.js](https://www.npmjs.com/package/commander)
+  - [Examples](https://github.com/tj/commander.js/tree/master/examples) en el repo del modulo
+[commander.js](https://www.npmjs.com/package/commander)
+
+### Soluciones
+
 * [Una Solución](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk-private/blob/private/p0-t0-esprima-logging-sol.js) (No disponible)
+* [Solucion con los retos](https://github.com/ULL-ESIT-PL-1920/p0-t0-esprima-logging-reto-DanielGlezExp)
