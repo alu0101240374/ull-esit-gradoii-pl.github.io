@@ -1,12 +1,12 @@
 ---
 ---
-# Debugging with Chrome
+## Debugging with Chrome
 
-## Debugging Client Code with Chrome
+### Debugging Client Code with Chrome
 
 * [Debugging in Chrome in the client in javascript.info](https://javascript.info/debugging-chrome)
 
-## Debugging NodeJS with Chrome
+### Debugging NodeJS with Chrome
 
 En la terminal:
 
@@ -33,8 +33,19 @@ Insert `debugger` statements wherever you want to set a break-point:
 
 ![]({{site.baseurl}}/assets/images/chrome-debugging-nodejs-debug-statements.png)
 
+## Debugging with Visual Studio
+
+If the <strong>Auto Attach</strong> feature is enabled, the Node debugger automatically attaches to certain Node.js processes that have been launched from VS Code's Integrated Terminal. To enable the feature, either use the <strong>Toggle Auto Attach</strong> command from the command palette (<span class="keybinding">F1</span>) or, if it's already activated, use the <strong>Auto Attach</strong> Status bar item
+
+After enabling Auto Attach, you'll need to restart your terminal. 
+
+![](https://code.visualstudio.com/assets/docs/nodejs/nodejs-debugging/auto-attach.gif)
+
+See [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+
 ## References
 
+* [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 * [Node.JS Debugging Guide](https://nodejs.org/en/docs/guides/debugging-getting-started/)
 * Mis viejos apuntes: [Debugging NodeJS](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/nodejs/)
 * Debugging in 2017 with Node.js YouTube video https://youtu.be/Xb_0awoShR8

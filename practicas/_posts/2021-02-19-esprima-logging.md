@@ -325,7 +325,7 @@ Entering <anonymous function>(2) at line 3
 ### Debugging
 
 * [Debugging Client Code with Chrome](https://javascript.info/debugging-chrome)
-* [Debugging NodeJS with Chrome]({{site.baseurl}}/assets/temas/introduccion-a-javascript/debugging)
+* [Debugging NodeJS with Chrome and Visual Studio Code]({{site.baseurl}}/assets/temas/introduccion-a-javascript/debugging)
 
 ### Commander
 

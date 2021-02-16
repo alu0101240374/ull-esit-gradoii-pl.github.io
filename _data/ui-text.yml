@@ -109,6 +109,7 @@ es: &DEFAULT_ES
   search_algolia_no_results  :
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
+  February                   : Febrero
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
@@ -1367,7 +1368,7 @@ pa: &DEFAULT_PA
   comment_form_md_info       : "ਮਾਰਕਡਾਊਨ ਵਰਤ ਸਕਦੇ ਹੋ।"
   comment_form_name_label    : "ਨਾਮ"
   comment_form_email_label   : "ਈਮੇਲ ਪਤਾ"
-  comment_form_website_label : "ਵੈਬਸਾਈਟ (ਵਿਕਲਪਿਕ)"
+  comment_form_website_label : "ਵੈਬਸਾਈਟ (ਵ�����ਕਲਪਿਕ)"
   comment_btn_submit         : "ਕੋਈ ਟਿੱਪਣੀ ਭੇਜੋ"
   comment_btn_submitted      : "ਪੇਸ਼ ਕੀਤਾ"
   comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
