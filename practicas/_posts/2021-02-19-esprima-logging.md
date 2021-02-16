@@ -88,7 +88,7 @@ foo(1, 'wut', 3);
 
 Le ayudarán a entender el código estos dos recursos:
 
-* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
+* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/ee28a7c80b48178607f998b8242746bc/72adda89322262c0089b79c77023912d87754dbf) en [https://astexplorer.net/](https://astexplorer.net/)
 * [Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
 
 En esta práctica, se pide:
@@ -319,7 +319,7 @@ Entering <anonymous function>(2) at line 3
 ### Material para la Práctica
 
 * En el [Repo ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk) encontrará material para esta práctica
-* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
+* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/ee28a7c80b48178607f998b8242746bc/72adda89322262c0089b79c77023912d87754dbf)
 * [Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
 
 ### Debugging
