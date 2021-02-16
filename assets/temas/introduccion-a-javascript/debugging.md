@@ -29,7 +29,7 @@ En el navegador abrimos la URL `chrome://inspect` y hacemos `click` en el enlace
 
 ![]({{site.baseurl}}/assets/images/chrome-debugging-nodejs-inspect.jpg)
 
-You can insert `debugger` statements wherever you want to set a break-point:
+Insert `debugger` statements wherever you want to set a break-point:
 
 ![]({{site.baseurl}}/assets/images/chrome-debugging-nodejs-debug-statements.png)
 
