@@ -309,7 +309,7 @@ defaults:
       path: practicas
       type: posts
     values:
-      layout: single
+      layout: practica
       permalink: practicas/:title
   - scope:
       path: clases

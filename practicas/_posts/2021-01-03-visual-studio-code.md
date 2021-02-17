@@ -1,6 +1,10 @@
 ---
 title: Visual Studio Code
 published: true
+rubrica:
+  - "Instalado SSH plugin para VSCode y funciona con máquina del iaas"
+  - "<code>LiveShare</code> instalado y funcionando correctamente"
+  - "Informe bien elaborado"
 ---
 
 # Descripción de la Práctica vscode
@@ -126,3 +130,4 @@ StackEdit is an  editor in the cloud: it can sync your files with Google Drive, 
 ## Repl.it
 
 * [Repl.it docs](https://docs.repl.it/repls/quick-start)
+

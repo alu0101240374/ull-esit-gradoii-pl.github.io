@@ -1,0 +1,8 @@
+{% if page.rubrica %} 
+<h2 id="rubrica">Incidencias para el Project Board para la práctica <i>{{ page.title}}</i></h2>
+<ul>
+    {% for criterio in page.rubrica -%}
+    <li>{{ criterio }}</li> 
+    {% endfor %}
+</ul>
+{% endif %}

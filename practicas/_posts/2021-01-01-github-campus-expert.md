@@ -1,5 +1,9 @@
 ---
 title: GitHub Campus Expert
+rubrica:
+  - "Rellenado cuestionario GitHub-Alu"
+  - "Miembro de la comunidad Currents/G+"
+  - "Informe realizado correctamente"
 ---
 
 # Práctica: github-campus-expert

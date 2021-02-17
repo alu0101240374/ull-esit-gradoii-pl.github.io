@@ -1,5 +1,10 @@
 ---
 title: GitHub Project Board
+rubrica:
+  - "Proyecto Kanban creado a nivel de Organización"
+  - "Lo estoy usando para informar del avance en mis prácticas"
+  - "Convierto las notas en issues"
+  - "Informe elaborado correcto"
 ---
 
 # Práctica: github-project-board
