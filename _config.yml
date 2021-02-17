@@ -311,7 +311,12 @@ defaults:
     values:
       layout: single
       permalink: practicas/:title
-      
+  - scope:
+      path: clases
+      type: posts
+    values:
+      layout: leccion
+       
 
 
 ## PL repasar

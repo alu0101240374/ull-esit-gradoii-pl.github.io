@@ -1,0 +1,12 @@
+
+{% if page.summary %}
+{%- capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{%- capture posttime %}{{page.date | date: '%s'}}{% endcapture %}
+{% if posttime < nowunix -%}
+<h2> Que hemos visto </h2>
+{% else %}
+<h2> Que veremos </h2>
+{% endif %}
+{{ page.summary }}
+
+{% endif %}
