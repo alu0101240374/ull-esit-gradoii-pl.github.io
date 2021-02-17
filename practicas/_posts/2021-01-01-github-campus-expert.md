@@ -3,6 +3,7 @@ title: GitHub Campus Expert
 rubrica:
   - "Rellenado cuestionario GitHub-Alu"
   - "Miembro de la comunidad Currents/G+"
+  - "Solicitado Backpak"
   - "Informe realizado correctamente"
 ---
 
