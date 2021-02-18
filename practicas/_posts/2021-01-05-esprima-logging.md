@@ -307,6 +307,7 @@ function foo(a, b) {
         return z + 3;
     }(2);
 }
+foo(1, 'wut', 3);
 ```
 
 ```
