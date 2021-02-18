@@ -308,8 +308,9 @@ function foo(a, b) {
     }(2);
 }
 ```
+
 ```
-foo(1, 'wut', 3);[vi esprima-pegjs-jsconfeu-talk(develop)]$ node salida.js 
+[esprima-pegjs-jsconfeu-talk(develop)]$ node salida.js 
 Entering foo(1,wut) at line 1
 Entering <anonymous function>(2) at line 3
 ```
