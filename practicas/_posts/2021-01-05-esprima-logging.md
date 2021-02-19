@@ -86,10 +86,11 @@ foo(1, 'wut', 3);
 `));
 ```
 
-Le ayudarán a entender el código estos dos recursos:
+Le ayudarán a entender el código estos recursos:
 
-* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/ee28a7c80b48178607f998b8242746bc/72adda89322262c0089b79c77023912d87754dbf) en [https://astexplorer.net/](https://astexplorer.net/)
+* [Patrick Dubroy: Parsing, Compiling, and Static Metaprogramming -- JSConf EU 2013](https://youtu.be/UqTlToUYK1E)
 * [Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
+* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/ee28a7c80b48178607f998b8242746bc/72adda89322262c0089b79c77023912d87754dbf) en [https://astexplorer.net/](https://astexplorer.net/)
 
 En esta práctica, se pide:
 
