@@ -1,12 +1,14 @@
 ---
 layout: single
-title: "Introducción a JavaScript"
-published: false
+title: "Introducción"
+published: true
 ---
 
 ## [IAAS]({{site.baseurl}}/assets/temas/introduccion-a-javascript/iaas)
 
 ## [Editors]({{site.baseurl}}/assets/temas/introduccion-a-javascript/editors)
+
+## [gh]({{site.baseurl}}/assets/temas/introduccion-a-javascript/gh)
 
 ## [The Event Loop]({{site.baseurl}}/assets/temas/introduccion-a-javascript/event-loop)
 
