@@ -1,6 +1,6 @@
 ---
+title: GitHub Command Line Interface
 ---
-# GitHub Command Line Interface
 
 ## gh api
 

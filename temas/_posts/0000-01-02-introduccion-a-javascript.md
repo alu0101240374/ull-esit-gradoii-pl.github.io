@@ -1,43 +1,65 @@
 ---
 layout: single
-title: "Introducción a JavaScript"
+title: "Fundamentos"
 published: true
+excerpt: "Introducción a JavaScript y otras Herramientas"
+sections:
+  herramientas:
+    - title: IAAS
+      url: iaas
+    - title: Editors
+      url: editors
+    - title: "GitHub Command Line Interface"
+      url: gh
+    - title: Jekyll
+      url: jekyll
+    - title: "GitHub Actions"
+      url: github-actions
+    - title: "GitHub Apps"
+      url: github-apps
+    - title: Azure
+      url: azure
+  javascript:
+    - title: "The Event Loop"
+      url: event-loop
+    - title: Promises
+      url: promises
+    - title: Promise Examples
+      url: promise-examples
+    - title: Módulos
+      url: modulos
+    - title: Node.JS
+      url: node
+    - title: "Pruebas, Integración y Calidad"
+      url: pruebas
+    - title: "Object Oriented Programming: OOP"
+      url: oop
+    - title: "Functional Programming"
+      url: functional
+    - title: "Diseño, Principios"
+      url: design
+    - title: "JAM Stack"
+      url: jam
+    - title: "Build Tools"
+      url: build-tools
+    - title: TypeScript
+      url: typescript
 ---
 
-## [IAAS]({{site.baseurl}}/assets/temas/introduccion-a-javascript/iaas)
+## Herramientas
 
-## [Editors]({{site.baseurl}}/assets/temas/introduccion-a-javascript/editors)
+{% for section in page.sections.herramientas %}
 
-## [gh]({{site.baseurl}}/assets/temas/introduccion-a-javascript/gh)
+### [{{section.title}}]({{site.baseurl}}/assets/temas/introduccion-a-javascript/{{section.url}})
 
-## [The Event Loop]({{site.baseurl}}/assets/temas/introduccion-a-javascript/event-loop)
+{% endfor %}
 
-## [Promises]({{site.baseurl}}/assets/temas/introduccion-a-javascript/promises)
+## JavaScript
 
-### [Promise Examples]({{site.baseurl}}/assets/temas/introduccion-a-javascript/promise-examples)
+{% for section in page.sections.javascript %}
 
-## [Jekyll]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jekyll)
+### [{{section.title}}]({{site.baseurl}}/assets/temas/introduccion-a-javascript/{{section.url}})
 
-## [JAM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jam)
+{% endfor %}
 
-## [TypeScript]({{site.baseurl}}/assets/temas/introduccion-a-javascript/typescript)
 
-## [Node.JS]({{site.baseurl}}/assets/temas/introduccion-a-javascript/node)
-
-## [Pruebas, Integración y Calidad]({{site.baseurl}}/assets/temas/introduccion-a-javascript/pruebas)
-
-## [Build Tools]({{site.baseurl}}/assets/temas/introduccion-a-javascript/build-tools)
-
-## [GitHub Apps]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-apps)
-
-## [GitHub Actions]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-actions)
-
-## [Object Oriented Programming: OOP]({{site.baseurl}}/assets/temas/introduccion-a-javascript/oop)
-
-## [Módulos]({{site.baseurl}}/assets/temas/introduccion-a-javascript/modulos)
-
-## [Functional Programming]({{site.baseurl}}/assets/temas/introduccion-a-javascript/functional)
-
-## [Diseño, Principios]({{site.baseurl}}/assets/temas/introduccion-a-javascript/design)
-
-## [Azure]({{site.baseurl}}/assets/temas/introduccion-a-javascript/azure)
