@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Introducción"
+title: "Introducción a JavaScript"
 published: true
 ---
 
