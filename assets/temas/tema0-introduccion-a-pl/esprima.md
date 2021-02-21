@@ -209,5 +209,5 @@ presented in the second half of the [talk Parsing, Compiling, and Static Metapro
 
 En el `package.json` introduzca 
 
-* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, que ejecute su solución contra diferentes programaa de prueba
+* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, que ejecute su solución contra diferentes programas de prueba
 * Una entrada `scripts/test` que ejecute su solución contra todos los programas de prueba
