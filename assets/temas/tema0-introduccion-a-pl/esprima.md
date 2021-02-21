@@ -207,4 +207,7 @@ presented in the second half of the [talk Parsing, Compiling, and Static Metapro
 
 ## Entrega
 
-En el `package.json` introduzca una entrada `scripts/test` que ejecute su solución contra el programa de prueba
+En el `package.json` introduzca 
+
+* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, que ejecute su solución contra diferentes programaa de prueba
+* Una entrada `scripts/test` que ejecute su solución contra todos los programas de prueba
