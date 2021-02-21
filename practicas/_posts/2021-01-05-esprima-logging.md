@@ -346,5 +346,12 @@ Entering <anonymous function>(2) at line 3
 
 En el `package.json` introduzca 
 
-* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, con los comandos para la ejecución de su solución contra diferentes programas de prueba
+* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, con los comandos para la ejecución de su solución contra diferentes programas de prueba. Algo así:
+
+  ```js
+  "scripts": {
+        "test-1": "node src/my-sol-logging-espree.js test/prueba-1.js",
+        ...
+  }
+  ```
 * Una entrada `scripts/test` que ejecute su solución contra todos los programas de prueba
