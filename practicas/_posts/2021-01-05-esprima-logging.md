@@ -336,7 +336,15 @@ Entering <anonymous function>(2) at line 3
   - [Examples](https://github.com/tj/commander.js/tree/master/examples) en el repo del modulo
 [commander.js](https://www.npmjs.com/package/commander)
 
-### Soluciones
 
-* [Una Solución](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk-private/blob/private/p0-t0-esprima-logging-sol.js) (No disponible)
+### Soluciones (No disponibles)
+
+* [Una Solución](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk-private/blob/private/p0-t0-esprima-logging-sol.js) 
 * [Solucion con los retos](https://github.com/ULL-ESIT-PL-1920/p0-t0-esprima-logging-reto-DanielGlezExp)
+
+## Entrega
+
+En el `package.json` introduzca 
+
+* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, con los comandos para la ejecución de su solución contra diferentes programas de prueba
+* Una entrada `scripts/test` que ejecute su solución contra todos los programas de prueba

@@ -205,9 +205,3 @@ if we search for `hack` it produces:
 [altjs.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/altjs.js) is the code for the "AltJS language in 5 minutes" section
 presented in the second half of the [talk Parsing, Compiling, and Static Metaprogramming](http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html) by Patrick Dubroy
 
-## Entrega
-
-En el `package.json` introduzca 
-
-* Entradas adicionales `scripts/test-1`, `scripts/test-2` etc, que ejecute su solución contra diferentes programas de prueba
-* Una entrada `scripts/test` que ejecute su solución contra todos los programas de prueba
