@@ -9,6 +9,7 @@ permalink: /clases
       {%- assign currentMonth = post.date | date: "%B" %}
       {%- if currentMonth != previousMonth %}
 
+
 ### Classes during the month of {{ currentMonth }}
 
       {%- endif %}
