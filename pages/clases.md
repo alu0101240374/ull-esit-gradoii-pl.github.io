@@ -3,10 +3,10 @@ layout: single
 title: Clases
 permalink: /clases
 ---
-
+ 
   {%- assign previousMonth = "0" %}
   {%- for post in site.categories["clases"] reversed %}
-     {%- assign currentMonth = post.date | date: "%B" %}
+      {%- assign currentMonth = post.date | date: "%B" %}
       {%- if currentMonth != previousMonth %}
 
 ### Classes during the month of {{ currentMonth }}
