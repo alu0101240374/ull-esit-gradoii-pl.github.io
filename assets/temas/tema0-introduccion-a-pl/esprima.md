@@ -40,6 +40,10 @@ undefined
   9, 10, 11, 12
 ]
 ```
+
+Navegar en el árbol AST es complicado. El atributo [`espree.visitorKeys`](espree-visitorkeys) nos proporciona la lista de nodos y los nombres de  los atributos de sus hijos
+
+
 Hagamos un análisis léxico:
 
 ```js
@@ -83,7 +87,7 @@ Uncaught [SyntaxError: The keyword 'const' is reserved
 
 La versión ECMA de JS usada por defecto por `espree` es la 5 y esta no admite `const`
 
-Especifiquemosle la versión ECMA que queremos:
+Especifiquemos la versión ECMA que queremos:
 
 ```js
 > espree.parse('const answer = 42', 
@@ -205,3 +209,7 @@ if we search for `hack` it produces:
 [altjs.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/altjs.js) is the code for the "AltJS language in 5 minutes" section
 presented in the second half of the [talk Parsing, Compiling, and Static Metaprogramming](http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html) by Patrick Dubroy
 
+## References
+
+* [Espree](https://github.com/eslint/espree)
+  * [Options for parse and tokenize methods](https://github.com/eslint/espree#options)
