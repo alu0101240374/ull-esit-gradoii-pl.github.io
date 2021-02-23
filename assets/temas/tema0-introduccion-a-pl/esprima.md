@@ -200,6 +200,7 @@ if we search for `hack` it produces:
 2:8:     let hack = 3;
 ```
 
+Observe how the appearances of `hack` inside the comment or the string aren't shown
 
 ## ASTExplorer
 
