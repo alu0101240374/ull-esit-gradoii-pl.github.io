@@ -202,6 +202,10 @@ if we search for `hack` it produces:
 
 Observe how the appearances of `hack` inside the comment or the string aren't shown
 
+## Práctica Espree Logging
+
+* [Descripción de la Práctica Espree Logging]({{site.baseurl}}/practicas/esprima-logging)
+
 ## ASTExplorer
 
 * <a href="https://astexplorer.net/" target="_blank">astexplorer.net demo</a>
