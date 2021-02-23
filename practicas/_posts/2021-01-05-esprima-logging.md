@@ -361,3 +361,11 @@ En el `package.json` introduzca
   }
   ```
 * Una entrada `scripts/test` que ejecute su solución contra todos los programas de prueba
+
+## References
+
+* [Tipos de Nodos del AST]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/espree-visitorkeys)
+* [Espree](https://github.com/eslint/espree)
+  * [Options for parse and tokenize methods](https://github.com/eslint/espree#options)
+* [Escodegen repo en GitHub](https://github.com/estools/escodegen)
+  - [Escodegen API Doc](https://github.com/estools/escodegen/wiki/API)
