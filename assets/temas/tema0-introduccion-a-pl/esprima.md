@@ -172,9 +172,9 @@ Usando la herramienta web **[https://astexplorer.net](https://astexplorer.net)**
 
 * <a href="https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest" target="_blank">AST de <code>answer = 42</code></a> en [https://astexplorer.net](https://astexplorer.net)
 
-### Extra Example: Searching for Specific Identifiers
+### Example: Searching for Specific Identifiers
 
-The file [idgrep.coffee](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.coffee) (and [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is another example of using Esprima
+The file [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is an example of using Esprima
 to do static analysis on JavaScript code.
 
 It provides a function `idgrep` that finds the appearances of identifiers matching a search string inside the input code.
@@ -213,3 +213,4 @@ presented in the second half of the [talk Parsing, Compiling, and Static Metapro
 
 * [Espree](https://github.com/eslint/espree)
   * [Options for parse and tokenize methods](https://github.com/eslint/espree#options)
+* [idgrep.coffee](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.coffee)
