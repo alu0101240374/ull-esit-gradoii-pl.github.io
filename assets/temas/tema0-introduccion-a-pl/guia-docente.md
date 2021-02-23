@@ -51,10 +51,12 @@ Date de alta en la comunidad [Google + de PL]({{page.google_plus}}).
 
 * Issues en GitHub en el repo de la correspondiente práctica. 
 * Asociarlos con el project board del alumno y actualizarlos según su progreso
-* [Google chat and VideoConferences]({{site.chat}})
 * [Google group de PL ](https://groups.google.com/u/1/a/ull.edu.es/g/asignatura_139263121)
 * [GitHub Discussions in the repo ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io](https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/discussions)
 * Comentarios en los apuntes de la asignatura
+
+### Chat vs Hangouts
+* [Google chat and VideoConferences]({{site.chat}}): Usen Google chat (institucional) y no Google Hangouts para contactar con el profesor
 
 ## La Bibliografía
 
