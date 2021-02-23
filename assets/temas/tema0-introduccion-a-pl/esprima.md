@@ -192,9 +192,9 @@ Given an input like this:
 if we search for `hack` it produces:
 
 ```
-➜  esprima-pegjs-jsconfeu-talk git:(master) node idgrep.js 
-2:11:   function hacky_function() {
-3:9:      var hack = 3;
+➜  esprima-pegjs-jsconfeu-talk git:(master) ./idgrep.js hacky.js
+1:6: const hacky = () => {
+2:8:     let hack = 3;
 ```
 
 
