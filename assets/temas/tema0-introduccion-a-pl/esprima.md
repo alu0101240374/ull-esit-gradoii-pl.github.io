@@ -174,19 +174,22 @@ Usando la herramienta web **[https://astexplorer.net](https://astexplorer.net)**
 
 ### Example: Searching for Specific Identifiers
 
-The file [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is an example of using Esprima
+The file [idgrep.js](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/idgrep.js) is a very simple example of using Esprima
 to do static analysis on JavaScript code.
 
 It provides a function `idgrep` that finds the appearances of identifiers matching a search string inside the input code.
 
 Given an input like this:
 
+```
+➜  esprima-pegjs-jsconfeu-talk git:(master) cat hacky.js 
+```
 ```js
-   // This is a hack!
-  function hacky_function() {
-     var hack = 3;
-     return 'hacky string';
-   }
+// This is a hack!
+const hacky = () => {
+    let hack = 3;
+    return 'hacky string';
+}
 ```
 
 if we search for `hack` it produces:
