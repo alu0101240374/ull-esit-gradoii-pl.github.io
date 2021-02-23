@@ -1,6 +1,12 @@
 ---
 title: Práctica Espree Logging
 published: true
+rubrica:
+  - "Opciones en línea de comandos (`-o`, `-V`, `-h`, etc.)"
+  - "Añade mensajes de logs a la entrada de las `function()`"
+  - "Añade mensajes de logs a la entrada de las arrow `() => { ... }`"
+  - "Tutorial README.md y paneles bien presentados"
+  - "El `package.json` [tiene scripts](./esprima-logging#entrega) para ejecutar el programa"
 ---
 
 ## Descripción de la Tarea

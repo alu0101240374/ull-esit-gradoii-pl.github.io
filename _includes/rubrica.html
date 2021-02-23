@@ -4,7 +4,7 @@
 Incidencias para el Project Board para la práctica <i>{{ page.title}}</i>
 <ul>
     {% for criterio in page.rubrica -%}
-    <li>{{ criterio }}</li> 
+    <li>{{ criterio | markdownify }}</li> 
     {% endfor %}
 </ul>
 {% endif %}
