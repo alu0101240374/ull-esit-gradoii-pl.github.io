@@ -56,7 +56,7 @@ Date de alta en la comunidad [Google + de PL]({{page.google_plus}}).
 * Comentarios en los apuntes de la asignatura
 
 ### Chat vs Hangouts
-* [Google chat and VideoConferences]({{site.chat}}): Usen Google chat (institucional) y no Google Hangouts para contactar con el profesor
+* [Google chat and VideoConferences]({{site.chat}}): Usen Google chat (institucional) y **no Google Hangouts** para contactar con el profesor
 
 ## La Bibliografía
 
