@@ -3,7 +3,6 @@
 
 ## Módulos en NPM
 
-* [Introducción a los Módulos en JS](https://lenguajejs.com/automatizadores/introduccion/commonjs-vs-es-modules/) por Manz
 * [Creating and Publishing a Node.js Module](creating-and-publishing-npm-module) 
 * [Creación de Paquetes NPM](nodejspackages.html)
 
