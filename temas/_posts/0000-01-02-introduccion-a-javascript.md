@@ -20,14 +20,14 @@ sections:
     - title: Azure
       url: azure
   javascript:
+    - title: Módulos
+      url: modulos
     - title: "The Event Loop"
       url: event-loop
     - title: Promises
       url: promises
     - title: Promise Examples
       url: promise-examples
-    - title: Módulos
-      url: modulos
     - title: Node.JS
       url: node
     - title: "Pruebas, Integración y Calidad"

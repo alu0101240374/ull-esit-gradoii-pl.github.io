@@ -44,11 +44,12 @@ npm set init.author.email "whatever@gmail.com"
 npm set init.author.url "https://github.com/crguezl"
 ```
 
-This next command will prompt you for an email and password, create or
-verify a user in the npm registry, and save the credentials to the
+This next command will prompt you for an email and password, **create or verify a user in the npm registry**, and save the credentials to the
 `~/.npmrc` file.
 
     npm adduser
+
+another way to register in npm is [using the npm web interface]{{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html#ejercicio-darse-de-alta-en-npm)
 
 ## What are scopes? 
 
