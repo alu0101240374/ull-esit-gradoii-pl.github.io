@@ -48,7 +48,7 @@ This next command will prompt you for an email and password, **create or verify 
 
     npm adduser
 
-another way to register in npm is [using the npm web interface]{{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html#ejercicio-darse-de-alta-en-npm)
+another way to register in npm is [using the npm web interface]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html#ejercicio-darse-de-alta-en-npm)
 
 ## What are scopes? 
 
