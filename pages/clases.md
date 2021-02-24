@@ -5,7 +5,7 @@ permalink: /clases
 ---
  
   {%- assign previousMonth = "0" %}
-  {%- for post in site.categories["clases"] reversed %}
+  {%- for post in site.categories["clases"]  %}
       {%- assign currentMonth = post.date | date: "%B" %}
       {%- if currentMonth != previousMonth %}
 
