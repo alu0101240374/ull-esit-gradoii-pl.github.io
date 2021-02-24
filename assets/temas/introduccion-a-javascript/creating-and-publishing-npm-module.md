@@ -1,3 +1,6 @@
+---
+---
+
 # Creating and Publishing a node.js Module in GitHub and NPM Registries
 
 Creating a node module and publishing it to npm is a fairly
