@@ -71,7 +71,7 @@ npm publish --access=public
 
 ## What is Github Registry?
 
-GitHub Package Registry is a software package hosting service, similar to npmjs.org, rubygems.org, or hub.docker.com, that allows you to host your packages and code in one place. You can host software packages privately or publicly and use them as dependencies in your projects.
+GitHub Package Registry is a software package hosting service, similar to npmjs.org, rubygems.org, or [hub.docker.com](https://hub.docker.com/), that allows you to host your packages and code in one place. You can host software packages privately or publicly and use them as dependencies in your projects.
 
 ### Setting a Token
 
