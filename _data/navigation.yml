@@ -51,6 +51,8 @@ sidebar-sample:
         url: https://www.ull.es/estudios-docencia/calendario-academico/
   - title: "GOOGLE"
     children:
+      - title: meet
+        url: https://meet.google.com/eha-yfij-zmo
       - title: Chat
         url: https://chat.google.com/u/1/
         
