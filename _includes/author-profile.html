@@ -6,7 +6,7 @@
   {% if author.avatar %}
     <div class="author__avatar">
       {% if author.home %}
-        <a href="{{ author.home | relative_url }}">
+        <a href="{{ author.home | relative_url }}" target="_blank">
           <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
         </a>
       {% else %}
@@ -14,7 +14,8 @@
       {% endif %}
     </div>
   {% endif %}
-
+  
+  {% comment %}
   <div class="author__content">
     {% if author.home %}
       <a href="{{ author.home | relative_url }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
@@ -27,24 +28,26 @@
       </div>
     {% endif %}
   </div>
+  {% endcomment %}
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
-      {% if author.location %}
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
-        </li>
-      {% endif %}
+      {% comment %}
+        {% if author.location %}
+          <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+            <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
+          </li>
+        {% endif %}
 
-      {% if author.links %}
-        {% for link in author.links %}
-          {% if link.label and link.url %}
-            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-
+        {% if author.links %}
+          {% for link in author.links %}
+            {% if link.label and link.url %}
+              <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endcomment %}
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
