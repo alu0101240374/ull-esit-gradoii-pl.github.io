@@ -14,6 +14,9 @@ permalink: /clases
 
       {%- endif %}
 1. [{{ post.title }}]({{site.baseurl}}{{ post.url }})  {%- if post.video %} ([Vídeo]({{post.video}})) {%- endif %} [📝]({{site.organization.master}}/{{post.path}})
+  {%- if post.summary %}
+  - {{ post.summary }}
+  {%- endif -%}
       {%- assign previousMonth = currentMonth %}
   {%- endfor %}
 
