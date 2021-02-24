@@ -17,12 +17,15 @@ Este project board se crea a nivel de organización y no de repo.
 
 ## Metodología de Trabajo con los Tableros
 
-En el board del estudiante  a nivel de organización sólo creamos una incidencia  por práctica. Dicha incidencia estará asociada al repo de la práctica. La incidencia se moverá a la columna `done` cuando esté terminada. En ese momento creamos una incidencia mencionando al profesor y comunicándole que hemos finalizado la tarea
+En el board del estudiante  a nivel de organización sólo creamos una incidencia  por práctica. Dicha incidencia estará asociada al repo de la práctica. La incidencia se moverá a la columna `done` cuando esté terminada. En ese momento creamos una incidencia mencionando al profesor y comunicándole que hemos finalizado la tarea. 
+
+Algún alumno ha tenido la idea de añadir una columna `revisados por el profesor` a este board. Si te gusta la idea añade esa columna.
 
 Además:
 
 * Para cada práctica se crea un tablero Kanban automático en el repo de la práctica
 * En este tablero de repo se crean inicialmente en la columna `TODO` tantas incidencias como requisitos tiene la práctica
+
 
 ## References
 
