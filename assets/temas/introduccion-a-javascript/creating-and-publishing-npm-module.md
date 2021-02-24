@@ -591,6 +591,12 @@ Github and npm.
   * 0.1.0 Initial release
 ```      
 
+### Documenting the JavaScript Sources
+
+* [What's the best way to document JavaScript?](https://gomakethings.com/whats-the-best-way-to-document-javascript/)
+* [JsDoc](https://jsdoc.app/)
+* [Documentation npm package: Getting Started](https://github.com/documentationjs/documentation/blob/HEAD/docs/GETTING_STARTED.md)
+
 ### Semantic Versioning
 
 As you may have noticed in the readme above, I referenced the version
