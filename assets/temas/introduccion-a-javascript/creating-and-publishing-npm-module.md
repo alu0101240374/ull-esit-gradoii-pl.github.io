@@ -664,6 +664,50 @@ $ npm install -g documentation
 `--help` or `--help <command>` to get help.
 
 ```
+➜  scapegoat git:(master) npx documentation help
+Usage:
+
+  # generate markdown docs for index.js and files it references
+  documentation build index.js -f md
+
+  # generate html docs for all files in src
+  documentation build src/** -f html -o docs
+
+  # document index.js, ignoring any files it requires or imports
+  documentation build index.js -f md --shallow
+
+  # build, serve, and live-update html docs for app.js
+  documentation serve app.js
+
+  # validate JSDoc syntax in util.js
+  documentation lint util.js
+
+  # update the API section of README.md with docs from index.js
+  documentation readme index.js --section=API
+
+  # build docs for all values exported by index.js
+  documentation build --document-exported index.js
+
+
+Comandos:
+  documentation serve [input..]   generate, update, and display HTML
+                                  documentation
+  documentation build [input..]   build documentation
+  documentation lint [input..]    check for common style and uniformity mistakes
+  documentation readme [input..]  inject documentation into your README.md
+
+Opciones:
+  --version  Muestra número de versión                                [booleano]
+  --help     Muestra ayuda                                            [booleano]
+
+Ejemplos:
+  documentation build foo.js -f md > API.md
+  documentation readme index.js -s "API Docs" --github
+```
+
+Here is the help for the `build` command:
+
+```
 $ documentation --help build
 
 Options:
