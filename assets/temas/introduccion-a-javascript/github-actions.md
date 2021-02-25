@@ -1,5 +1,4 @@
 ---
-layout: single
 ---
 
 # GitHub Actions: An Introduction

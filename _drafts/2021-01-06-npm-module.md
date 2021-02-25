@@ -2,16 +2,54 @@
 title: Práctica npm Module
 published: true
 rubrica: false
-category: practica
+categories: [ "practica" ]
 ---
 
-## Descripción de la Tarea
+## Objetivos
 
-Partiendo de la práctica [Espree Logging]({{site.baseurl}}/practicas/esprima-logging) publique en npm un módulo  `@aluXXX/addlogging` que además de exportar la función `addLogging` provee un ejecutable `snitch` que inserta los mensajes de logs a la entrada de las funciones que casan con una expresión regular dada (proveída como un argumento opcional a `addLogging`) para los ficheros de entrada especificados en línea de comandos.
+Partiendo de la práctica [Espree Logging]({{site.baseurl}}/practicas/esprima-logging) y usando el repo de la asignación de esta tarea construya un paquete npm y 
+publíquelo como paquete en npmjs con ámbito `@aluAtgitHub`  y con nombre `addlogging`
 
-* Añada pruebas
-* Añada un badge
-* Añada documentación
+El módulo además de exportar la función `addLogging` provee un ejecutable `add-logging` que inserta los mensajes de logs a la entrada de las funciones que casan con el patrón  y  el fichero de entrada especificados en línea de comandos.
+
+La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/introduccion-a-javascript/creating-and-publishing-npm-module). 
+
+
+## Pruebas
+
+Deberá añadir pruebas usando [Mocha y Chai]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module#testing-with-mocha-and-chai) o [Jest]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jest)
+
+## Documentación
+
+[Documente]({{site.baseurl}}/assets/temas/introduccion-a-javascript/documentation)
+el módulo incorporando un `README.md` y la documentación de la función exportada.
+
+## Pruebas de Producción
+
+Publíquelo como paquete en npmjs con ámbito `@aluAtgitHub`  y con nombre `addlogging`
+
+En el repo asignado `testing-addlogging-aluXXX` añada las pruebas
+para comprobar que el paquete publicado se instala y puede ser usado correctamente.
+
+Usando `git submodule` configure como super-project para que contenga
+a ambos repos: el del módulo npm `addlogging-aluAtXXX` y el repo de pruebas de producción `testing-addlogging-aluXXX`.
+
+## Semantic Versioning
+
+Publique una mejora en la funcionalidad del módulo.  
+Por ejemplo puede hacer que el ejecutable `add-logging` admita como especificación de patrón  una expresión regular o admita mas de un fichero de entrada.
+¿Como debe en tal caso cambiar el nº de versión?
+
+## Referencias
+
+* Sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
+* [Jest]({{site.baseurl}}/tema1-introduccion-a-javascript/jest)
+* Sección [GitHub Registry]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-registry)
+* Sección [GitHub Actions]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-actions)
+* Sección [Módulos]({{site.baseurl}}/assets/temas/introduccion-a-javascript/modulos)
+* Sección [Node.js Packages]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages)
+* Sección [Documentation]({{site.baseurl}}/assets/temas/introduccion-a-javascript/documentation)
+
 
 ## References
 
