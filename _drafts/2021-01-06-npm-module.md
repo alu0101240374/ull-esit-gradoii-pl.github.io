@@ -12,6 +12,10 @@ publíquelo como paquete en npmjs con ámbito `@aluAtgitHub`  y con nombre `addl
 
 El módulo además de exportar la función `addLogging` provee un ejecutable `add-logging` que inserta los mensajes de logs a la entrada de las funciones que casan con el patrón  y  el fichero de entrada especificados en línea de comandos.
 
+```
+add-logging --pattern 'temperature' --output salida.js input.js
+```
+
 La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/introduccion-a-javascript/creating-and-publishing-npm-module). 
 
 
