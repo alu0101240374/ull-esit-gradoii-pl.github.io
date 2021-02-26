@@ -239,6 +239,10 @@ along.
     }
 ```      
 
+For scoped modules, run `npm init --scope=@scope-name`
+
+Read the blog [Create a project using the `npm init initializer` command](https://elijahmanor.com/blog/npm-init-initializer) by Elijah Manor for more information on `npm init`
+
 ### index.js: Write the code
 
 Now we can actually get on to the business of writing code. Create an
