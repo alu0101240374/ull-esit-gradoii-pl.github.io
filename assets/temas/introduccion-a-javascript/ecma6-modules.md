@@ -1,4 +1,6 @@
-# Módulos en ECMA6
+---
+title: Módulos en ECMA6
+---
 
 - [Eloquent JS](http://eloquentjavascript.net/index.html): [Modules](http://eloquentjavascript.net/10_modules.html)
 - [Book: Understanding ECMAScript 6. Chapter 13. Encapsulating Code With Modules](https://leanpub.com/understandinges6/read#leanpub-auto-encapsulating-code-with-modules)
