@@ -19,7 +19,7 @@ add-logging --pattern 'temperature' --output salida.js input.js
 e inserta los mensajes de logs a la entrada de las funciones que casan con el patrón `temperature` que aparecen en  el fichero de entrada especificado `input.js`.
 
 
-La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/introduccion-a-javascript/creating-and-publishing-npm-module). Léala con detenimiento antes de hacer esta práctica. 
+La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module). Léala con detenimiento antes de hacer esta práctica. 
 
 ## Ámbitos
 
