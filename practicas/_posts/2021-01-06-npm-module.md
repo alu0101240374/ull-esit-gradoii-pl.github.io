@@ -47,7 +47,7 @@ Repase la sección [Testing in Production]({{site.baseurl}}/assets/temas/introdu
 ## Superproject with Git Submodule
 
 Usando `git submodule` configure como super-project el repo asignado `super-addloggin-aluXXX` para que contenga
-a alos dos repos: en el que ha desarrollado el módulo npm `addlogging-aluAtXXX` y el repo para las pruebas en tiempo de producción `testing-addlogging-aluXXX`.
+a a los dos repos: en el que ha desarrollado el módulo npm `addlogging-aluXXX` y el repo para las pruebas en tiempo de producción `testing-addlogging-aluXXX`.
 
 Repase la sección [Making a Project with the two repos: git submodule]({{site.baseurl}}//assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module#making-a-project-with-the-two-repos-git-submodule)
 
