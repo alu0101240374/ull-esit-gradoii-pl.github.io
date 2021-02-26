@@ -53,10 +53,14 @@ Repase la sección [Making a Project with the two repos: git submodule]({{site.b
 
 ## Semantic Versioning
 
-Publique una mejora en la funcionalidad del módulo.  
-Por ejemplo puede hacer que el ejecutable `add-logging` admita como especificación de patrón  una expresión regular o admita mas de un fichero de entrada.
+Publique alguna mejora en la funcionalidad del módulo.  
+Por poner algunos ejemplos 
+* puede hacer que el ejecutable `add-logging` admita como especificación de patrón  una expresión regular, 
+* que admita mas de un fichero de entrada,  
+* que admita un directorio (en cuyo caso procesaría todos los ficheros `*.js` en el directorio),
+* etc.
 
-¿Como debe en tal caso cambiar el nº de versión?
+¿Como debe en tales casos cambiar el nº de versión?
 
 Repase la sección [Semantic Versioning]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module#semantic-versioning)
 
