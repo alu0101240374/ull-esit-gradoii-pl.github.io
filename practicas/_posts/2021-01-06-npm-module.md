@@ -8,7 +8,7 @@ categories: [ "practica" ]
 ## Objetivos
 
 Partiendo de la práctica [Espree Logging]({{site.baseurl}}/practicas/esprima-logging) construya un paquete npm y 
-publíquelo en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX`  y con nombre `addlogging`
+publíquelo en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX` y con nombre `addlogging` 
 
 El módulo además de exportar la función `addLogging` provee un ejecutable `add-logging` que se llama así:
 
@@ -19,8 +19,7 @@ add-logging --pattern 'temperature' --output salida.js input.js
 e inserta los mensajes de logs a la entrada de las funciones que casan con el patrón `temperature` que aparecen en  el fichero de entrada especificado `input.js`.
 
 
-La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/introduccion-a-javascript/creating-and-publishing-npm-module). 
-
+La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/introduccion-a-javascript/creating-and-publishing-npm-module). Léala con detenimiento antes de hacer esta práctica. Para saber sobre ámbitos, vea la sección [Scopes and Registries]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module#scopes-and-registries).
 
 ## Pruebas
 
@@ -44,6 +43,8 @@ Repase la sección [Testing in Production]({{site.baseurl}}/assets/temas/introdu
 Usando `git submodule` configure como super-project el repo asignado `super-addloggin-aluXXX` para que contenga
 a alos dos repos: en el que ha desarrollado el módulo npm `addlogging-aluAtXXX` y el repo para las pruebas en tiempo de producción `testing-addlogging-aluXXX`.
 
+Repase la sección [Making a Project with the two repos: git submodule]({{site.baseurl}}//assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module#making-a-project-with-the-two-repos-git-submodule)
+
 ## Semantic Versioning
 
 Publique una mejora en la funcionalidad del módulo.  
@@ -51,16 +52,17 @@ Por ejemplo puede hacer que el ejecutable `add-logging` admita como especificaci
 
 ¿Como debe en tal caso cambiar el nº de versión?
 
+Repase la sección [Semantic Versioning]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module#semantic-versioning)
+
 ## References
 
 * [Creating and Publishing a node.js Module in GitHub and NPM Registries]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module)
 * [Jest]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jest)
-* Sección [Módulos]({{site.baseurl}}/assets/temas/introduccion-a-javascript/modulos)
-* Sección [Node.js Packages]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages)
-* Sección [Documentation]({{site.baseurl}}/assets/temas/introduccion-a-javascript/documentation)
+* [Módulos]({{site.baseurl}}/assets/temas/introduccion-a-javascript/modulos)
+* [Node.js Packages]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages)
+* [Documentation]({{site.baseurl}}/assets/temas/introduccion-a-javascript/documentation)
 * [Instalación de Módulos desde GitHub]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html#instalaci%C3%B3n-desde-github)
 * [Introducción a los Módulos en JS](https://lenguajejs.com/automatizadores/introduccion/commonjs-vs-es-modules/) por Manz
-* [Creating and Publishing a Node.js Module](creating-and-publishing-npm-module) 
 * [@ull-esit-dsi-1617/scapegoat](https://www.npmjs.com/package/@ull-esit-dsi-1617/scapegoat) en npm
 * [How to install an npm package from GitHub directly?](https://stackoverflow.com/questions/17509669/how-to-install-an-npm-package-from-github-directly) in StackOverflow
 * [Working with scoped packages](https://docs.npmjs.com/getting-started/scoped-packages)
