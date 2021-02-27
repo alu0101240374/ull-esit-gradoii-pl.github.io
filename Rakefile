@@ -81,6 +81,12 @@ task :serve do
   # sh "bundle exec jekyll serve --future --incremental --watch --drafts --host 0.0.0.0 --port 4000"
 end
 
+desc "serve simple"
+task :s do
+  #sh "bundle exec jekyll serve --future --incremental --watch --livereload --livereload-port 3333 --drafts --host 0.0.0.0 --port 4000"
+  sh "bundle exec jekyll serve --future --host 0.0.0.0 --port 4000"
+end
+
 desc "Publicar en GitHub ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl-github.io"
 task :default do
   sh "git ci -am 'PL 2020/2021' && git push"

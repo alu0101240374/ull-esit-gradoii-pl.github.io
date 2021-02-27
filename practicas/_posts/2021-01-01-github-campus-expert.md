@@ -27,4 +27,5 @@ Use el repo asignado para documentar (usando las GitHub Pages) que ha realizado 
 ## References
 
 * [Students leading the way: Campus Experts - Juan Pablo Flores](https://www.twitch.tv/videos/833713562?collection=lrqXyFWFThau8w) twitch video. De 08:00 a 13:25 se dan consejos sobre como rellenar la solicitud.
+* [Teachers guiding teachers: Campus Advisors](https://www.twitch.tv/videos/833727589?collection=lrqXyFWFThau8w) Arelia Jones
 
