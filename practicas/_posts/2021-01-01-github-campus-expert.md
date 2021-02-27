@@ -24,4 +24,7 @@ Estas son las tareas a realizar:
 
 Use el repo asignado para documentar (usando las GitHub Pages) que ha realizado el curso, solicitado el *student developer pack* y la *GitHub Internship*. En la tarea, suba el enlace al repo.
 
+## References
+
+* [Students leading the way: Campus Experts - Juan Pablo Flores](https://www.twitch.tv/videos/833713562?collection=lrqXyFWFThau8w) twitch video. De 08:00 a 13:25 se dan consejos sobre como rellenar la solicitud.
 

@@ -201,7 +201,7 @@ locally.
 
 ### package.json
 
-Executing the following command will create a `package.json` file:
+Executing the following command will create an unscoped `package.json` file:
 
     npm init -f
 
@@ -239,7 +239,7 @@ along.
     }
 ```      
 
-For scoped modules, run `npm init --scope=@scope-name`
+For scoped modules, run `npm init --scope=@scope-name`. For example `npm init --scope=@aluXXX`
 
 Read the blog [Create a project using the `npm init initializer` command](https://elijahmanor.com/blog/npm-init-initializer) by Elijah Manor for more information on `npm init`
 
