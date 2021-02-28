@@ -2,7 +2,6 @@
 title: Práctica npm Module
 published: true
 rubrica: false
-categories: [ "practica" ]
 ---
 
 ## Objetivos

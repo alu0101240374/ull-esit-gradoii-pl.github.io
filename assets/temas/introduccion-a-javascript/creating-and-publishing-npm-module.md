@@ -8,6 +8,12 @@ about? Here's a quick tutorial to speed you along.
 
 ## What is npm?
 
+NPM has three components. These components consist of 
+
+1. the npm website, 
+2. the Command Line Interface (CLI), and 
+3. an online database of public and private packages called the **npm registry** 
+
 npm is an online registry for open-source node.js projects, modules,
 resources, etc. You can find it at <http://npmjs.org>.
 
