@@ -15,12 +15,12 @@ NPM has three components. These components consist of
 3. an online database of public and private packages called the **npm registry** 
 
 npm is an online registry for open-source node.js projects, modules,
-resources, etc. You can find it at <http://npmjs.org>.
+resources, etc. You can find it at <https://www.npmjs.com/>.
 
 npm is also the official package manager for node.js, and provides a
 command line interface (CLI) for interacting with the registry. This
 utility comes bundled with node.js and is installed automatically. For
-API documentation, visit <https://npmjs.org/doc/> or just type `npm` in
+API documentation, visit <https://docs.npmjs.com/> or just type `npm` in
 your terminal.
 
 For you ruby devs, npm is akin to [rubygems](http://rubygems.org/).
