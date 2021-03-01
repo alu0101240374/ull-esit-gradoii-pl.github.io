@@ -58,8 +58,10 @@ another way to register in npm is [using the npm web interface]({{site.baseurl}}
 
 Here is an example of `.npmrc` file
 
+```
+➜  create-a-npm-module git:(master) ✗ cat .npmrc-example
+```
 ```ini
-➜  create-a-npm-module git:(master) ✗ cat .npmrc-example 
 //registry.npmjs.org/:_authToken=00000000000
 init.author.name=Casiano Rodriguez-Leon
 init.author.email=whatever@gmail.com
