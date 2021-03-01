@@ -222,7 +222,7 @@ utils to prevent cross site scripting
 attacks when
 rendering user generated content. 
 
-We'll call this project, 'Scapegoat',
+We'll call this project, '*Scapegoat*',
 because a quick search of the
 npm registry reveals that the name has not yet been taken. 
 
