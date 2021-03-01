@@ -209,7 +209,7 @@ anything that should be exposed publicly.
 For example:
 
 ```js
-    var other = require('other_module');
+    let other = require('other_module');
     module.exports = function() {
         console.log(other.doSomething());
     }
