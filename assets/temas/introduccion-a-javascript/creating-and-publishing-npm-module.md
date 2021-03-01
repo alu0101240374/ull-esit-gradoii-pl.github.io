@@ -56,6 +56,27 @@ This next command will prompt you for an email and password, **create or verify 
 
 another way to register in npm is [using the npm web interface]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html#ejercicio-darse-de-alta-en-npm)
 
+Here is an example of `.npmrc` file
+
+```ini
+➜  create-a-npm-module git:(master) ✗ cat .npmrc-example 
+//registry.npmjs.org/:_authToken=00000000000
+init.author.name=Casiano Rodriguez-Leon
+init.author.email=whatever@gmail.com
+init.author.url=https://github.com/crguezl
+access=public
+@ull-esit-dsi-1617:registry=https://registry.npmjs.org/
+//10.6.128.127:8081/:_password="blahblahencrypted"
+//10.6.128.127:8081/:username=crguezl
+//10.6.128.127:8081/:email=whatever@gmail.com
+//10.6.128.127:8081/:always-auth=false
+@ULL-ESIT-PL-1920:registry=https://npm.pkg.github.com
+@ull-esit-pl-1920:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=0000000111111etc.
+@PAL-ULL:registry=https://npm.pkg.github.com
+@pal-ull:registry=https://npm.pkg.github.com/
+```
+
 ## What are scopes? 
 
 Scopes are like namespaces for npm packages. Each npm user has their own scope.
