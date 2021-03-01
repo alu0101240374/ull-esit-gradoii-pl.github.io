@@ -92,7 +92,17 @@ This means that you don’t have to worry about someone else taking your package
 Scoped modules also make it possible to put your private code on npm when you sign up for [private modules](https://www.npmjs.com/features). 
 With private modules, you have control over who can see and collaborate on any of the modules in your scope (but you have to paid for it. Public scoped packages are free).
 
-To create a scoped package, all you need to do is add your scope to the front of the name property in `package.json` and run `npm` with the access option:
+To create a scoped package, all you need to do is add your scope to the front of the name property in `package.json` 
+
+```json
+{
+  "name": "@ull-esit-dsi-1617/scapegoat",
+  "version": "1.3.11",
+  ...
+}
+```
+
+and run `npm` with the access option:
 
 ```
 npm publish --access=public
