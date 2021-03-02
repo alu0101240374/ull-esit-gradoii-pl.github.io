@@ -787,7 +787,7 @@ found 0 vulnerabilities
 /Users/casiano/.nvm/versions/node/v12.10.0/lib/node_modules/@ULL-ESIT-PL-1920/lexer-generator -> /Users/casiano/local/src/github-actions-learning/lexer-generator
 ```
 
-This will create a symlink in the global `node_modules` folder that links to the package where the `npm link` command was executed:
+This will create a symlink in the global `node_modules` folder that links to the folder where the `npm link` command was executed:
 
 ```
 [~/.../github-actions-learning/lexer-generator(master)]$ npm list -g | head -n 1
