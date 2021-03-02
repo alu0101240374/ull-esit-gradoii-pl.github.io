@@ -41,8 +41,6 @@ sidebar-sample:
         url: https://www.ull.es/apps/guias/guias/view_guide_course/1920/139263121 
       - title: Horario de Tutorías
         url: https://www.ull.es/apps/guias/guias/view_guide_course/1920/139263121/3/
-      - title: Cita Previa
-        url: https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUd1YlJSLURtcE5JfGRlZmF1bHR8ZmNiMWNmMTE4MjNjNzk1MWQwZGQyYTI4ZjZjYjZjY2E      
       - title: Horarios Tercero
         url: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/#tercero
       - title: BULL PuntoQ
@@ -53,8 +51,11 @@ sidebar-sample:
     children:
       - title: Meet
         url: https://meet.google.com/eha-yfij-zmo
+      - title: Cita Previa
+        url: https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUd1YlJSLURtcE5JfGRlZmF1bHR8ZmNiMWNmMTE4MjNjNzk1MWQwZGQyYTI4ZjZjYjZjY2E      
+      - title: Videos
+        url: https://youtube.com/playlist?list=PLuPGCp-dfrUTzN_o2beArY1QoFUTGH-yd
       - title: Chat
-        url: https://chat.google.com/u/1/
-        
+        url: https://chat.google.com/u/1/        
 
   
