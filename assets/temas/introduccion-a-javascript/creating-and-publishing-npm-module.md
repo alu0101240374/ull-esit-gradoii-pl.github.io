@@ -928,7 +928,7 @@ published at `https://npm.pkg.github.com`.
 Let us repeat it: Any `npm publish` for a package name that contains the scope 
 will be published to that registry instead.
 
-In the following example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
+In the following example, the name of the package is [`@ULL-ESIT-PL-1920/lexer-generator`](https://github.com/ULL-ESIT-PL-1920/lexer-generator):
 
 ```
 $ cat package.json
