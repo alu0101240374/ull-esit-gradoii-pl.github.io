@@ -897,7 +897,7 @@ If  both  files  exist  and  a  file  is  ignored  by `.gitignore` but not by
 **By default npm will publish to the public registry**.
 
 This can be overridden **by specifying  a  different  default registry**
-or using a [npm scope in the name]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages.html##scoped-packages).
+or using a [npm scope in the name]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html##scoped-packages).
 
 You can associate a scope with a registry at login, e.g.
 
@@ -925,7 +925,7 @@ scope  will request packages from that registry instead.
 Therefore any package with name `@ULL-ESIT-PL-1920/some-name` will be 
 published at `https://npm.pkg.github.com`.
 
-Lte us repeat it: Any `npm publish` for a package name that contains the scope 
+Let us repeat it: Any `npm publish` for a package name that contains the scope 
 will be published to that registry instead.
 
 In the following example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
