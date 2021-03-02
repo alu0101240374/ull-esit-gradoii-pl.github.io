@@ -1088,7 +1088,7 @@ You can see all the packages you've installed and search for a specific package 
 
 ## Publishing Again!
 
-The command `npm version` can be followed by one of the semantic versionin words 
+The command `npm version` can be followed by one of the semantic versioning words 
 like `npm version minor -m "Upgrade to %s for reasons"`:
 
 ```
