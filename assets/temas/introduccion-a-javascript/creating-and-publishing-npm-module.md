@@ -696,7 +696,12 @@ Better yet: use `npm version`. The syntax is:
 npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
 ```
 
-The `newversion` argument should be a valid **semver string**, a valid second argument to [semver.inc](https://github.com/npm/node-semver#functions) (one of `patch`, `minor`, `major`, `prepatch`, `preminor`, `premajor`, `prerelease`), or `from-git`.  In  the  second  case,  the existing version will be incremented by 1 in the specified field.  `from-git` will try to read the latest `git tag`, and use that as the new npm version.
+The `newversion` argument should be 
+* a valid **semver string**, 
+* a valid second argument to [semver.inc](https://github.com/npm/node-semver#functions) (one of `patch`, `minor`, `major`, `prepatch`, `preminor`, `premajor`, `prerelease`), or
+  * In  this case,  the existing version will be incremented by 1 in the specified field.  
+* `from-git`.  
+  * `from-git` will try to read the latest `git tag`, and use that as the new npm version.
 
 For example:
 
@@ -704,8 +709,9 @@ For example:
 npm version patch -m "Upgrade to %s for reasons"
 ```
 
-
-- If run in a git repo, it will  create a version commit and tag
+If run in a git repo,
+ 
+- it will  create a version commit and tag
 - If the message config contains `%s` then that will be replaced with the resulting version number.
 
 ### GitHub can be used to install npm packages
