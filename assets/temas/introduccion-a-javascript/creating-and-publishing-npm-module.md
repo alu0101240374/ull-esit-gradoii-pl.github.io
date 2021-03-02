@@ -710,7 +710,7 @@ npm version patch -m "Upgrade to %s for reasons"
 ```
 
 If run in a git repo,
- 
+
 - it will  create a version commit and tag
 - If the message config contains `%s` then that will be replaced with the resulting version number.
 
@@ -718,9 +718,15 @@ If run in a git repo,
 
 Note that for whatever reason if you decide not to publish your module
 on npm, the npm package format provides value in itself in both
-portability and ease of installation. For example, you can install
-packages directly from Github, and even specify a tag, sha, or branch if
-you want.
+portability and ease of installation. 
+
+You can install packages directly from Github, and even specify 
+
+1. a tag, 
+2. a sha, or 
+3. branch 
+
+if you want.
 
     npm install git://github.com/brentertz/scapegoat.git
     npm install git://github.com/brentertz/scapegoat.git#0.1.0
