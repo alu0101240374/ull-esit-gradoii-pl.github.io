@@ -1,8 +1,8 @@
 ---
 layout: single
 permalink: /references
+title: Referencias y Bibliografía
 ---
-# Referencias y Bibliografía
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
 * [Eloquent JS 2nd Edition](http://eloquentjavascript.net/2nd_edition/)
