@@ -2,6 +2,7 @@
 layout: single
 title: Clases
 permalink: /clases
+toc: false
 ---
  
  <ol>
