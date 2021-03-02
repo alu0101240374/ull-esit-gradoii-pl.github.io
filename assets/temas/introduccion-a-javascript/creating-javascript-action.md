@@ -1,6 +1,6 @@
 ---
+title: Hello Actions World!
 ---
-# Hello Actions World!
 
 ## Introduction
 
