@@ -4,22 +4,20 @@ title: Clases
 permalink: /clases
 ---
  
+ <ol>
   {%- assign previousMonth = "0" %}
   {%- for post in site.categories["clases"]  %}
       {%- assign currentMonth = post.date | date: "%B" %}
       {%- if currentMonth != previousMonth %}
+</ol>
+<h3> Classes during the month of {{ currentMonth }}</h3>
 
-
-### Classes during the month of {{ currentMonth }}
-
+<ol reversed>
       {%- endif %}
-1. [{{ post.title }}]({{site.baseurl}}{{ post.url }})  {%- if post.video %} ([Vídeo]({{post.video}})) {%- endif %} [📝]({{site.organization.master}}/{{post.path}})
+<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>  {%- if post.video %} <a href="{{post.video}}">(Vídeo)</a> {%- endif %} <a href= "{{site.organization.master}}/{{post.path}}">📝</a></li>
   {%- if post.summary %}
-  - {{ post.summary }}
+  <ul><li>{{ post.summary }}</li></ul>
   {%- endif -%}
       {%- assign previousMonth = currentMonth %}
   {%- endfor %}
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTE2Njg1MF19
--->
