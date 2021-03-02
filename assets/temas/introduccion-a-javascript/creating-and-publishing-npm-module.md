@@ -724,13 +724,12 @@ You can install packages directly from Github, and even specify
 
 1. a tag, 
 2. a sha, or 
-3. branch 
+3. a branch 
 
-if you want.
-
-    npm install git://github.com/brentertz/scapegoat.git
-    npm install git://github.com/brentertz/scapegoat.git#0.1.0
-
+```
+npm install git://github.com/brentertz/scapegoat.git
+npm install git://github.com/brentertz/scapegoat.git#0.1.0
+```
 
 ### Test the Installation Process
 
@@ -768,6 +767,11 @@ rather attempting an actual install.
 ```
 
 #### Symlink Your Package with npm link
+
+This is another way to check your package before publishing it.
+
+Observe that in this sections I am working with a different repo (not the `scapegoat`example but a different package `@ULL-ESIT-PL-1920/lexer-generator`.
+You can find the example at <https://github.com/ULL-ESIT-PL-1920/lexer-generator>)
 
 Run `npm link` in the package directory:
 
