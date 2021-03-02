@@ -1498,7 +1498,7 @@ Submodule path 'lexer-generator': checked out '54594a4b0febd5eb1de0cee8b8f6b45ed
 Submodule path 'test-lexer-generator': checked out 'b2f64a6dc2fe4145e268b6b63f8d03753b5eeff8'
 ```
 
-A `cd` to the sub-repo folder will leave us in the commit specified in the super-repo, but we can of course checkout the `master` branch nad make a `pull` if we think an update is needed.
+A `cd` to the sub-repo folder will leave us in the commit specified in the super-repo, but we can of course checkout the `master` branch and make a `pull` if we think an update is needed.
 
 ```
 [/tmp/project-lexer-generator(master)]$ cd lexer-generator/
