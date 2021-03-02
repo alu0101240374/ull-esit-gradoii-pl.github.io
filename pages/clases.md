@@ -15,7 +15,7 @@ toc: false
 
 <ol reversed>
       {%- endif %}
-<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>  {%- if post.video %} <a href="{{post.video}}">(Vídeo)</a> {%- endif %} <a href= "{{site.organization.master}}/{{post.path}}">📝</a></li>
+<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>  {%- if post.video %} <a href="https://youtu.be/{{post.video}}">(Vídeo)</a> {%- endif %} <a href= "{{site.organization.master}}/{{post.path}}">📝</a></li>
   {%- if post.summary %}
   <ul><li>{{ post.summary }}</li></ul>
   {%- endif -%}
