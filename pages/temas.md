@@ -2,6 +2,7 @@
 layout: single
 title: Temas
 permalink: /temas
+toc: false
 ---
 
 {% comment %}
@@ -9,6 +10,7 @@ permalink: /temas
 {{ page.categories }} - {{ page.url }}
 {% endfor %}
 {% endcomment %}
+
 {% assign temas = site.categories["temas"] | sort %}
 <ol>
   {% for tema in temas %}
