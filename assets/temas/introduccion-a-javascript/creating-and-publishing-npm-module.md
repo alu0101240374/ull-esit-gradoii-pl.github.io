@@ -1392,7 +1392,10 @@ Inicializado repositorio Git vacío en /Users/casiano/local/src/github-actions-l
 To add the other repos to this one we use `git sumodule add <url>`:
 
 ```
-[~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.gitClonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/lexer-generator'...
+[~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.git
+Clonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/lexer-generator'
+...
+
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
 Clonando en '/Users/casiano/local/src/github-actions-learning/
 ...
