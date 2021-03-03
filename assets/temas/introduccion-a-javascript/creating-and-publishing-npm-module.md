@@ -1389,7 +1389,11 @@ Let us make the new project:
 Inicializado repositorio Git vacío en /Users/casiano/local/src/github-actions-learning/project-lexer-generator/.git/
 ```
 
-To add the other repos to this one we use `git sumodule add <url>`:
+To add the other repos to this one we use 
+
+```
+git sumodule add <repo url>
+```
 
 ```
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.git
