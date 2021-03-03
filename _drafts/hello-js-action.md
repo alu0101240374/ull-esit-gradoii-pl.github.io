@@ -1,17 +1,21 @@
 ---
-title: GitHub Action Hello World
+title: "Práctica: GitHub Action Hello World"
 categories: [ practicas ]
 date: 2021-03-03
 ---
 
 
 Write a GitHub Action *Hello World* following the tutorial 
-at section [Hello Actions World!]({{site.baseurl}}//tema1-introduccion-a-javascript/creating-javascript-action).
+at section [Hello Actions World!]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-javascript-action).
 
 1. Save the action code in repo `hello-js-action-aluXXX`, 
 2. Inside repo `use-hello-js-action-aluXXX` save the project using the action and  
 3. In repo `hello-js-action-super` build a  repo having the former two as submodules
-4. Write your `README.md` report in the super-repo. Set `master` branch for GitHub pages and choose one of the available Jekyll styles. Set the URL in the *description* section
+4. Write your `README.md` report in the superproject repo. 
+5. Set [GitHub pages](https://guides.github.com/features/pages/) 
+  - Set the `main` branch and the root of the superproject 
+  - Choose one of the [page supported themes](https://pages.github.com/themes/) for the static generator [Jekyll](https://jekyllrb.com/) 
+  - Set the `github.io` URL in the *description* section of the superproject
 
 ## Optional Step
 
