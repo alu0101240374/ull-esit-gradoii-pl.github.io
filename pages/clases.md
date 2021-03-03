@@ -2,7 +2,7 @@
 layout: single
 title: Clases
 permalink: /clases
-toc: false
+toc: true
 ---
  
  <ol>
@@ -11,14 +11,16 @@ toc: false
       {%- assign currentMonth = post.date | date: "%B" %}
       {%- if currentMonth != previousMonth %}
 </ol>
-<h3> Classes during the month of {{ currentMonth }}</h3>
+### Classes during the month of {{ currentMonth }}
 
 <ol reversed>
       {%- endif %}
-<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>  {%- if post.video %} <a href="https://youtu.be/{{post.video}}">(Vídeo)</a> {%- endif %} <a href= "{{site.organization.master}}/{{post.path}}">📝</a></li>
-  {%- if post.summary %}
-  <ul><li>{{ post.summary | markdownify }}</li></ul>
-  {%- endif -%}
+<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+  <ul>
+    {%- if post.summary %}<li>{{ post.summary | markdownify }}</li>{%- endif -%}
+    {%- if post.video %}<li> <a href="https://youtu.be/{{post.video}}">Vídeo</a> </li>{%- endif %}
+    <li><a href= "{{site.organization.master}}/{{post.path}}">✏️ Edit</a></li>
+  </ul>
       {%- assign previousMonth = currentMonth %}
   {%- endfor %}
 
