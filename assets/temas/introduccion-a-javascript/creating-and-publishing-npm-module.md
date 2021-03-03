@@ -1465,7 +1465,7 @@ Clonando en 'project-lexer-generator'...
 ...
 ```
 
-You can see the folders for the subrepos are empty:
+In such case, You can see the folders for the subrepos are empty:
 
 ```
 [/tmp/project-lexer-generator(master)]$ tree
