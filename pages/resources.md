@@ -2,6 +2,7 @@
 layout: single
 title: Recursos
 permalink: /resources
+toc: true
 ---
 
 ## Recursos ULL

@@ -2,6 +2,7 @@
 layout: single
 permalink: /references
 title: Referencias y Bibliografía
+toc: false
 ---
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
@@ -15,7 +16,7 @@ title: Referencias y Bibliografía
  A curated list of awesome resources, learning materials, tools, frameworks, platforms, technologies and source code projects in the field of Compilers, Interpreters and Runtimes. This list has a bias towards education.
 * [UC Berkeley. CS294-113: Virtual Machines and Managed Runtimes](http://www.wolczko.com/CS294/index.html) by [Mario Wolczko](http://www.wolczko.com/)
   - [Virtual Machines Summer School 2016 (#vmss16)](https://soft-dev.org/events/vmss16/) May 31, 12:00 - June 3 2016, 16:00 Cumberland Lodge, UK
-* [Nearley](https://github.com/kach/nearley)
+* [Nearley](https://github.com/kach/nearley) is a JS parser generator using the Early algorithm
 * [GitHub Learning Lab Courses](https://lab.github.com/)
 
 <!--

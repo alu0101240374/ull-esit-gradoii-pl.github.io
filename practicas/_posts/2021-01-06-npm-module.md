@@ -12,10 +12,10 @@ publíquelo en [npmjs](https://www.npmjs.com/) con ámbito `@aluXXX` y con nombr
 El módulo además de exportar la función `addLogging` provee un ejecutable `add-logging` que se llama así:
 
 ```
-add-logging --pattern 'temperature' --output salida.js input.js
+add-logging --pattern 'functionNamePattern' --output salida.js input.js
 ```
 
-e inserta los mensajes de logs a la entrada de las funciones que casan con el patrón `temperature` que aparecen en  el fichero de entrada especificado `input.js`.
+e inserta los mensajes de logs a la entrada de las funciones cuyo nombre casa con el patrón `functionNamePattern` que aparecen en  el fichero de entrada especificado `input.js`.
 
 
 La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module). Léala con detenimiento antes de hacer esta práctica. 

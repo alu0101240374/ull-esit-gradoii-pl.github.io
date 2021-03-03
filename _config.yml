@@ -317,6 +317,11 @@ defaults:
       type: posts
     values:
       layout: leccion
+  - scope:
+      path: pages
+    values:
+      toc: false
+
        
 
 
