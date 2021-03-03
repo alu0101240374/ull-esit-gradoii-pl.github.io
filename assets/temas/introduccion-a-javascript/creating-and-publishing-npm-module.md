@@ -1440,7 +1440,24 @@ Clicking in the repo links will take us to the corresponding GitHub repo **but b
 
 See the [Chacon's book on Git: Chapter 7.11 Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information.
 
-Now, when someone clones the super-repo:
+Now, when someone clones the super-repo uses the `--recurse-submodules` option:
+
+```
+$ git clone --recurse-submodules git@github.com:ULL-ESIT-PL-1920/project-lexer-generator.git
+```
+
+The  `--recurse-submodules` option initializes and clones submodules within based on the provided
+pathspec. 
+
+This is equivalent to running
+
+```
+git submodule update --init --recursive <pathspec> 
+```
+
+immediately after the clone is finished. 
+
+We can also make a flat clone:
 
 ```
 [/tmp]$ git clone git@github.com:ULL-ESIT-PL-1920/project-lexer-generator.git
