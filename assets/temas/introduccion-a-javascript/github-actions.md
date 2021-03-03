@@ -1,5 +1,5 @@
 ---
-title:  GitHub Actions: An Introduction
+title:  "GitHub Actions: An Introduction"
 ---
 
 
