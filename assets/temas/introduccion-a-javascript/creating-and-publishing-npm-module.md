@@ -1541,6 +1541,10 @@ Here are the two repos for the scapegoat example:
   - [Submodule ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   - [Submodule ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
 
+And here is the ULL-ESIT-PL-1920/project-lexer-generator project example:
+
+* [ULL-ESIT-PL-1920/project-lexer-generator](https://github.com/ULL-ESIT-PL-1920/project-lexer-generator)
+
 ### Git Submodule Alternatives
 
 After a while searching for alternatives to `git submodules` I found these two tools quite convincing:
