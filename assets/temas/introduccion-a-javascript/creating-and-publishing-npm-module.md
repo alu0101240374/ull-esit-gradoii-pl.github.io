@@ -1395,6 +1395,8 @@ To add the other repos to this one we use
 git sumodule add <repo url>
 ```
 
+Example:
+
 ```
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.git
 Clonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/lexer-generator'
