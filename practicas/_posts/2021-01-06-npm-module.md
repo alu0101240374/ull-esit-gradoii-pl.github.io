@@ -1,7 +1,20 @@
 ---
 title: Práctica npm Module
 published: true
-rubrica: false
+rubrica: 
+  - El paquete está publicado en npmjs con ámbito `aluXXX`
+  - Contiene un ejecutable que se ejecuta correctamente (`--help`, etc.)
+  - Se ha extendido con la opción `--pattern` 
+  - El módulo exporta las funciones adecuadas
+  - Contiene suficientes tests 
+  - "Opcional: estudio de covering"
+  - Se ha hecho CI con GitHub Actions
+  - Los informes están bien presentados
+  - La documentación de la API es correcta
+  - "Opcional: publicar la documentación usando GitHub Pages en la carpeta `docs/`"
+  - Las *pruebas de producción* funcionan bien
+  - El superproyecto está correctamente estructurado usando submódulos
+  - Se ha hecho un buen uso del versionado semántico en la evolución del módulo
 ---
 
 ## Objetivos
