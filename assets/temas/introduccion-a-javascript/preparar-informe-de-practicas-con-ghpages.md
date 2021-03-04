@@ -1,6 +1,6 @@
 # Jekyll: Como preparar un informe de Prácticas usando GitHub Pages
 
-* [Jekyll]({{site.baseurl}}/tema1-introduccion-a-javascript/jekyll/)
+* [Jekyll]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jekyll/)
 * [Jekyll docs](https://jekyllrb.com/docs/)
 * [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 * [GitHub Pages](https://pages.github.com/)

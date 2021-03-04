@@ -43,9 +43,18 @@ jobs:
 ```
 
 
-## The Editor of Github Actions
+## Editing Github Actions
 
-We can also use the GitHub Interface. 
+To manage GitHub Actions from Visual Studio we can install the extension [GitHub Actions](https://marketplace.visualstudio.com/items?itemName=cschleiden.vscode-github-actions)
+
+![]({{ site.baseurl }}/assets/images/github-actions-vscode-extension.png)
+
+To use it, you have to [authorize the VsCode extension to access your GitHub acount](https://github.com/cschleiden/vscode-github-actions/issues/66)
+
+![]({{ site.baseurl }}/assets/images/authorizing-vscode-extensions.jpg)
+
+
+We can also use the online GitHub Interface. 
 
 The Github Actions Editor is quite clever:  Auto-complete can be triggered with **Ctrl+Space** almost anywhere. 
 
@@ -124,6 +133,8 @@ jobs:
       - run: npm test
  ``` 
 
+The `run` keyword tells the job to execute a command on the [runner](#runner). In this case, you are using `run: npm test` to run  the tests in your package
+
 ## Actions
 
 **Actions** are the smallest portable building block of a workflow and can be combined as **steps** to create a **job**. 
@@ -201,7 +212,7 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 
 ### The `release` event
 
-* See [GitHub Releases]({{site.baseurl}}/tema1-introduccion-a-javascript/releases.html)
+* See [GitHub Releases]({{site.baseurl}}/assets/temas/introduccion-a-javascript/releases.html)
 
 ## Runner
 
@@ -728,7 +739,7 @@ jobs:
 
 ## References
 
-* [A quick demo showing how to use GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries]({{site.baseurl}}/tema1-introduccion-a-javascript/github-action-npm-publish) 
+* [A quick demo showing how to use GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-action-npm-publish) 
 * [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
 * [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module to both GH Registry and npm Registry
 * [About the editor for GitHub Actions](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/)

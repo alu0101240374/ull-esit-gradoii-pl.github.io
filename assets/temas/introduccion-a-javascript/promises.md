@@ -24,7 +24,7 @@
 * [Promise Chaining](https://javascript.info/promise-chaining)
   * A call to `promise.then` returns a promise, so that we can call the next `.then` on it.
   * A handler, used in `.then(handler)` may create and return a promise. In that case further handlers wait until it settles, and then get its result.
-  * [Promises Chaining fetch example]({{site.baseurl}}/tema1-introduccion-a-javascript/promises-chaining-fetch-example)
+  * [Promises Chaining fetch example]({{site.baseurl}}/assets/temas/introduccion-a-javascript/promises-chaining-fetch-example)
   * If a `.then` (or `catch/finally`, doesn’t matter) handler returns a promise, the rest of the chain waits until it settles. When it does, its result (or error) is passed further.
   * [Repo ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io: exercises/promises/promise-chaining](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/promise-chaining)
 
@@ -34,7 +34,7 @@
 
 ```
 [~/.../exception-inside-promise(master)]$ pwd -P
-/Users/casiano/campus-virtual/1920/pl1920/apuntes/tema1-introduccion-a-javascript/event-loop/exercises/promises/exception-inside-promise
+/Users/casiano/campus-virtual/1920/pl1920/apuntes/assets/temas/introduccion-a-javascript/event-loop/exercises/promises/exception-inside-promise
 ```
 
 [Exercises: Exceptions and Promises](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/exception-inside-promise)
@@ -43,7 +43,7 @@
 ### [Promise API](https://javascript.info/promise-api)
 
 <!-- RETO
-* [Promise.all exercise]({{site.baseurl}}/tema1-introduccion-a-javascript/event-loop/exercises/promises/promise-all)
+* [Promise.all exercise]({{site.baseurl}}/assets/temas/introduccion-a-javascript/event-loop/exercises/promises/promise-all)
 -->
 
 
@@ -54,7 +54,7 @@
 
 [~/.../promises(master)]$ cd promisify/
 [~/.../promisify(master)]$ pwd -P
-/Users/casiano/campus-virtual/1920/pl1920/apuntes/tema1-introduccion-a-javascript/event-loop/exercises/promises/promisify
+/Users/casiano/campus-virtual/1920/pl1920/apuntes/assets/temas/introduccion-a-javascript/event-loop/exercises/promises/promisify
 -->
 
 
