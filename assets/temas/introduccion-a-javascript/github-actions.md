@@ -12,9 +12,11 @@ Here is a brief glossary of terms (for more see [Core concepts for GitHub Action
 
 ## Workflow
 
-A **Workflow** is an automated process that is made up of one or multiple **jobs** and can be triggered by an **event**. Workflows are defined using a YAML file in the `.github/workflows` directory.
+A **Workflow** is an automated process that is made up of one or multiple **jobs** and can be triggered by an **event**. 
 
-Workflows can be created inside the `.github/workflows` directory by adding a `.yml` workflow file. Here in the terminal we do:
+Workflows are defined using a YAML file in the `.github/workflows` directory.
+Workflows can be created inside the `.github/workflows` directory by adding a `.yml` workflow file. 
+Here in the terminal we do:
 
 ```
 $ mkdir -p .github/workflows
@@ -97,7 +99,11 @@ can not start until the `build` step has finished
 
 ## Step
 
-A **step** is a set of tasks that can be executed by a job. Steps can run **commands** or **actions**.
+A **step** is an individual task that can run commands in a job. A step can be either 
+* an action or 
+* a shell command. 
+
+Each step in a job executes on the same runner, allowing the actions in that job to share data with each other.
 
 Example:
 
@@ -178,8 +184,11 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 
 ## Runner
 
-A **runner** is a machine with the Github Actions `runner` application installed. Then `runner` waits for available **jobs** it can then execute. After picking up a job they run the job's **actions** and report the progress and results back to Github. Runners can be hosted on Github or self-hosted on your own machines/servers.
+A **runner** is a machine with the [Github Actions `runner` application](https://github.com/actions/runner) installed. 
 
+1. A `runner` waits for available **jobs** it can then execute. 
+2. After picking up a job they run the job's **actions** and report the progress and results back to Github. 
+3. Runners can [be hosted on Github](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) or self-hosted on your own machines/servers.
 
 ## Syntax of the .yml File
 
@@ -206,6 +215,22 @@ or
 ```
 on: [pull_request, issues]
 ```
+
+You can set up the workflow to only run on certain branches, paths, or tags. 
+For syntax examples including or excluding branches, paths, or tags, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
+
+For instance, the example below runs anytime the `push` event includes a file in the `sub-project` directory or its subdirectories, unless the file is in the `sub-project/docs` directory. 
+
+```yaml
+on:
+  push:
+    paths:
+    - 'sub-project/**'
+    - '!sub-project/docs/**'
+```
+
+
+For example, a `push` that changed `sub-project/index.js` or `sub-project/src/index.js` will trigger a workflow run, but a `push` changing only `sub-project/docs/readme.md` will not.
 
 ### Jobs:
 
