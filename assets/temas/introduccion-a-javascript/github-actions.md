@@ -259,7 +259,7 @@ jobs:
     - run: npm test
         # Environment variables
         env:
-        CI: true
+          CI: true
 ```
 
 ### Env:
@@ -268,7 +268,7 @@ jobs:
 
 ```
 env:
-CI: true
+  CI: true
 ```
 
 ### steps.with
