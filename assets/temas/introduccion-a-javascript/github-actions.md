@@ -128,8 +128,29 @@ jobs:
 
 **Actions** are the smallest portable building block of a workflow and can be combined as **steps** to create a **job**. 
 
-- You can create your own Actions 
-- or use publicly [shared Actions from the Marketplace](https://github.com/marketplace?type=actions).
+Here is another example:
+
+```yaml
+name: learn-github-actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install -g bats
+      - run: bats -v
+```
+
+* The `uses: actions/checkout@v2`  tells the job to retrieve `v2` of the community action named `actions/checkout@v2`. 
+  - This is an action that checks out your repository and downloads it to the runner, allowing you to run actions against your code (such as testing tools). 
+  - You must use the `checkout` action any time your workflow will run against the repository's code
+* The `uses: actions/setup-node@v1`  installs the node software package on the runner, giving you access to the `npm` command.
+* You can create your own Actions 
+* or use publicly [shared Actions from the Marketplace](https://github.com/marketplace?type=actions)
+
+### Types of Actions
 
 There are two types of actions:
 
@@ -176,7 +197,7 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 
 ## Event
 
-**Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
+**Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using [Webhooks](https://docs.github.com/en/developers/webhooks-and-events/about-webhooks).
 
 ### The `release` event
 
@@ -264,12 +285,26 @@ jobs:
 
 ### Env:
 
-**Env** defines a map of environment variables that are available to all jobs and steps in the workflow. You can also set environment variables that are only available to a job or step.
+**Env** defines a map of environment variables that are available to all jobs and steps in the workflow. You can also set environment variables that are only available to a job or step. Here is a simple example taken from the [GitHub docs on Environment Variables](https://docs.github.com/es/actions/reference/environment-variables)
 
-```
-env:
+```yaml
+jobs:
+  weekday_job:
+    runs-on: ubuntu-latest
+    env:
+      DAY_OF_WEEK: Mon
+    steps:
+      - name: "Hello world when it's Monday"
+        if: env.DAY_OF_WEEK == 'Mon'
+        run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
+        env:
+          FIRST_NAME: Mona
+          middle_name: The
+          Last_Name: Octocat
   CI: true
 ```
+
+There are [lots of default environment variables set by GitHub](https://docs.github.com/es/actions/reference/environment-variables#default-environment-variables)
 
 ### steps.with
 
