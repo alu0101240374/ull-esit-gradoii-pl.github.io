@@ -7,6 +7,9 @@ Github Actions enables you to create custom software development lifecycle workf
 
 This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
 
+For instance, at any time during this course each student  has two active automatic kanban project boards: one we call *global* where you insert an issue per lab assignment and another for the *current lab* with moving issues corresponding to the items in the published requirements/signature. Once the teacher has reviewed your work for the current lab you have to close not only the lab issue but all the issues in the current board. This is an example of workflow.
+We can conceive a GitHub Action to automate the last part of this workflow such that when you close the issue in your student board all the issues in the repo board are automatically closed.
+
 
 Here is a brief glossary of terms (for more see [Core concepts for GitHub Actions](https://help.github.com/en/actions/getting-started-with-github-actions/core-concepts-for-github-actions)):
 
