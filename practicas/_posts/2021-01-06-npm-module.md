@@ -10,9 +10,9 @@ rubrica:
   - "Opcional: estudio de covering"
   - Se ha hecho CI con GitHub Actions
   - Los informes están bien presentados
-  - La documentación de la API es correcta
-  - "Opcional: publicar la documentación usando GitHub Pages en la carpeta `docs/`"
-  - Las *pruebas de producción* funcionan bien
+  - "La documentación es completa: API, ejecutable, instalación, etc." 
+  - "Opcional: publicar la documentación de la API usando GitHub Pages en la carpeta `docs/`"
+  - Las *pruebas de producción* funcionan bien (probar ejecutable)
   - El superproyecto está correctamente estructurado usando submódulos
   - Se ha hecho un buen uso del versionado semántico en la evolución del módulo
 ---
