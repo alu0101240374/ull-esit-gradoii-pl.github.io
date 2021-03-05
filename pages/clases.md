@@ -15,11 +15,10 @@ toc: true
 
 <ol reversed>
       {%- endif %}
-<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+<li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>  <a href= "{{site.organization.master}}/{{post.path}}">✏️</a></li>
   <ul>
     {%- if post.summary %}<li>{{ post.summary | markdownify }}</li>{%- endif -%}
     {%- if post.video %}<li> <a href="https://youtu.be/{{post.video}}">Vídeo</a> </li>{%- endif %}
-    <li><a href= "{{site.organization.master}}/{{post.path}}">✏️ Edit</a></li>
   </ul>
       {%- assign previousMonth = currentMonth %}
   {%- endfor %}

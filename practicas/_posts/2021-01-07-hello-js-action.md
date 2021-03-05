@@ -1,9 +1,10 @@
 ---
 title: "Práctica: GitHub Action Hello World"
-categories: [ practicas ]
-date: 2021-03-03
+published: true
+rubrica:
 ---
 
+## Goals
 
 Write a GitHub Action *Hello World* following the tutorial 
 at section [Hello Actions World!]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-javascript-action).
