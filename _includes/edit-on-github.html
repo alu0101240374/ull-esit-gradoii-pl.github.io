@@ -1,0 +1,15 @@
+<section class="page__share">
+    {% if site.data.ui-text[site.locale].share_on_label %}
+      <h4 class="page__share-title">{{ "Edit on GitHub ✏️" }}</h4>
+    {% endif %}
+      
+     <a href="{{site.organization.master}}/{{page.path}}" 
+        target="_blank" 
+        style="background-color: #faaf" 
+        class="btn btn--twitter">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+        <span>✏️</span>
+      </a>
+    
+</section>
+  
