@@ -1,5 +1,5 @@
 ---
-title: "Práctica: GitHub Action Hello World"
+title: "GitHub Action Hello World"
 published: true
 rubrica:
 ---

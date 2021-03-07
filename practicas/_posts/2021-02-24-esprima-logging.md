@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Espree Logging"
+title: "Espree Logging"
 published: true
 rubrica:
   - "Opciones en línea de comandos (`-o`, `-V`, `-h`, etc.)"
