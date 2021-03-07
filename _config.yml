@@ -279,13 +279,13 @@ defaults:
     values:
       layout: single
       comments: true
+      share: true
       sidebar:
         title: ""
         nav: sidebar-sample
       toc: true
       toc_label: "Tabla de Contenidos"
       toc_icon: "list"
-      comments: true
 
   # _posts
   - scope:
@@ -295,7 +295,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
       related: true
       read_time: false
 
