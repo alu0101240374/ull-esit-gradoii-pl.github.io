@@ -1,5 +1,5 @@
 ---
-title: Práctica npm Module
+title: "Práctica: npm Module"
 published: true
 rubrica: 
   - El paquete está publicado en npmjs con ámbito `aluXXX`
