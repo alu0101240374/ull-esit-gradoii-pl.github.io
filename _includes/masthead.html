@@ -1,4 +1,8 @@
-{% capture logo_path %}{{ site.logo }}{% endcapture %}
+  {% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+  {% unless site.darks contains site.minimal_mistakes_skin  -%} 
+    {% capture logo_path %}{{ site.logoLightBackground }}{% endcapture %}
+  {% endunless %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
