@@ -752,7 +752,7 @@ rather attempting an actual install.
 ```
       npm ls -g
 ```
--->
+
 
 #### Test Installation from Another Directory
 
@@ -767,6 +767,7 @@ rather attempting an actual install.
       '&lt;h1&gt;Hello World!&lt;/h1&gt;'
       >
 ```
+-->
 
 #### Symlink Your Package with npm link
 
