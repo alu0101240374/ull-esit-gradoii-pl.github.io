@@ -1,4 +1,26 @@
 {% if page.video %}
+{% if page.video.first%}
+
+<h2> Videos</h2>
+
+{% for video in page.video %}
+    <a href="https://youtu.be/{{video}}">Vídeo</a> 
+    {% capture video_src %}
+     https://www.youtube-nocookie.com/embed/{{ video }}
+    {% endcapture %}
+    {% assign video_src = video_src | strip %}
+
+    {% unless video_src == "" %}
+    <div class="responsive-video-container">
+        <iframe src="{{ video_src }}" 
+          frameborder="0" 
+          webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+        </iframe>
+    </div>
+   {% endunless %}
+{% endfor %}
+
+{% else  %}
 <h2> Video</h2>
 
 {% capture video_src %}
@@ -14,5 +36,5 @@
         </iframe>
     </div>
 {% endunless %}
-
+{% endif %}
 {% endif %}

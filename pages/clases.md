@@ -18,7 +18,18 @@ toc: true
 <li> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
   <ul>
     {%- if post.summary %}<li>{{ post.summary | markdownify }}</li>{%- endif -%}
-    {%- if post.video %}<li> <a href="https://youtu.be/{{post.video}}">Vídeo</a> </li>{%- endif %}
+    {%- if post.video %}<li> 
+      {% if post.video.first%}
+        Videos:
+        {% for video in post.video %}
+            <a href="https://youtu.be/{{video}}">Vídeo</a> 
+        {% endfor %}
+        
+      {% else %}
+           <a href="https://youtu.be/{{post.video}}">Vídeo</a> 
+      {% endif %}
+    </li>
+    {%- endif %}
   </ul>
       {%- assign previousMonth = currentMonth %}
   {%- endfor %}
