@@ -737,6 +737,7 @@ Before publishing, be sure to test that your package installs and works
 correctly. This does not mean running the tests as we did above, but
 rather attempting an actual install.
 
+<!--
 #### Test Installation from the Working Directory
 
 -   Verify that the package installs properly. From your package root
@@ -751,6 +752,7 @@ rather attempting an actual install.
 ```
       npm ls -g
 ```
+-->
 
 #### Test Installation from Another Directory
 
