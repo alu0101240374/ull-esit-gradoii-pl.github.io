@@ -4,8 +4,7 @@
 <h2> Videos</h2>
 
 {% for video in page.video %}
-    <a href="https://youtu.be/{{video}}">Vídeo</a> 
-    {% capture video_src %}
+    {% capture video_src %} <!-- Warning dulpicated code below -->
      https://www.youtube-nocookie.com/embed/{{ video }}
     {% endcapture %}
     {% assign video_src = video_src | strip %}
