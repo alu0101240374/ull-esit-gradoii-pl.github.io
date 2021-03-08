@@ -2,9 +2,9 @@
 {% if page.video.first%}
 
 <h2> Videos</h2>
-
+<!-- Warning duplicated code below-->
 {% for video in page.video %}
-    {% capture video_src %} <!-- Warning dulpicated code below -->
+    {% capture video_src %} 
      https://www.youtube-nocookie.com/embed/{{ video }}
     {% endcapture %}
     {% assign video_src = video_src | strip %}
