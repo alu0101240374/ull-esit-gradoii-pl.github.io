@@ -660,7 +660,7 @@ steps:
 ```
 
 #### Example: A GitHub Action to Publish a npm Package
- 
+
 For example, to write a github action to publish a npm package in the npm registry
 I surely need to give GitHub a token so that it can work on my name and publish 
 the package. Thus, the procedure will be:
@@ -708,6 +708,21 @@ jobs:
           NODE_AUTH_TOKEN: ${{ "{{secrets.npm_token" }} }}
 ```
 
+This example stores the `npm_token` secret in the `NODE_AUTH_TOKEN` environment variable. 
+
+When the `setup-node` action creates an `.npmrc` file, it references the token from the `NODE_AUTH_TOKEN` environment variable.
+
+In the example above, 
+the `setup-node` 
+action creates an `.npmrc` file on the *runner* with the following contents:
+
+```ini
+//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
+registry=https://registry.npmjs.org/
+always-auth=true
+```
+
+See [Publishing packages to the npm registry](https://docs.github.com/en/actions/guides/publishing-nodejs-packages#publishing-packages-to-the-npm-registry)
 
 ### Debugging Context to the log file
 
@@ -764,7 +779,7 @@ Add another step to the former workflow to see the `SECRETS` context. What do yo
 
 GitHub automatically creates a **GITHUB_TOKEN** secret to use in your workflow. You can use the `GITHUB_TOKEN` to authenticate in a workflow run.
 
-When you enable GitHub Actions, GitHub installs a GitHub App on your repository. 
+When you enable GitHub Actions, GitHub installs a [GitHub App](https://docs.github.com/es/github-ae@latest/developers/apps/getting-started-with-apps) on your repository. 
 
 The `GITHUB_TOKEN` secret is a GitHub App installation access token. 
 
@@ -772,39 +787,60 @@ You can use the installation access token to authenticate on behalf of the GitHu
 
 **The token's permissions are limited to the repository that contains your workflow**.
 
+Before each job begins:
+
+1. GitHub fetches an installation access token for the job. 
+2. The token expires when the job is finished.
+
 For more see [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
 
 For example, when the repo contains and npm module and 
 we want to write a github action to publish the npm package in the GitHub Package Registry
-it is enough to use the `GITHUB_TOKEN`. 
+it is enough to use the `GITHUB_TOKEN`. There is no need [to create a new secret](#creating-a-secret)
 
 Thus, this is enough to do the job:
 
 {% raw %}
 ```yml
+name: Node.js Package
+on:
+  release:
+    types: [created]
 jobs:
   build:
-    ...
-  publish-npm:
-    ...
-  publish-gpr:
-    needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-          scope: @ULL-ESIT-PL1920
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ "{{secrets.GITHUB_TOKEN" }} }}
+    - uses: actions/checkout@v2
+    # Setup .npmrc file to publish to GitHub Packages
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12.x'
+        registry-url: 'https://npm.pkg.github.com'
+        # Defaults to the user or organization that owns the workflow file
+        scope: '@ULL-ESIT-PL-2021'
+    - run: npm install
+    - run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 {% endraw %}
 
+The `setup-node` action creates an `.npmrc` file on the *runner*. 
+
+When you use the `scope` input to the `setup-node` action, the `.npmrc` file includes the `scope` prefix. 
+
+By default, the `setup-node` action sets the `scope` in the `.npmrc` file to the account that contains that workflow file.
+
+```ini
+//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
+@ULL-ESIT-PL-2021:registry=https://npm.pkg.github.com
+always-auth=true
+```
+
+See [Publishing packages to GitHub Packages](https://docs.github.com/en/actions/guides/publishing-nodejs-packages#publishing-packages-to-github-packages)
+
 ## Creating a Packaged JavaScript Action
+
 
 * [Writing a "Hello World!" JavaScript Action](creating-javascript-action)
 
