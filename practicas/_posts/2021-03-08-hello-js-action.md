@@ -14,7 +14,7 @@ Write a GitHub Action *Hello World* following the tutorial
 at section [Hello Actions World!]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-javascript-action).
 
 1. Save the action code in repo `hello-js-action-aluXXX`, 
-  - Change the visibility of this repo to `public` (got to `settings/manage access`)
+  - Change the visibility of this repo to `public` (go to `settings/manage access`)
 2. Inside repo `use-hello-js-action-aluXXX` save the project using the action and  
 3. In repo `hello-js-action-super` build a  repo having the former two as submodules
 4. Write your `README.md` report in the superproject repo. 
