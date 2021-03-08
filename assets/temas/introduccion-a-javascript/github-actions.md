@@ -593,7 +593,7 @@ See an [example of runner context]({{site.baseurl}}/assets/temas/introduccion-a-
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
 
-Here is a more complex [example](https://github.community/t5/GitHub-Actions/Create-matrix-with-multiple-OS-and-env-for-each-one/td-p/38339) of use of the strategy context.
+Here is a more complex [example](https://github.community/t5/GitHub-Actions/Create-matrix-with-multiple-OS-and-env-for-each-one/td-p/38339) of strategy:
 
 ```yml
 jobs:
@@ -621,9 +621,14 @@ jobs:
               - LINKER: gcc
 ```
 
+Strategy parameters include fail-fast, job-index, job-total, and max-parallel. [Here is the output for the]({{site.baseurl}}/assets/temas/introduccion-a-javascript/action-files/debug-action-log#strategy_context)
+[Debugging Context to the log](#debugging-context-to-the-log-file) example
+
 ### The Secrets Context
 
 The **secrets context** access to secrets set in a repository. See [Creating and storing encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). 
+
+#### Creating a Secret
 
 To create a secret:
 
@@ -641,6 +646,8 @@ To create a secret:
     
 *   Click **Add secret**.
 
+#### Using a Secret
+
 To use a secret:
 
 ```yml
@@ -652,6 +659,8 @@ steps:
       super_secret: {{ "${{ secrets.SuperSecret" }} }}
 ```
 
+#### Example: A GitHub Action to Publish a npm Package
+ 
 For example, to write a github action to publish a npm package in the npm registry
 I surely need to give GitHub a token so that it can work on my name and publish 
 the package. Thus, the procedure will be:
