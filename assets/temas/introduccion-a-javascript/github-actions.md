@@ -672,7 +672,7 @@ jobs:
 ```
 
 
-### Example printing context information to the log file
+### Debugging Context to the log file
 
 To inspect the information that is accessible in each context, you can use this workflow file example.
 
@@ -718,6 +718,10 @@ jobs:
 The  calls `toJSON(value)` return a pretty-print JSON representation of `value`. You can use this function to debug the information provided in contexts.
 
 Here is [an example of output]({{ site.baseurl }}/assets/temas/introduccion-a-javascript/action-files/debug-action-log) of the action above.
+
+#### Exercise
+
+Add another step to the former workflow to see the `SECRETS` context
 
 ## GITHUB_TOKEN
 
