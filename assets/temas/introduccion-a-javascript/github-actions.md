@@ -587,11 +587,39 @@ The **runner context** contains information about the runner that is executing t
 
 Examples are `runner.os` for the Operating System or `runner.temp` for the path of the temporary directory for the runner. This directory is guaranteed to be empty at the start of each job, even on self-hosted runners.
 
+See an [example of runner context]({{site.baseurl}}/assets/temas/introduccion-a-javascript/action-files/debug-action-log#runner_context)
+
 ### The Strategy Context
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
 
-Here is an [example](https://github.community/t5/GitHub-Actions/Create-matrix-with-multiple-OS-and-env-for-each-one/td-p/38339) of use of the strategy context.
+Here is a more complex [example](https://github.community/t5/GitHub-Actions/Create-matrix-with-multiple-OS-and-env-for-each-one/td-p/38339) of use of the strategy context.
+
+```yml
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          os: macos-latest
+            env:
+              - TARGET: x86_64-apple-darwin
+              - COMPILER: clang
+              - LINKER: clang
+
+          os: ubuntu-latest
+            env:
+              - TARGET: armv7-unknown-linux-musleabihf
+              - COMPILER: arm-linux-gnueabihf-gcc-5
+              - LINKER: gcc-5-arm-linux-gnueabihf
+
+          os: ubuntu-latest
+            env:
+              - TARGET: x86_64-unknown-linux-musl
+              - COMPILER: gcc
+              - LINKER: gcc
+```
 
 ### The Secrets Context
 
