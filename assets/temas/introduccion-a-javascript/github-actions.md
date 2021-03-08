@@ -218,6 +218,9 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 
 **Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using [Webhooks](https://docs.github.com/en/developers/webhooks-and-events/about-webhooks).
 
+Example of Webhook: When you install Travis in your repo a webhook is installed on push so that Travis will know when you push to your repo. See also [Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+
+
 ### The `release` event
 
 * See [GitHub Releases]({{site.baseurl}}/assets/temas/introduccion-a-javascript/releases.html)
