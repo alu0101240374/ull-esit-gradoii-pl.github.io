@@ -721,7 +721,7 @@ Here is [an example of output]({{ site.baseurl }}/assets/temas/introduccion-a-ja
 
 #### Exercise
 
-Add another step to the former workflow to see the `SECRETS` context
+Add another step to the former workflow to see the `SECRETS` context. What do you see?
 
 ## GITHUB_TOKEN
 
