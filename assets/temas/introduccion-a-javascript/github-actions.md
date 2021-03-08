@@ -282,6 +282,7 @@ For example, a `push` that changed `sub-project/index.js` or `sub-project/src/in
 A workflow run is made up of one or more jobs. Jobs define the functionality that will be run in the workflow and run in parallel by default.  
 
 ```yml
+{% raw %}
 jobs: 
     ci-scapegoat:
     # Define the OS our workflow should run on
@@ -295,7 +296,7 @@ jobs:
     steps: # Clone the repo. See https://github.com/actions/checkout
     - uses: actions/checkout@v2
     # Example of using an environment variable
-    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
+    - name: Use Node.js ${{ matrix.node-version }} # Will be: "Use Node.js 12.x"
         uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
         with:
         node-version: ${{ "{{ matrix.node-version" }} }}
@@ -305,6 +306,7 @@ jobs:
         # Environment variables
         env:
           CI: true
+{% endraw %}
 ```
 
 ### Env:
@@ -362,26 +364,32 @@ jobs:
 
 You can use expressions to programmatically set variables in workflow files and access contexts. 
 
+{% raw %}
 ```
 ${{ "{{ <expression>" }} }}
 ```
+{% endraw%}
+
 You can combine literals, context references, and functions using **operators**.
 
 An expression can be any combination of 
 
 ### literal values, 
 
+{% raw %}
 ```
 env:
-    myNull: ${ { null }}
-    myBoolean: ${ { false }}
-    myIntegerNumber: ${ { 711 }}
-    myFloatNumber: ${ { -9.2 }}
-    myHexNumber: ${ { 0xff }}
-    myExponentialNumber: ${ { -2.99-e2 }}
-    myString: ${ { 'Mona the Octocat' }}
-    myEscapedString: ${ { 'It''s open source!' }}
+    myNull: ${{ null }}
+    myBoolean: ${{ false }}
+    myIntegerNumber: ${{ 711 }}
+    myFloatNumber: ${{ -9.2 }}
+    myHexNumber: ${{ 0xff }}
+    myExponentialNumber: ${{ -2.99-e2 }}
+    myString: ${{ 'Mona the Octocat' }}
+    myEscapedString: ${{ 'It''s open source!' }}
 ```
+{% endraw %}
+
 
 ### Operators
 
@@ -465,7 +473,7 @@ in a workflow file to determine whether a step should run.
 
 
 When you use expressions in an `if` conditional, 
-you do not need to use the expression syntax (`${ { }}`) 
+you do not need to use the expression syntax ({% raw %}`${{ }}`{% endraw %}) 
 because GitHub automatically evaluates the `if` conditional as an expression.
  
 For more information about if conditionals, see "[Workflow syntax for GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions/#jobsjob_idif)."
@@ -525,9 +533,11 @@ has triggered the event is `'bug'`
 
 **Contexts** are a way to access information about workflow runs, runner environments, jobs, and steps. Contexts use the **expression syntax**. See [Context and expression syntax for GitHub Actions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts) at the GitHub Actions Reference.
 
+{% raw %}
 ```
 ${{ "{{ <context>" }} }}
 ```
+{% endraw %}
 
 ### Matrix Context
 
@@ -560,14 +570,16 @@ The **steps context** contains information about the steps in the current job th
 
 Here is a more complex [example using step information and functions](https://github.com/rusnasonov/vscode-hugo/blob/master/.github/workflows/build.yml)
 
+{% raw %}
 ```yml
 ...
 - name: save vsix
       uses: actions/upload-artifact@master
       with:
-        name: ${ { format('vscode-hugo-{0}-{1}.vsix', steps.build_package.outputs.version, github.sha) }}
-        path: ${ { format('vscode-hugo-{0}.vsix', steps.build_package.outputs.version) }}
+        name: ${{ format('vscode-hugo-{0}-{1}.vsix', steps.build_package.outputs.version, github.sha) }}
+        path: ${{ format('vscode-hugo-{0}.vsix', steps.build_package.outputs.version) }}
 ```
+{% endraw %}
 
 ### The Runner Context
 
@@ -667,6 +679,7 @@ To inspect the information that is accessible in each context, you can use this 
 ```
 [~/.../scapegoat(master)]$ cat .github/workflows/debug.yml
 ```
+{% raw %}
 ```yml
 name: Debugging contexts
 on: push
@@ -677,31 +690,34 @@ jobs:
     steps:
       - name: Dump GitHub context
         env:
-          GITHUB_CONTEXT: ${ { toJson(github) }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
       - name: Dump job context
         env:
-          JOB_CONTEXT: ${ { toJson(job) }}
+          JOB_CONTEXT: ${{ toJson(job) }}
         run: echo "$JOB_CONTEXT"
       - name: Dump steps context
         env:
-          STEPS_CONTEXT: ${ { toJson(steps) }}
+          STEPS_CONTEXT: ${{ toJson(steps) }}
         run: echo "$STEPS_CONTEXT"
       - name: Dump runner context
         env:
-          RUNNER_CONTEXT: ${ { toJson(runner) }}
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
         run: echo "$RUNNER_CONTEXT"
       - name: Dump strategy context
         env:
-          STRATEGY_CONTEXT: ${ { toJson(strategy) }}
+          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
         run: echo "$STRATEGY_CONTEXT"
       - name: Dump matrix context
         env:
-          MATRIX_CONTEXT: ${ { toJson(matrix) }}
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
 ```
+{% endraw %}
 
-Here is [an example of output](https://github.com/ULL-ESIT-DSI-1617/scapegoat/runs/548538435?check_suite_focus=true)
+The  calls `toJSON(value)` return a pretty-print JSON representation of `value`. You can use this function to debug the information provided in contexts.
+
+Here is [an example of output]({{ site.baseurl }}/assets/temas/introduccion-a-javascript/action-files/debug-action-log) of the action above.
 
 ## GITHUB_TOKEN
 
@@ -723,7 +739,8 @@ it is enough to use the `GITHUB_TOKEN`.
 
 Thus, this is enough to do the job:
 
-```
+{% raw %}
+```yml
 jobs:
   build:
     ...
@@ -744,7 +761,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ "{{secrets.GITHUB_TOKEN" }} }}
 ```
-
+{% endraw %}
 
 ## Creating a Packaged JavaScript Action
 
