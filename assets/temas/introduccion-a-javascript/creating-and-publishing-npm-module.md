@@ -1327,6 +1327,9 @@ The action simply run the production tests each time a `push` happens
 ```
 
 ```yml
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
 name: Test scapegoat in production
 
 on: # when this action should be triggered?
@@ -1338,20 +1341,20 @@ on: # when this action should be triggered?
 jobs: # jobs are made of steps
   build:
     # Define the OS our workflow should run on
-    runs-on: ubuntu-latest
-
+    runs-on: ${{ matrix.os }}
     strategy:
       # To test across multiple language versions
       matrix:
-        node-version: [12.x]
+        os: [macos-latest, ubuntu-latest, windows-latest ]
+        node-version: [12.x, 14.x]
 
     steps: # See https://github.com/actions/checkout
     - uses: actions/checkout@v2
     # Example of using an environment variable
-    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
+    - name: Use Node.js ${{ matrix.node-version }} # Will be: "Use Node.js 12.x"
       uses: actions/setup-node@v1 # See https://github.com/actions/setup-node
       with:
-        node-version: ${{ "{{ matrix.node-version" }} }}
+        node-version: ${{ matrix.node-version }}
     - run: npm test
       env:
         CI: true
