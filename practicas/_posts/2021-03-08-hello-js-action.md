@@ -2,8 +2,11 @@
 title: "GitHub Action Hello World"
 published: true
 rubrica:
-  # - Hacer el ejercicio *Add another step to the former workflow to see the SECRETS context. What do you see?* <https://ull-esit-gradoii-pl.github.io/assets/temas/introduccion-a-javascript/github-actions#exercise>
 ---
+
+<!--
+  # - Hacer el ejercicio *Add another step to the former workflow to see the SECRETS context. What do you see?* <https://ull-esit-gradoii-pl.github.io/assets/temas/introduccion-a-javascript/github-actions#exercise>
+-->
 
 ## Goals
 
