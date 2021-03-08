@@ -1,6 +1,6 @@
 ---
+title: Jekyll
 ---
-# Jekyll
 
 A **static site generator (SSG)** (see [https://www.staticgen.com/](https://www.staticgen.com/) is a compromise between using a hand-coded static site and a full content management system (CMS). You generate an HTML-only website using raw data (such as Markdown files) and templates. The resulting build is transferred to your live server.
 
