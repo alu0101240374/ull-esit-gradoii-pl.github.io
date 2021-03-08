@@ -116,7 +116,9 @@ The toolkit `@actions/core` package provides an interface to
 - exit statuses, and 
 - debug messages.
 
-The toolkit also offers a `@actions/github` package that returns an authenticated **Octokit REST client** and access to GitHub Actions **contexts**.
+The toolkit also offers a `@actions/github` package that returns 
+- an authenticated **Octokit REST client** and 
+- access to GitHub Actions **contexts**.
 
 The toolkit offers more than the **core** and **github** packages. 
 
@@ -135,6 +137,29 @@ Now you should see
 2. a `package-lock.json` file with the installed module dependencies and the versions of each installed module.
 
 ## Write the action code
+
+Add a new file called `index.js`, with the following code:
+
+```
+[~/.../hello-world-javascript-action(master)]$ cat index.js
+```
+```js
+const core = require('@actions/core');
+const github = require('@actions/github');
+
+try {
+  // `who-to-greet` input defined in action metadata file
+  const nameToGreet = core.getInput('who-to-greet');
+  console.log(`Hello ${nameToGreet}!`);
+  const time = (new Date()).toTimeString();
+  core.setOutput("time", time);
+  // Get the JSON webhook payload for the event that triggered the workflow
+  const payload = JSON.stringify(github.context.payload, undefined, 2)
+  console.log(`The event payload: ${payload}`);
+} catch (error) {
+  core.setFailed(error.message);
+}
+```
 
 This action uses the toolkit to get the `who-to-greet` input variable required in the action's metadata file 
 
@@ -177,37 +202,28 @@ GitHub Actions provide **context** information about the webhook event, Git refs
 }
 ```
 
-To access the context information, you can use the **github** package. The action you'll write will print the webhook event payload the log.
+To access the context information, you can use the **github** package. 
+The action you'll write will print the webhook event payload the log.
 
 ```js
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+const payload = JSON.stringify(github.context.payload, undefined, 2)
+console.log(`The event payload: ${payload}`);
 ```
 
-Add a new file called `index.js`, with the following code:
+If an error is thrown in the above `index.js` example, `core.setFailed(error.message);` uses the actions toolkit [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core) package to log a message and set a failing exit code.
 
-```
-[~/.../hello-world-javascript-action(master)]$ cat index.js
-```
+
 ```js
 const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
-  const time = (new Date()).toTimeString();
-  core.setOutput("time", time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  ...
 } catch (error) {
   core.setFailed(error.message);
 }
 ```
 
-If an error is thrown in the above `index.js` example, `core.setFailed(error.message);` uses the actions toolkit [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core) package to log a message and set a failing exit code.
 
 For more information, see "[Setting exit codes for actions](https://help.github.com/en/actions/building-actions/setting-exit-codes-for-actions)."
 
@@ -226,6 +242,8 @@ In your `hello-world-javascript-action` directory, create a `README.md` file tha
 
 ```
 [~/.../hello-world-javascript-action(master)]$ cat README.md
+```
+```md
 # Hello world javascript action
 
 This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
@@ -251,7 +269,7 @@ with:
 
 ## Commit, tag, and push your action to GitHub
 
-GitHub downloads each action run in a workflow during runtime and executes it as a complete package of code before you can use workflow commands like run to interact with the runner machine. 
+GitHub downloads each action run in a workflow during runtime and executes it as a complete package of code before you can use workflow commands like `run` to interact with the *runner* machine. 
 
 This means **you must include any package dependencies required to run the JavaScript code**. You'll need to check in the toolkit core and github packages to your action's repository.
 
@@ -283,9 +301,9 @@ For more information on versioning your action, see
 * [About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
 * [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
 
-As an alternative to checking in your `node_modules` directory you can use a tool called [zeit/ncc](https://github.com/zeit/ncc) to compile your code and modules into one file used for distribution.
+As an alternative to checking in your `node_modules` directory you can use a tool called [vercel/ncc](https://github.com/vercel/ncc) to compile your code and modules into one file used for distribution.
 
-1. Install [zeit/ncc](https://github.com/zeit/ncc) by running this command in your terminal: `npm i -g @zeit/ncc`
+1. Install [vercel/ncc](https://github.com/vercel/ncc) by running this command in your terminal: `npm i -g @zeit/ncc`
 2. Compile your `index.js` file. `ncc build index.js`
    You'll see a new `dist/index.js` file with your code and the compiled modules.
 3. Change the `main` keyword in your `action.yml` file to use the new `dist/index.js` file. main: `'dist/index.js'`
@@ -306,6 +324,8 @@ Now you're ready to test your action out in a workflow.
 When an action is in a private repository, the action can only be used in workflows in the same repository.
 
 Public actions can be used by workflows in any repository.
+
+Change the visibility of your action repo to public.
 
 Let us create  a new repo in GitHub and also set it in your machine:
 
