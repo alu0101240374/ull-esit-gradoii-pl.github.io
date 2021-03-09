@@ -729,6 +729,7 @@ For more details, see also [Publishing packages to the npm registry](https://doc
 Extend the lab [npm-module](https://ull-esit-gradoii-pl.github.io/practicas/npm-module) with an action inside the repo `testing-addlogging-aluXXX` to publish the npm package in npmjs after the production tests 
 run correctly in several operating systems (for example, `windows-latest`, `mac-os-latest`, `ubuntu-latest`) and different node versions
 
+{% raw %}
 ```yml
 jobs: # jobs are made of steps
   build:
@@ -742,9 +743,11 @@ jobs: # jobs are made of steps
     ...
   ...
 ```
+{% endraw %}
 
 Here is another example
 
+{% raw %}
 ```yml
 jobs:
   build:
@@ -778,6 +781,7 @@ jobs:
       - run: npm test
   ...
 ```
+{% endraw %}
 
 See the docs for [jobs.\<job_id\>.strategy.matrix](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 
