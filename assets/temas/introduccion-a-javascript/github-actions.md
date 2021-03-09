@@ -779,7 +779,7 @@ jobs:
   ...
 ```
 
-See the doc for [jobs.<job_id>.strategy.matrix](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
+See the docs for [jobs.<job_id>.strategy.matrix](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 
 ### Debugging Context to the log file
 
