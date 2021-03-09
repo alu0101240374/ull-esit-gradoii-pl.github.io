@@ -20,9 +20,9 @@ toc: true
     {%- if post.summary %}<li>{{ post.summary | markdownify }}</li>{%- endif -%}
     {%- if post.video %}<li> 
       {% if post.video.first%}
-        Videos:
         {% for video in post.video %}
-            <a href="https://youtu.be/{{video}}">Vídeo</a> 
+            <a href="https://youtu.be/{{video}}">Vídeo {{ forloop.index }}</a> 
+            {% unless forloop.last%},{% endunless %}
         {% endfor %}
         
       {% else %}

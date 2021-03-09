@@ -275,7 +275,7 @@ Let us use our new alias:
 ### LEARN MORE
 
   Use `gh <command> <subcommand> --help` for more information about a command.
-  Read the manual at https://cli.github.com/manual
+  Read the manual at <https://cli.github.com/manual>
 
 ## GraphQL Example
 
