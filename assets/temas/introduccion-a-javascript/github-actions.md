@@ -682,7 +682,7 @@ the package. Thus, the procedure will be:
     └────────────────┴──────────────────────────────────────┘
   ```
 
-3. Set the secret token in the secrets section of your repo with name for example `npm_token`
+3. Set the secret token in the secrets section of your repo with name for example `NPM_TOKEN`
 4. Make the secret accesible to the GitHub Action via the `secrets` context
 
 ```yml
@@ -705,10 +705,10 @@ jobs:
       - run: npm ci
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ "{{secrets.npm_token" }} }}
+          NODE_AUTH_TOKEN: ${{ "{{secrets.NPM_TOKEN" }} }}
 ```
 
-This example stores the `npm_token` secret in the `NODE_AUTH_TOKEN` environment variable. 
+This example stores the `NPM_TOKEN` secret in the `NODE_AUTH_TOKEN` environment variable. 
 
 When the `setup-node` action creates an `.npmrc` file, it references the token from the `NODE_AUTH_TOKEN` environment variable.  See [actions/setup-node/README](https://github.com/actions/setup-node/blob/main/README.md#usage)
 
@@ -727,7 +727,59 @@ For more details, see also [Publishing packages to the npm registry](https://doc
 ### Exercise
 
 Extend the lab [npm-module](https://ull-esit-gradoii-pl.github.io/practicas/npm-module) with an action inside the repo `testing-addlogging-aluXXX` to publish the npm package in npmjs after the production tests 
-run correctly in several operating systems (for example, windows-latest, mac-os-latest, ubuntu-latest) and node versions
+run correctly in several operating systems (for example, `windows-latest`, `mac-os-latest`, `ubuntu-latest`) and node versions
+
+```yml
+jobs: # jobs are made of steps
+  build:
+    # Define the OS our workflow should run on
+    runs-on: ${{ matrix.os }}
+    strategy:
+      # To test across multiple language versions
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest ]
+        node-version: [12.x, 14.x]
+    ...
+  ...
+```
+
+Here is another example
+
+```yml
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        node_version:
+          - 10
+          - 12
+          - 14
+        architecture:
+          - x64
+        # an extra windows-x86 run:
+        include:
+          - os: windows-2016
+            node_version: 12
+            architecture: x86
+    name: Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
+          architecture: ${{ matrix.architecture }}
+      - run: npm install
+      - run: npm test
+  ...
+```
+
+See the doc for [jobs.<job_id>.strategy.matrix](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 
 ### Debugging Context to the log file
 
@@ -807,26 +859,22 @@ Thus, this is enough to do the job:
 
 {% raw %}
 ```yml
-name: Node.js Package
-on:
-  release:
-    types: [created]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    # Setup .npmrc file to publish to GitHub Packages
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '12.x'
-        registry-url: 'https://npm.pkg.github.com'
-        # Defaults to the user or organization that owns the workflow file
-        scope: '@ULL-ESIT-PL-2021'
-    - run: npm install
-    - run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+steps:
+- uses: actions/checkout@v2
+- uses: actions/setup-node@v2
+  with:
+    node-version: '14.x'
+    registry-url: 'https://registry.npmjs.org'
+- run: npm install
+- run: npm publish
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.NPN_TOKEN }}
+- uses: actions/setup-node@v2
+  with:
+    registry-url: 'https://npm.pkg.github.com'
+- run: npm publish
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 {% endraw %}
 
