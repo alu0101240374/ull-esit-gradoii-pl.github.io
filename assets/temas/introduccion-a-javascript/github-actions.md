@@ -33,7 +33,7 @@ $ touch .github/workflows/nodejs.yml
 
 and use our favourite editor.
 
-Ejemplo:
+Example:
 
 ```yml
 name: Node.js Package
