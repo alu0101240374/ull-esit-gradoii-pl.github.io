@@ -1,7 +1,6 @@
 ---
+title: Questions
 ---
-
-# Questions
 
 * ¿Como son las rotaciones en prácticas?
 
