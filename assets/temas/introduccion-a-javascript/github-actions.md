@@ -727,7 +727,7 @@ For more details, see also [Publishing packages to the npm registry](https://doc
 ### Exercise
 
 Extend the lab [npm-module](https://ull-esit-gradoii-pl.github.io/practicas/npm-module) with an action inside the repo `testing-addlogging-aluXXX` to publish the npm package in npmjs after the production tests 
-run correctly in several operating systems (for example, `windows-latest`, `mac-os-latest`, `ubuntu-latest`) and node versions
+run correctly in several operating systems (for example, `windows-latest`, `mac-os-latest`, `ubuntu-latest`) and different node versions
 
 ```yml
 jobs: # jobs are made of steps
