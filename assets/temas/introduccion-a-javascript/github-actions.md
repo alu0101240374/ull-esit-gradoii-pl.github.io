@@ -753,7 +753,7 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
-      matrix:
+      matrix: # A job matrix can generate a maximum of 256 jobs per workflow run
         os:
           - ubuntu-latest
           - macos-latest
@@ -769,7 +769,7 @@ jobs:
           - os: windows-2016
             node_version: 12
             architecture: x86
-    name: Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
+    name: Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }} # The name of the job displayed on GitHub.
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
