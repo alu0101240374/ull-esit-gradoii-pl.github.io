@@ -665,7 +665,7 @@ For example, to write a github action to publish a npm package in the npm regist
 I surely need to give GitHub a token so that it can work on my name and publish 
 the package. Thus, the procedure will be:
 
-1. You create a token for [npm](https://docs.npmjs.com/creating-and-viewing-authentication-tokens) with read and publish permits:
+1. You create a token for npm with [npm token create](https://docs.npmjs.com/creating-and-viewing-authentication-tokens) with read and publish permits:
    
    ```
     [~/.../lexer-generator(master)]$ npm token create
@@ -710,7 +710,7 @@ jobs:
 
 This example stores the `npm_token` secret in the `NODE_AUTH_TOKEN` environment variable. 
 
-When the `setup-node` action creates an `.npmrc` file, it references the token from the `NODE_AUTH_TOKEN` environment variable.
+When the `setup-node` action creates an `.npmrc` file, it references the token from the `NODE_AUTH_TOKEN` environment variable.  See [actions/setup-node/README](https://github.com/actions/setup-node/blob/main/README.md#usage)
 
 In the example above, 
 the `setup-node` 
