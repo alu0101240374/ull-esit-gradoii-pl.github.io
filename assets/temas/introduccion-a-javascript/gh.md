@@ -2,7 +2,64 @@
 title: GitHub Command Line Interface
 ---
 
-## gh api
+## Introduction
+
+[gh](https://cli.github.com/manual/) pretends to facilitate the access to GitHub from the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
+
+```
+➜  apuntes git:(main) ✗ gh help
+Work seamlessly with GitHub from the command line.
+
+USAGE
+  gh <command> <subcommand> [flags]
+
+CORE COMMANDS
+  gist:       Manage gists
+  issue:      Manage issues
+  pr:         Manage pull requests
+  release:    Manage GitHub releases
+  repo:       Create, clone, fork, and view repositories
+
+ADDITIONAL COMMANDS
+  alias:      Create command shortcuts
+  api:        Make an authenticated GitHub API request
+  auth:       Login, logout, and refresh your authentication
+  completion: Generate shell completion scripts
+  config:     Manage configuration for gh
+  help:       Help about any command
+
+FLAGS
+  --help      Show help for command
+  --version   Show gh version
+
+EXAMPLES
+  $ gh issue create
+  $ gh repo clone cli/cli
+  $ gh pr checkout 321
+
+ENVIRONMENT VARIABLES
+  See 'gh help environment' for the list of supported environment variables.
+
+LEARN MORE
+  Use 'gh <command> <subcommand> --help' for more information about a command.
+  Read the manual at https://cli.github.com/manual
+
+FEEDBACK
+  Open an issue using 'gh issue create -R cli/cli'
+```
+
+To install it, see  the [installation instructions](https://github.com/cli/cli#installation).
+
+Check the [GitHub CLI Manual](https://cli.github.com/manual/) for more details.
+
+
+There are several ways you can extend/customize `gh`:
+
+*   Create shorthands using [`gh alias set`](https://cli.github.com//manual/gh_alias_set)
+*   Make custom API queries using [`gh api`](https://cli.github.com//manual/gh_api)
+*   Use [environment variables](https://cli.github.com//manual/gh_help_environment)
+
+## Introduction to `gh api` 
 
 ### Authentication Token
 
@@ -15,7 +72,7 @@ to generate a new token for `gh` and set then environment variable
 Placeholder values `:owner`, `:repo`, and `:branch` in the endpoint argument will get replaced with values from the repository of the current directory.
 
 ```
-[~/.../sytws2021/apuntes(master)]$  gh api repos/:owner/:repo/issues
+$  gh api repos/:owner/:repo/issues
 [
   {
     "url": "https://api.github.com/repos/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/issues/5",
@@ -39,14 +96,14 @@ Placeholder values `:owner`, `:repo`, and `:branch` in the endpoint argument wil
 We can pipe the output to [jq](jq):
 
 ```
-[~/.../sytws2021/apuntes(master)]$  gh api repos/:owner/:repo/issues | jq '.[0] | .title'
+$  gh api repos/:owner/:repo/issues | jq '.[0] | .title'
 "tema0-presentacion/practicas/pb-gh-campus-expert/"
 ```
 
 Of course, we can explicit the repo and owner. For example:
 
 ```
-➜  learning git:(master) gh api repos/ULL-MII-SYTWS-2021/p01-t1-iaas-alu0101040882/issues | jq '.[0] | .user.login, .body'
+➜ gh api repos/ULL-MII-SYTWS-2021/p01-t1-iaas-alu0101040882/issues | jq '.[0] | .user.login, .body'
 "crguezl"
 "Hola @alu0101040882, \r\n\r\nVeo que alguno ya está trabajando en la práctica de
 ```
@@ -421,11 +478,16 @@ For GraphQL requests, all fields other than "query" and "operationName" are inte
 }
 ```
 
+<!--
 ## Descripción de la práctica p6-t1-gh-cli
 
-[Descripción de la práctica p6-t1-gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
+[Descripción de la práctica gh-cli]({{site.baseurl}}/practicas/p6-t1-gh-cli)
+-->
 
 ## References
 
+* [gh manual](https://cli.github.com/manual/)
+* [GitHub REST API](https://docs.github.com/en/rest)
+* [Getting started with the REST API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
 * Blog: [GitHub CLI is Now Available: Here’s Why You Should Be Excited by 
 Kasun Rajapakse](https://blog.bitsrc.io/github-cli-is-now-available-heres-why-you-should-be-excited-91d8bdd81a51)
