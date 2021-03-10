@@ -1,8 +1,8 @@
 name: CI
 on:
   push:
-  schedule:
-    - cron: '0 8 * * 6'
+  # schedule:
+  #   - cron: '0 8 * * 6' # See https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,6 +25,9 @@ jobs:
         with:
           directory: ./_site
           enforce_https: false
+          check_favicon: false
+          check_opengraph: false
+          empty_alt_ignore: false
           tokens: |
             {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
           url_ignore: |

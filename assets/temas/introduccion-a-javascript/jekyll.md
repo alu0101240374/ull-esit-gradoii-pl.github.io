@@ -277,6 +277,7 @@ When pushed on production, the <code>jekyll build</code> command will use the de
 
 ## Testing
 
+### HTMLProofer
 
 We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to test our web site.
 Here is an example of use:
@@ -307,12 +308,56 @@ task :test do
 end
 ```
 
-### Testing with HTMLProofer References
+### Testing with GitHub Actions 
+
+Here is an example of using the action [Proof-HTML](https://github.com/marketplace/actions/proof-html) to check the health of our site:
+
+
+```yml
+➜  apuntes git:(main) ✗ cat .github/workflows/testHTML.yml
+name: CI
+on:
+  push:
+  schedule:
+    - cron: '0 8 * * 6'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.x
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - run: bundle exec jekyll build
+      - uses: anishathalye/proof-html@v1
+        with:
+          directory: ./_site
+          enforce_https: false
+          tokens: |
+            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+          url_ignore: |
+            http://www.example.com/
+            https://en.wikipedia.org/wiki/Main_Page
+          url_ignore_re: |
+            ^https://twitter.com/
+```
+
+### References for Testing 
 
 * [HTMLProofer](https://github.com/gjtorikian/html-proofer)
 * [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
+
+
 * [GitHub Action HTMLProofer](https://github.com/marketplace/actions/htmlproofer)
-* [GitHub Action Proof HTML](https://github.com/marketplace/actions/proof-html)
 
 ## Jekyll as a Web Service
 
