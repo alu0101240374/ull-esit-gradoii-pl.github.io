@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "Parsing Expression Grammars"
-date: 0000-01-04
 published: false
 hover:
 toc: true

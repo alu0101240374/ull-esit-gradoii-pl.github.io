@@ -275,12 +275,59 @@ or
 
 When pushed on production, the <code>jekyll build</code> command will use the default <code>_config.yml</code>.
 
-## Testing
+## Testing HTML pages
 
 ### HTMLProofer
 
+> When testing Jekyll output, there is no better tool than <a href="https://github.com/gjtorikian/html-proofer">html-proofer</a>.
+> This tool checks your resulting site to ensure all links and images exist.
+> Utilize it either with the convenient <code>htmlproofer</code> command-line executable,
+> or write a Ruby script which utilizes the gem
+
+```
+usuario@ubuntu:~/src/ull-mii-sytws-1920.github.io$ bundle exec htmlproofer ./_site --disable-external
+Running ["ImageCheck", "ScriptCheck", "LinkCheck"] on ["./_site"] on *.html... 
+
+
+Ran on 158 files!
+
+
+- ./_site/2019/09/30/leccion.html
+  *  internally linking to /practicas, which does not exist (line 31)
+     <a href="/practicas" title="Prácticas">✍</a>
+  *  internally linking to /practicas, which does not exist (line 129)
+     <a href="/practicas" title="Prácticas">✍</a>
+- ./_site/404.html
+  *  internally linking to /practicas, which does not exist (line 31)
+     <a href="/practicas" title="Prácticas">✍</a>
+     ... many more entries
+```
+
+Let us see if its true. Instead of running with `jekyll` serve, I use a static server to see if the build 
+is really consistent:
+
+```
+usuario@ubuntu:~/src/ull-mii-sytws-1920.github.io/_site$ static-server -p 8080
+options.index is now deprecated please use options.templates.index instead.
+* Static server successfully started.
+* Serving files at: http://localhost:8080
+* Press Ctrl+C to shutdown.
+<-- [GET] /2019/09/30/leccion.html
+--> 200 OK /2019/09/30/leccion.html 5.63 KiB (15.964ms)
+...
+<-- [GET] /practicas/
+--> 403 /practicas/ (2.199ms)
+<-- [GET] /favicon.ico
+```
+
+See the `403 /practicas/ (2.199ms)` warning.
+
+It seems `htmlproofer` is right in spite that it works in `github.io`
+
 We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to test our web site.
 Here is an example of use:
+
+### Rakefile task for testing
 
 ```
 ~/.../sytws1920/ull-mii-sytws-1920.github.io(master)]$ cat Rakefile 
@@ -352,13 +399,10 @@ jobs:
 ```
 {% endraw %}
 
-### References for Testing 
+### Testing with HTMLProofer and Travis
 
-* [HTMLProofer](https://github.com/gjtorikian/html-proofer)
 * [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
 
-
-* [GitHub Action HTMLProofer](https://github.com/marketplace/actions/htmlproofer)
 
 ## Jekyll as a Web Service
 
