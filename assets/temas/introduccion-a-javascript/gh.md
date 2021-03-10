@@ -222,7 +222,7 @@ Quotes must always be used when defining a command as in the examples.
   #=> gh issue list --label="epic" | grep "foo"
 ````
 
-### Example: Search for repos inside our organization using GitHub API v3
+### Example: Search for repos inside an organization
 
 Let us search for repos inside our organization using GitHub API v3:
 
