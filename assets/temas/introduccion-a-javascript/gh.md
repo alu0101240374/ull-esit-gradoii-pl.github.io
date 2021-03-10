@@ -180,7 +180,7 @@ If we use `--paginate` the request takes a long time and gives us near a thousan
      990     990   32868
 ```
 
-## gh alias
+## Introduction to `gh alias`
 
 
 ### gh alias set
@@ -236,7 +236,7 @@ Quotes must always be used when defining a command as in the examples.
 Let us search for repos inside our organization using GitHub API v3:
 
 ```
-➜  to-meta git:(master) ✗ gh api '/search/repositories?q=vscode+org:ULL-MII-SYTWS-2021+in:name'
+➜ gh api '/search/repositories?q=vscode+org:ULL-MII-SYTWS-2021+in:name'
 ```
 
 
@@ -251,7 +251,7 @@ section of the REST API GitHub docs to know more about the API.
 Now we can use `gh alias set` to make an alias `get-lab` to get the repos:
 
 ```
-➜  to-meta git:(master) ✗ gh alias set get-labs 'api /search/repositories?q=$2+org:$1+in:name'
+➜ gh alias set get-labs 'api /search/repositories?q=$2+org:$1+in:name'
 - Adding alias for get-labs: api /search/repositories?q=$2+org:$1+in:name
 ✓ Added alias.
 ➜  to-meta git:(master) ✗ gh alias list
@@ -262,13 +262,13 @@ get-labs:  api /search/repositories?q=$2+org:$1+in:name
 And now we can use it:
 
 ```
-➜  to-meta git:(master) ✗ gh get-labs ULL-MII-SYTWS-2021 iaas
+➜ gh get-labs ULL-MII-SYTWS-2021 iaas
 ```
 
 Next  we can pipe the output to [jq](jq) to get the names of the repos and the date of the last push:
 
 ```
-➜  to-meta git:(master) ✗ gh get-labs ULL-MII-SYTWS-2021 iaas | jq '.items[] | .name, .pushed_at'
+➜ gh get-labs ULL-MII-SYTWS-2021 iaas | jq '.items[] | .name, .pushed_at'
 "p01-t1-iaas-juanchojbarroso"
 "2020-10-21T15:58:32Z"
 "p01-t1-iaas-alu0101040882"
@@ -308,7 +308,7 @@ gh api --paginate /search/repositories?q=$ASSIGNMENT+org:$ORG+in:name |
 Let us make an alias for `gh`:
 
 ```
-➜  to-meta git:(master) ✗ gh alias set --shell get-repos 'repos $1 $2'
+➜ gh alias set --shell get-repos 'repos $1 $2'
 - Adding alias for get-repos: repos $1 $2
 ✓ Changed alias get-repos from !repos to !repos $1 $2
 ```
