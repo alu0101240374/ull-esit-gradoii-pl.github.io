@@ -138,16 +138,16 @@ The option `--paginate`allow us to make additional HTTP requests to fetch
 all pages of results. Here is an example. 
 
 ```
-➜  to-meta git:(master) ✗ gh alias set get-repos 'api /orgs/$1/repos'
+➜  gh alias set get-repos 'api /orgs/$1/repos'
 - Adding alias for get-repos: api /orgs/$1/repos
 ✓ Added alias.
-➜  to-meta git:(master) ✗ gh alias list
+➜  gh alias list
 co:         pr checkout
 get-repos:  api /orgs/$1/repos
 ``` 
 
 ```
-➜  to-meta git:(master) ✗ gh get-repos ULL-MII-SYTWS-2021
+➜ gh get-repos ULL-MII-SYTWS-2021
 ```
 
 ![]({{site.baseurl}}/assets/images/gh-alias-repos.png)
@@ -155,7 +155,7 @@ get-repos:  api /orgs/$1/repos
 Now  we can pipe the output to [jq](jq) to get the names of the repos:
 
 ```
-➜  to-meta git:(master) ✗ gh get-repos ULL-MII-SYTWS-2021 | jq '.[].full_name' -
+➜  gh get-repos ULL-MII-SYTWS-2021 | jq '.[].full_name' -
 "ULL-MII-SYTWS-2021/sytws-2021-meta"
 "ULL-MII-SYTWS-2021/sytws2021-private"
 "ULL-MII-SYTWS-2021/books-shared"
@@ -168,7 +168,7 @@ Now  we can pipe the output to [jq](jq) to get the names of the repos:
 Let ask for the repos in the PL organization for the course 19/20:
 
 ```
-➜  to-meta git:(master) ✗ gh api /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
+➜ gh api /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
       30      30    1088
 ```
 It gave us 30 repos. There are much more than that in that organization.
@@ -176,7 +176,7 @@ It gave us 30 repos. There are much more than that in that organization.
 If we use `--paginate` the request takes a long time and gives us near a thousand repos:
 
 ```
-➜  to-meta git:(master) ✗ gh api --paginate /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
+➜ gh api --paginate /orgs/ULL-ESIT-PL-1920/repos | jq '.[] | .name' | wc
      990     990   32868
 ```
 
@@ -186,7 +186,7 @@ If we use `--paginate` the request takes a long time and gives us near a thousan
 ### gh alias set
 
 ```
-➜  to-meta git:(master) ✗ gh help alias set
+➜ gh help alias set
 ````
 
 Declare a word as a command alias that will expand to the specified command(s).
@@ -254,7 +254,7 @@ Now we can use `gh alias set` to make an alias `get-lab` to get the repos:
 ➜ gh alias set get-labs 'api /search/repositories?q=$2+org:$1+in:name'
 - Adding alias for get-labs: api /search/repositories?q=$2+org:$1+in:name
 ✓ Added alias.
-➜  to-meta git:(master) ✗ gh alias list
+➜  gh alias list
 co:        pr checkout
 get-labs:  api /search/repositories?q=$2+org:$1+in:name
 ```
@@ -285,7 +285,7 @@ Next  we can pipe the output to [jq](jq) to get the names of the repos and the d
 We can improve it by writing a script:
 
 ```
-➜  to-meta git:(master) ✗ cat ~/bin/repos
+➜  cat ~/bin/repos
 ```
 
 ```bash
