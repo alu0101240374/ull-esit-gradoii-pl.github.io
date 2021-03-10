@@ -277,12 +277,9 @@ When pushed on production, the <code>jekyll build</code> command will use the de
 
 ## Testing
 
-* [HTMLProofer](https://github.com/gjtorikian/html-proofer)
-* [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
-* [GitHub Action HTMLProofer](https://github.com/marketplace/actions/htmlproofer)
-* [GitHub Action Proof HTML](https://github.com/marketplace/actions/proof-html)
 
-Sigue un ejemplo de uso:
+We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to test our web site.
+Here is an example of use:
 
 ```
 ~/.../sytws1920/ull-mii-sytws-1920.github.io(master)]$ cat Rakefile 
@@ -309,6 +306,13 @@ task :test do
   HTMLProofer.check_directory("./_site", options).run
 end
 ```
+
+### Testing with HTMLProofer References
+
+* [HTMLProofer](https://github.com/gjtorikian/html-proofer)
+* [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
+* [GitHub Action HTMLProofer](https://github.com/marketplace/actions/htmlproofer)
+* [GitHub Action Proof HTML](https://github.com/marketplace/actions/proof-html)
 
 ## Jekyll as a Web Service
 

@@ -99,3 +99,16 @@ end
 
 desc "Publicar en GitHub ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl-github.io and ULL-ESIT-PL-2021/ull-esit-pl-2021.github.io"
 task :publish => [:default, :push2021]
+
+require 'html-proofer'
+desc "test links in the build web site"
+task :test do
+  sh "bundle exec jekyll build"
+  options = { 
+    :assume_extension => true, 
+    :disable_external => true, 
+    :empty_alt_ignore => true,
+    :file_ignore => [ %r{categories} ]
+  }
+  HTMLProofer.check_directory("./_site", options).run
+end
