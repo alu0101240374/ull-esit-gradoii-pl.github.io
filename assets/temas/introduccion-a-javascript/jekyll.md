@@ -312,7 +312,7 @@ end
 
 Here is an example of using the action [Proof-HTML](https://github.com/marketplace/actions/proof-html) to check the health of our site:
 
-
+{% raw %}
 ```yml
 ➜  apuntes git:(main) ✗ cat .github/workflows/testHTML.yml
 name: CI
@@ -350,6 +350,7 @@ jobs:
           url_ignore_re: |
             ^https://twitter.com/
 ```
+{% endraw %}
 
 ### References for Testing 
 
@@ -406,7 +407,7 @@ So you just want to test them while writing the blog, but you don't want publish
 * [Chen Hui Jing talks on Jekyll](https://www.chenhuijing.com/blog/jekyll/#%F0%9F%91%BE)
 * [Chen Hui Jing talks](https://www.chenhuijing.com/talks/#%F0%9F%8F%80) Slides in reveal.js
 
-## Práctica p8-t3-jekyll-netlify
+## Práctica jekyll-netlify
 
-* [Práctica p8-t3-jekyll-netlify](practicas/p8-t3-jekyll-netlify)
+* [Práctica jekyll-netlify]({{site.baseurl}}/practicas/jekyll-netlify)
 * [Práctica p10-t3-jekyll-search](practicas/p10-t3-jekyll-search)

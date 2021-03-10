@@ -2,6 +2,10 @@
 title: "GitHub Action Hello World"
 published: true
 rubrica:
+  - La acción está publicada y se usa correctamente
+  - Las GitHub pages funcionan correctamente en el super repo
+  - Se ha instalado Jekyll y puede ver las páginas generadas en local
+  - "Opcional: En la práctica anterior se ha extendido la CI para Mac OS y Windows"
 ---
 
 <!--
