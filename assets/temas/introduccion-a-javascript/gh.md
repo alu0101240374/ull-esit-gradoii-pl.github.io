@@ -227,12 +227,12 @@ Quotes must always be used when defining a command as in the examples.
 Let us search for repos inside our organization using GitHub API v3:
 
 ```
-➜ gh api '/search/repositories?q=vscode+org:ULL-MII-SYTWS-2021+in:name'
+➜ gh api '/search/repositories?q=iaas+org:ULL-MII-SYTWS-2021+in:name'
 ```
 
 ![]({{site.baseurl}}/assets/images/gh-api-search-for-repos.png) 
 
-In this [link](gh-get-labs-output.json) you'll find the full output.
+Here is [the JSON with the full output](gh-get-labs-output.json).
 
 * See the [SEARCH](https://docs.github.com/en/free-pro-team@latest/rest/reference/search)
 section of the REST API GitHub docs to know more about the API.
@@ -318,11 +318,6 @@ Let us use our new alias:
 "tfa-esther-sergio-tfa" => "2020-07-10T08:53:04Z"
 ...
 ```
-
-### LEARN MORE
-
-  Use `gh <command> <subcommand> --help` for more information about a command.
-  Read the manual at <https://cli.github.com/manual>
 
 ## GraphQL Example
 
