@@ -183,17 +183,16 @@ If we use `--paginate` the request takes a long time and gives us near a thousan
 ## Introduction to `gh alias`
 
 
-### gh alias set
-
 ```
-➜ gh help alias set
-````
+➜ gh alias set <alias> <expansion> [flags]
+```
 
 Declare a word as a command alias that will expand to the specified command(s).
 
 The expansion may specify additional arguments and flags. If the expansion
 includes positional placeholders such as `$1`, `$2`, etc., any extra arguments
 that follow the invocation of an alias will be inserted appropriately.
+
 
 If `--shell` is specified, the alias will be run through a shell interpreter (sh). This allows you
 to compose commands with `|` or redirect with `>`. Note that extra arguments following the alias
@@ -205,17 +204,7 @@ you have installed git on Windows in some other way, shell aliases may not work 
 
 Quotes must always be used when defining a command as in the examples.
 
-
-### USAGE
-  gh alias set <alias> <expansion> [flags]
-
-### FLAGS
-  -s, --shell   Declare an alias to be passed through a shell interpreter
-
-### INHERITED FLAGS
-  --help   Show help for command
-
-### EXAMPLES
+### Simple Examples
 
 ```
   $ gh alias set pv 'pr view'
@@ -233,12 +222,13 @@ Quotes must always be used when defining a command as in the examples.
   #=> gh issue list --label="epic" | grep "foo"
 ````
 
+### Example: Search for repos inside our organization using GitHub API v3
+
 Let us search for repos inside our organization using GitHub API v3:
 
 ```
 ➜ gh api '/search/repositories?q=vscode+org:ULL-MII-SYTWS-2021+in:name'
 ```
-
 
 ![]({{site.baseurl}}/assets/images/gh-api-search-for-repos.png) 
 
