@@ -27,7 +27,7 @@ jobs:
         uses: anishathalye/proof-html@v1.1.0
         with:
           # The directory to scan
-          directory: 
+          directory: .
           # Check whether external anchors exist
           check_external_hash: false # optional
           # Validate HTML
