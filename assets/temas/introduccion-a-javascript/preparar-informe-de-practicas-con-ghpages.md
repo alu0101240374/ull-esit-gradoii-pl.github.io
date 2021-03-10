@@ -240,7 +240,7 @@ _site
 
 ## Starting a file server on the `_site` directory 
 
-Observe que el server arrancado es un seridor de ficheros estático que nada tiene que ver con Jekyll:
+Observe que el server arrancado es un servidor de ficheros estático que nada tiene que ver con Jekyll:
 
 ```
 [~/.../p1-t1-iaas-Jorge-Acevedo(master)]$ cd _site/
