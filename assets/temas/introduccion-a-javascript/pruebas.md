@@ -36,8 +36,7 @@ layout: single
 
 ### Travis 16/17
 
-* [Travis en los apuntes del curso 16/17](https://casianorodriguezleon.gitbooks.io/
-ull-esit-1617/content/apuntes/pruebas/travis.html)
+* [Travis en los apuntes del curso 16/17](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/travis.html)
 
 ### Antiguos Apuntes sobre Pruebas en el Navegador/Browser
 
