@@ -238,7 +238,7 @@ _site
 6 directories, 49 files
 ```
 
-## Starting a file server on the `_site`directory 
+## Starting a file server on the `_site` directory 
 
 Observe que el server arrancado es un seridor de ficheros estático que nada tiene que ver con Jekyll:
 
