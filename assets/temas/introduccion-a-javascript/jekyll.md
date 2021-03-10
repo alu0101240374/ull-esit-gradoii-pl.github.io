@@ -279,6 +279,8 @@ When pushed on production, the <code>jekyll build</code> command will use the de
 
 * [HTMLProofer](https://github.com/gjtorikian/html-proofer)
 * [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
+* [GitHub Action HTMLProofer](https://github.com/marketplace/actions/htmlproofer)
+* [GitHub Action Proof HTML](https://github.com/marketplace/actions/proof-html)
 
 Sigue un ejemplo de uso:
 
@@ -314,9 +316,33 @@ end
 
 ## Maths y Jekyll
 
+See the tutorial:
+
 * [Adding MathJax to a GitHub Pages Jekyll Blog](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html)
 
+Summarizing, the simplest way is to add a line like:
+
+```html
+<!-- Mathjax Support  -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+```
+
+at then end of your layout.
+
+Here is an example of what you can do:
+
+```latex
+$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+```
+
+that renders as:
+
+$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+
 ## Working with upcoming posts in Jekyll
+
+We used to work on more than one post at a time and publish them in future. 
+So you just want to test them while writing the blog, but you don't want publish them to your live blog immediately. There are  different ways to achieve this in jekyll. This article discuss several workflows:
 
 * [Working with upcoming posts in Jekyll](http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html)
 

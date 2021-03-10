@@ -2,13 +2,6 @@
 title: "Jekyll: Como preparar un informe de Prácticas usando GitHub Pages"
 ---
 
-* [Jekyll]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jekyll/)
-* [Jekyll docs](https://jekyllrb.com/docs/)
-* [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
-* [GitHub Pages](https://pages.github.com/)
-* El módulo npm [gh-pages](https://www.npmjs.com/package/gh-pages) para simplificar el despliegue a GitHub: `gh-pages -d _site`
-* [HTMLProofer](https://github.com/gjtorikian/html-proofer) para testear la salud de  tu website
-
 
 ## Una Práctica Cualquiera
 
@@ -339,9 +332,6 @@ When pushed on production, the <code>jekyll build</code> command will use the de
 
 ## html-proofer
 
-* [HTMLProofer](https://github.com/gjtorikian/html-proofer)
-* [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
-
 HTMLProofer is a set of tests to validate your HTML output. These tests check if your image references are legitimate, if they have alt tags, if your internal links are working, and so on. It's intended to be an all-in-one checker for your output.
 
 Add this line to your application's Gemfile:
@@ -381,3 +371,19 @@ task :test do
   HTMLProofer.check_directory("./_site", options).run
 end
 ```
+
+### References for HTMLProofer
+
+* [HTMLProofer](https://github.com/gjtorikian/html-proofer)
+* [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
+* [GitHub Action HTMLProofer](https://github.com/marketplace/actions/htmlproofer)
+* [GitHub Action Proof HTML](https://github.com/marketplace/actions/proof-html)
+
+## References
+
+* [Jekyll]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jekyll/)
+* [Jekyll docs](https://jekyllrb.com/docs/)
+* [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+* [GitHub Pages](https://pages.github.com/)
+* El módulo npm [gh-pages](https://www.npmjs.com/package/gh-pages) para simplificar el despliegue a GitHub: `gh-pages -d _site`
+* [HTMLProofer](https://github.com/gjtorikian/html-proofer) para testear la salud de  tu website
