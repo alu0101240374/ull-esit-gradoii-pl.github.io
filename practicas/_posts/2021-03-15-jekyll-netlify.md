@@ -68,6 +68,10 @@ Configure el tema elegido.
 
 Lea el tutorial [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/) y añada una página 404 personalizada
 
+Personaliza tu página de 404. 
+
+## DOM, Promesas y Async Await
+
 Tienes un ejemplo de `404.md` en estos apuntes [404.md](https://raw.githubusercontent.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/main/pages/404.md)
 
 
@@ -124,7 +128,7 @@ const URL = 'https://api.thecatapi.com/v1/images/search?size=full';
     let divcat = document.getElementById("cat");
     let response = await fetch(URL, {
        headers: {
-       'x-api-key': "56a4f1cc-7f60-468d-9dba-e4b6f04b7c7d"
+       'x-api-key': "blah"
        }
     });
     let cat = await response.json();
@@ -161,9 +165,73 @@ que se verá así
 
 La página hace un request a [The Cat API](https://thecatapi.com/) para mostrar una imagen de  gatitos obtenida al azar.
 
-Intenta  entender un poco el código. Para ello es conveniente que le eches un vistazo al capítulo [Promises]({{ site.baseurl}}/assets/temas/introduccion-a-javascript/promises#promises) 
+### Que es el DOM
 
-Personaliza tu página de 404. Existe una API similar para los amantes de los perros [Dog API](https://dog.ceo/dog-api/). 
+Intenta  entender un poco el código anterior. El ejemplo combina unos cuantos conceptos importantes en 
+el manejo de las tecnologías web. 
+
+Uno de los conceptos es el DOM (Document Object Model). Cuando nuestro browser descarga una página HTML lo primero que hace es un análisis sintáctico de la misma y construye un AST según un formato estándard que es conocido como DOM. 
+Los nodos de ese AST disponen de numerosos métodos que permiten 
+* la búsqueda de nodos (`let divTitle = document.getElementById("comment-cat");`),
+* el recorrido, 
+* la creación  de nodos (`document.createElement("img")`), 
+* la modificación de nodos (`img.src = cat[0].url`) y 
+* la transformación del AST (`divTitle.append(title);`) 
+
+
+Si estos conceptos son nuevos, estos capítulos pueden ayudarte a conocer el estandard del DOM:  
+
+* [DOM tree](https://javascript.info/dom-nodes) 
+* [DOM navigation](https://javascript.info/dom-navigation)
+* [DOM modification](https://javascript.info/modifying-document)
+
+
+### Asíncronia
+
+El código anterior hace también mucho uso de [fetch](https://javascript.info/fetch) para hacer solicitudes (*requests*)a un par de servidores. La llamada
+
+```js
+fetch(URL, {
+       headers: {
+       'x-api-key': "blah"
+       }
+    });
+```
+
+retorna un objeto de la clase [Promise](https://javascript.info/promise-basics). Los objetos `Promise` tienen tres estados:
+
+1. `pending`: No se ha iniciado el proceso de carga 
+2. `fulfilled`: La carga del recurso comienza con éxito y  la promesa se resuelve a un objeto de la clase [Response](https://fetch.spec.whatwg.org/#response-class) que permite manejar el flujo de datos. La carga realmente no tiene porque haber terminado  
+3. `rejected`: The promise **rejects** if the fetch was unable to make HTTP-request, e.g. network problems, or there’s no such site. Abnormal HTTP-statuses, such as 404 or 500 do not cause an error.
+
+La palabra [await](https://javascript.info/async-await) después del `fetch` hace que JS espere al *fulfillment* de la promesa devuelta por `fetch` de modo que en `response` queda el resultado de la promesa. 
+
+```js
+let response = await fetch(URL, {
+       headers: { 'x-api-key': "blah" }
+    });
+```
+
+Si la promesa es rechazada se ejecutará el `catch`:
+
+```js
+(async function() {
+  try {
+    ...
+    let response = await fetch(URL, {
+       headers: { 'x-api-key': "blah" }
+    });
+    ...
+  }
+  catch(e) { 
+    console.log(e);
+  }
+})();
+```
+
+Véase el capítulo [Promises]({{ site.baseurl}}/assets/temas/introduccion-a-javascript/promises#promises) para mas información
+
+Existe una API similar para los amantes de los perros [Dog API](https://dog.ceo/dog-api/). Puedes usarla en tu `404.md`
 
 
 ## Test the Deployment with html-proofer and GitHub Actions
