@@ -17,6 +17,7 @@ Use the GitHub REST API
 
 # gh delete-repo
 
+
 Lo mismo pero con delete:
 
 ```
