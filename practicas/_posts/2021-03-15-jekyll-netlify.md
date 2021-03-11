@@ -183,7 +183,7 @@ Despliegue su proyecto en GitHub usando GitHub Actions. Véase:
 ## Answer: Because this way we can use our own custom Jekyll plugins and build scripts.
 -->
 
-## Despliegues de Jekyll en Netlify
+## Despliegue en Netlify
 
 * Lea el tutorial [A Step-by-Step Guide: Jekyll 3.0 on Netlify](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/) y despliegue el correspondiente Jekyll blog en [Netlify](https://www.netlify.com/)
 
