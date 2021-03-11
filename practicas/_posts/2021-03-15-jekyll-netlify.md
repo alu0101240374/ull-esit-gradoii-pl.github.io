@@ -71,8 +71,6 @@ Also, read the section [*Deployment*](https://jekyllrb.com/docs/step-by-step/10-
 
 Lea el tutorial [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/) y añada una página 404 personalizada
 
-Personaliza tu página de 404. 
-
 ## DOM, Promesas y Async Await
 
 Tienes un ejemplo de `404.md` en estos apuntes [404.md](https://raw.githubusercontent.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/main/pages/404.md)
