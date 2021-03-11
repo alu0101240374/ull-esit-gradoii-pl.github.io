@@ -189,7 +189,7 @@ Si estos conceptos son nuevos, estos capítulos pueden ayudarte a conocer el est
 
 ### Asíncronia
 
-El código anterior hace también mucho uso de [fetch](https://javascript.info/fetch) para hacer solicitudes (*requests*)a un par de servidores. La llamada
+El código anterior hace también mucho uso de [fetch](https://javascript.info/fetch) para hacer solicitudes (*requests* ) a un par de servidores. La llamada
 
 ```js
 fetch(URL, {
