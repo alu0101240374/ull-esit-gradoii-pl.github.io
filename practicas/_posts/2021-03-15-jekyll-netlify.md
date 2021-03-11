@@ -54,9 +54,12 @@ Configure el tema elegido.
 
 ## Despliegue en GitHub Pages
 
-*   [Section *Deployment*](https://jekyllrb.com/docs/step-by-step/10-deployment/) of the *Step by Step Tutorial*
-* Despliegue el proyecto en GitHub Pages. Puede usar la rama `master`, la carpeta `docs` en `master`o bien
-    * Puede hacerlo usando la rama `gh-pages` con la gema [github-pages](https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages) o el paquete npm [gh-pages](https://www.npmjs.com/package/gh-pages)
+
+Despliegue el proyecto en GitHub Pages. Puede usar la rama `master`, la carpeta `docs` en `master`o bien
+Puede hacerlo usando la rama `gh-pages` con la gema [github-pages](https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages) o el paquete npm [gh-pages](https://www.npmjs.com/package/gh-pages)
+
+
+Also, read the section [*Deployment*](https://jekyllrb.com/docs/step-by-step/10-deployment/) of the *Step by Step Tutorial*
 
 <!--
 ## Navigation
