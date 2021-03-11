@@ -199,13 +199,14 @@ fetch(URL, {
     });
 ```
 
-retorna un objeto de la clase [Promise](https://javascript.info/promise-basics). Los objetos `Promise` tienen tres estados:
+retorna un objeto de la clase [Promise](https://javascript.info/promise-basics). 
+Los objetos `Promise` tienen tres estados:
 
 1. `pending`: No se ha iniciado el proceso de carga 
 2. `fulfilled`: La carga del recurso comienza con éxito y  la promesa se resuelve a un objeto de la clase [Response](https://fetch.spec.whatwg.org/#response-class) que permite manejar el flujo de datos. La carga realmente no tiene porque haber terminado  
 3. `rejected`: The promise **rejects** if the fetch was unable to make HTTP-request, e.g. network problems, or there’s no such site. Abnormal HTTP-statuses, such as 404 or 500 do not cause an error.
 
-La palabra [await](https://javascript.info/async-await) después del `fetch` hace que JS espere al *fulfillment* de la promesa devuelta por `fetch` de modo que en `response` queda el resultado de la promesa. 
+La palabra [await](https://javascript.info/async-await) después del `fetch` hace que JS espere al *fulfillment* de la promesa devuelta por `fetch` de modo que en `response` queda el objeto resultado de la promesa. 
 
 ```js
 let response = await fetch(URL, {
@@ -228,6 +229,14 @@ Si la promesa es rechazada se ejecutará el `catch`:
     console.log(e);
   }
 })();
+```
+
+El objeto `response` tiene un método `json` que cuando es llamado `response.json()` devuelve una promesa. 
+Esa promesa se cumple (*is fulfilled*) cuando finalmente obtenemos
+el cuerpo (*body*) de la respuesta desde el servidor. El resultado de la promesa es el JSON retornado en el *body*:
+
+```js
+let cat = await response.json();
 ```
 
 Véase el capítulo [Promises]({{ site.baseurl}}/assets/temas/introduccion-a-javascript/promises#promises) para mas información
