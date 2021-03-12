@@ -10,8 +10,11 @@ Using `gh api` and `gh alias --shell` add to `gh`
 an extension `gh create-repo` that creates the repo inside the given organization:
 
 ```
-gh create-repo prueba-repo ULL-MII-SYTWS-2021
+$ gh create-repo tuturepo ULL-ESIT-PL-2021
+$ gh repo view ULL-ESIT-PL-2021/tuturepo -w
 ```
+
+![]({{site.baseurl}}/assets/images/create-repo.png)
 
 Use the GitHub REST API
 
@@ -20,7 +23,12 @@ Use the GitHub REST API
 Lo mismo pero con delete:
 
 ```
-gh delete-repo prueba-repo ULL-MII-SYTWS-2021
+$ gh delete-repo tuturepo ULL-ESIT-PL-2021
 ```
+
+Then, after refreshing the page we get:
+
+![]({{site.baseurl}}/assets/images/delete-repo.png)
+
 
 * GitHub API doc for [Delete repository](https://docs.github.com/es/rest/reference/repos#delete-a-repository)
