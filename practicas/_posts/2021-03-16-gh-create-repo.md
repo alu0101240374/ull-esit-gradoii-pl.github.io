@@ -15,7 +15,7 @@ gh create-repo prueba-repo ULL-MII-SYTWS-2021
 
 Use the GitHub REST API
 
-# gh delete-repo
+## gh delete-repo
 
 Lo mismo pero con delete:
 
