@@ -26,7 +26,7 @@ Lo mismo pero con delete:
 $ gh delete-repo tuturepo ULL-ESIT-PL-2021
 ```
 
-Then, after refreshing the page we get:
+Then, after issuing the command and refreshing the former page we get:
 
 ![]({{site.baseurl}}/assets/images/delete-repo.png)
 
