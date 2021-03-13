@@ -20,7 +20,7 @@ Use the GitHub REST API
 
 ## gh delete-repo
 
-Lo mismo pero con delete:
+The smae but with delete:
 
 ```
 $ gh delete-repo tuturepo ULL-ESIT-PL-2021
