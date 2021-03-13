@@ -1297,12 +1297,14 @@ Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
 
 * [Ruby](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html#SECTION05440060000000000000)
 
-### C
+### C and C++
 
+* [C++ Regex 101](https://www.fluentcpp.com/2020/02/28/c-regex-101-simple-code-for-simple-cases-with-regexes/  )
 * [Expresiones Regulares en C](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node80.html)
 
 ### sed
 
+* [sed, a stream editor](https://www.gnu.org/software/sed/manual/sed.html)
 * [Expresiones Regulares en sed](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node83.html)
 
 ## Análisis Léxico
