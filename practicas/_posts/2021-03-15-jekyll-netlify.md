@@ -4,7 +4,7 @@ published: true
 rubrica: 
 ---
 
-Durante esta práctica desarrollará un web-site usando Jekyllrb como *static site generator* y lo desplegará en GitHub y en Netlify. 
+Durante esta práctica desarrollará un web-site usando Jekyllrb como *static site generator* y lo desplegará en GitHub y en Netlify. Un buen tópico para el Web Site es una página CV personal o un Web Site sobre un tópico de tu interés.
 
 ## Instale Jekyll
 
@@ -25,12 +25,16 @@ Realice el [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-set
 *   [Blogging](https://jekyllrb.com/docs/step-by-step/08-blogging/)
 *   [Collections](https://jekyllrb.com/docs/step-by-step/09-collections/)
 
+Es conveniente que el Web Site desarrollado contenga uso de los apartados estudiados, esto es haga uso de
+Collections, se haga separación de los datos en `_data` y `_config.yml`, que extienda algún layout en `_layout`, algún ejemplo de procesamiento con Liquid, uso de `_includes`, que haga uso de `categories` y `tags`, etc.
+
 ## Themes
 
 Elige un tema para tu web site. Puedes obtener información en [Jekyll Themes](https://jekyllrb.com/docs/themes/).
 
-Recomiendo [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/). 
-Configure el tema elegido.
+Recomiendo [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/). Si lo eliges, deberás leer las instrucciones de Minimal Mistakes.
+
+Configura y extiende el tema elegido (por ejemplo, los layouts).
 
 <!--
 ## Algunos tips si trabaja en la máquina del iaas.ull.es
