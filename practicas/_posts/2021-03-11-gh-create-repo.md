@@ -32,3 +32,8 @@ Then, after issuing the command and refreshing the former page we get:
 
 
 * GitHub API doc for [Delete repository](https://docs.github.com/es/rest/reference/repos#delete-a-repository)
+
+## Entrega
+
+En el repo de la asignación alabore un informe con las soluciones
+encontradas
