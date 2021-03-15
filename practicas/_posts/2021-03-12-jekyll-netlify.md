@@ -24,6 +24,7 @@ Realice el [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-set
 *   [Assets](https://jekyllrb.com/docs/step-by-step/07-assets/)
 *   [Blogging](https://jekyllrb.com/docs/step-by-step/08-blogging/)
 *   [Collections](https://jekyllrb.com/docs/step-by-step/09-collections/)
+  - For the use of collections, see [A Github Pages template for academic websites](https://github.com/academicpages/academicpages.github.io) and [the coresponding GotHub deployment](https://academicpages.github.io/)
 
 Es conveniente que el Web Site desarrollado contenga uso de los apartados estudiados, esto es haga uso de
 Collections, se haga separación de los datos en `_data` y `_config.yml`, que extienda algún layout en `_layout`, algún ejemplo de procesamiento con Liquid, uso de `_includes`, que haga uso de `categories` y `tags`, etc.
