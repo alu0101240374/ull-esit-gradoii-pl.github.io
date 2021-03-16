@@ -1,13 +1,15 @@
 ---
-title: Working with different environments: url and baseurl and more
+title: "Working with different environments: url and baseurl and more"
 ---
 
+
+Now you have to test your site locally and to deploy it in production. Sometimes, the `baseurl` is different and the `jekyll build` may not work out of the box in one of those environment.
+
+We need to understand `site.url` and `site.baseurl` and `page.path` and in which situation we need them. Those variables don't serve the same purpose.
 
 ![]({{site.baseurl}}/assets/images/what-is-a-baseurl.jpeg)
 
 ## `site.url`
-
-We need to understand `site.url` and `site.baseurl` and in which situation we need them. Those variables don't serve the same purpose.
 
 `site.url` is used in conjunction with `site.baseurl` when you want a link to something with the full URL to it.
 
@@ -17,7 +19,7 @@ By default, this variable is usually used in the page head for the `canonical` h
 
 This variable indicates the root folder of your Jekyll site. By default it is set to `""` (empty string). That means that your Jekyll site is at the root of `http://example.com`.
 
-If your Jekyll site lives in `http://example.com/blog`, you have to set `site.baseurl` to `/blog` (*note the slash*). This will allow assets (css, js) to load correctly.
+If your Jekyll site lives in `http://example.com/blog`, you have to set `site.baseurl` to `/blog` (*note the slash!*). This will allow assets (css, js) to load correctly.
 
 See how assets are loaded in your `head`section:
 
@@ -32,19 +34,14 @@ or, more verbose:
 ```   
 
 
-## Working in different environments
 
-Now you have to test your site locally and to deploy it in production. Sometimes, the `baseurl` is different and the `jekyll build` may not work out of the box in one of those environment.
-
-Here we have two solutions :
-
-### Use `jekyll serve`
+## Use `jekyll serve`
 
 Let's imagine that your site lives in a github repository and is served at `https://username.github.io/myProject`.
 
 You can setup the `baseurl` to `/myProject`. and test your site locally with `jekyll serve`, your site will be served at `http://127.0.0.1:4000/myProject/`
 
-### Use multiple configuration files
+## Use multiple configuration files
 
 If, for one reason or another, you cannot use `jekyll serve`, you can set a configuration file for both environment and `jekyll build` depending on where you are deploying.
 
