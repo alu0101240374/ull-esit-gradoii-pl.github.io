@@ -11,17 +11,17 @@ We need to understand `site.url` and `site.baseurl` and `page.path` and in which
 
 ## `site.url`
 
-`site.url` is used in conjunction with `site.baseurl` when you want a link to something with the full URL to it.
+`site.url` is typically used in conjunction with `site.baseurl` when you want a link to something with the full URL to it. 
 
-By default, this variable is usually used in the page head for the `canonical` header and the `RSS link`. It's also used in the xml feed to point to site resources as the software that will manage this feed doesn't know resource's urls.
+For example, in the page head for the `canonical` header and the `RSS link`. It's also used in the xml feed to point to site resources as the software that will manage this feed doesn't know resource's urls.
 
 ## `site.baseurl`
 
-This variable indicates the root folder of your Jekyll site. By default it is set to `""` (empty string). That means that your Jekyll site is at the root of `http://example.com`.
+`site.baseurl` indicates the root folder of your Jekyll site. By default it is set to `""` (empty string). That means that your Jekyll site is at the root of `http://example.com`.
 
 If your Jekyll site lives in `http://example.com/blog`, you have to set `site.baseurl` to `/blog` (*note the slash!*). This will allow assets (css, js) to load correctly.
 
-See how assets are loaded in your `head`section:
+See how assets must be loaded in your `head` section:
 
 ```html
 {%raw%}<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">{%endraw%}
@@ -33,13 +33,18 @@ or, more verbose:
 {%raw%}<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">{%endraw%}
 ```   
 
-
-
 ## Use `jekyll serve`
 
-Let's imagine that your site lives in a github repository and is served at `https://username.github.io/myProject`.
+Let's imagine that your site lives in a github repository `introduction` inside an organization `ULL-ESIT-PL-1819`:
 
-You can setup the `baseurl` to `/myProject`. and test your site locally with `jekyll serve`, your site will be served at `http://127.0.0.1:4000/myProject/`
+```
+$ git remote -v
+origin	git@github.com:ULL-ESIT-PL-1819/introduccion.git
+```
+
+and is served at GitHub at the url: `https://ull-esit-pl-1819.github.io/introduccion/`.
+
+You can setup the `baseurl` to `/introduccion`. and test your site locally with `jekyll serve`, your site will be served at `http://127.0.0.1:4000/introduccion/`
 
 ## Use multiple configuration files
 
