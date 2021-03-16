@@ -44,7 +44,7 @@ origin	git@github.com:ULL-ESIT-PL-1819/introduccion.git
 
 and is served at GitHub at the url: `https://ull-esit-pl-1819.github.io/introduccion/`.
 
-You can setup the `baseurl` to `/introduccion`. and test your site locally with `jekyll serve`, your site will be served at `http://127.0.0.1:4000/introduccion/`
+You can setup the `baseurl` to `/introduccion` and test your site locally with `jekyll serve`, your site will be served at `http://127.0.0.1:4000/introduccion/`
 
 ## Use multiple configuration files
 
