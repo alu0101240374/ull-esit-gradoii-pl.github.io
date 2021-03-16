@@ -72,6 +72,10 @@ Also, read the section [*Deployment*](https://jekyllrb.com/docs/step-by-step/10-
 * Lea del tutorial [Navigation](https://jekyllrb.com/tutorials/navigation/) los escenarios [Basic List](https://jekyllrb.com/tutorials/navigation/#scenario-1-basic-list) y [Sorted List](https://jekyllrb.com/tutorials/navigation/#scenario-2-sorted-list) e implementelos en su site
 -->
 
+## Deploying in different environments
+
+[Working with different environments: url and baseurl and more]({{site.baseurl}}/assets/temas/introduccion-a-javascript/baseurl)
+
 ## 404
 
 Lea el tutorial [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/) y añada una página 404 personalizada
