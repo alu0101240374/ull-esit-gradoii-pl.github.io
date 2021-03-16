@@ -1,4 +1,6 @@
-# loadScript
+---
+title:  loadScript
+---
 
 Here’s a callback-based function that loads a script from a specified `src` and adds it 
 to the current document:
@@ -29,7 +31,6 @@ promise.then(
 promise.then(script => alert('Another handler...'));
 ```
 
-## [Solution](index.html)
+## Solution
 
-* [Source](index.html)
-* [Deployed](https://ull-mii-sytws-1920.github.io/tema2-async/exercises/promises/load-script/index.html)
+* [Solution](solution.html)
