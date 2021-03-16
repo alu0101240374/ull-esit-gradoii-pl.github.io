@@ -75,12 +75,12 @@ console.log(numberSquared);
 
 ## Unas Figuras
 
-{% include image.html url="/introduccion/assets/images/how-the-event-loop-works.png" description='<i>All JavaScript environments use an event loop</i>' %}
+{% include image.html url="/assets/images/how-the-event-loop-works.png" description='<i>All JavaScript environments use an event loop</i>' %}
 
 As long as there’s something left to do, JSs event loop will keep spinning. Whenever an event occurs, JS invokes any *callbacks* (event handlers) that are listening for that event.
 
 
-{% include image.html url="/introduccion/assets/images/event-loop.png" description="<i>There’s an endless loop, when JavaScript engine waits for tasks, executes them and then sleeps waiting for more tasks</i>" %}
+{% include image.html url="/assets/images/event-loop.png" description="<i>There’s an endless loop, when JavaScript engine waits for tasks, executes them and then sleeps waiting for more tasks</i>" %}
 
 
 * Your JavaScript code runs single threaded. There is just one thing happening at a time.

@@ -1,6 +1,5 @@
 ---
+title:  The JS Event Loop
 ---
-
-# The JS Event Loop
 
 {% include event-loop.md %}
