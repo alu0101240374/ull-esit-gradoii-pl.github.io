@@ -451,7 +451,8 @@ So you just want to test them while writing the blog, but you don't want publish
 * [Chen Hui Jing talks on Jekyll](https://www.chenhuijing.com/blog/jekyll/#%F0%9F%91%BE)
 * [Chen Hui Jing talks](https://www.chenhuijing.com/talks/#%F0%9F%8F%80) Slides in reveal.js
 
+
 ## Práctica jekyll-netlify
 
 * [Práctica jekyll-netlify]({{site.baseurl}}/practicas/jekyll-netlify)
-* [Práctica p10-t3-jekyll-search](practicas/p10-t3-jekyll-search)
+* [Práctica jekyll-search](practicas/jekyll-search)
