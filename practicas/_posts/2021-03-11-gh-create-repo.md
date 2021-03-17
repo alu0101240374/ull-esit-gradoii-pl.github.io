@@ -2,6 +2,8 @@
 title:  "Extending GitHub Command Line Interface"
 published: true
 rubrica:
+  - Las soluciones publicadas son correctas
+  - El repo, el informe y los project boards están bien
 ---
 
 ## gh create-repo
