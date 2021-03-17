@@ -17,7 +17,7 @@ rubrica:
   - "Opcional: Ha añadido un sistema de comentarios"
 ---
 
-Durante esta práctica desarrollará un web-site usando Jekyllrb como *static site generator* y lo desplegará en GitHub y en Netlify. Un buen tópico para el Web Site es una página CV personal o un Web Site sobre un tópico de tu interés.
+Durante esta práctica desarrollará un web-site usando Jekyllrb como *static site generator* y lo desplegará en GitHub y en Netlify. Un buen tópico para el Web Site es una página CV personal o un Web Site sobre un tema de tu interés.
 
 ## Instale Jekyll
 
