@@ -11,7 +11,7 @@ rubrica:
   - Contiene Data files y esta bien configurado el `_config.yml`
   - Se ha experimentado con los Layouts
   - Se hace uso de las Collections 
-  - La *User Experience*,la navegación y la estética son aceptables
+  - La *User Experience*, la navegación y la estética son aceptables
   - Hay un Rakefile con Pruebas 
   - Se ha añadido una GitHub Action para las pruebas
   - "Opcional: Ha añadido un sistema de comentarios"
