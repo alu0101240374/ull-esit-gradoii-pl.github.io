@@ -8,7 +8,7 @@ rubrica:
   - Tiene un 404 personalizado
   - Se ha experimentado con las Categories y los tags
   - Se ha experimentado con Liquid
-  - Contiene Data files y esta bien configurado el `config.yml`
+  - Contiene Data files y esta bien configurado el `_config.yml`
   - Se ha experimentado con los Layouts
   - Se hace uso de las Collections 
   - La *User Experience*,la navegación y la estética son aceptables
