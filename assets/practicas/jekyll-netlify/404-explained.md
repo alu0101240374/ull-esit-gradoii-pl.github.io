@@ -2,93 +2,18 @@
 title: "404 explained: A Brief Intro to the DOM, Promises and Asyn Await"
 ---
 
-## The Code
+### The Code
 
 
-
-```md
----
-layout: single
-title: Error
-permalink: /404.html
-toc: false
----
-# ¡Ay Diós mío!
-
-## Aún no he escrito esta página. 
-```
-```html
-<div>
-<style>
-img, #quote, #comment-cat {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#author {
-  float: right;
-}
-</style>
-
-<div id="comment-cat"></div>
-<div id="cat"></div>
-<br/>
-<div id="quote"></div>
-<div id="author"></div>
-
-<script type="text/javascript">
-```
-```js
-/*
-  https://docs.thecatapi.com/ 
-*/
-const URL = 'https://api.thecatapi.com/v1/images/search?size=full';
-
-(async function() {
-  try {
-    
-    // CAT 
-    let divTitle = document.getElementById("comment-cat");
-    
-    let divcat = document.getElementById("cat");
-    let response = await fetch(URL, {
-       headers: {
-       'x-api-key': "blah"
-       }
-    });
-    let cat = await response.json();
-    // console.log(cat);   
-    let img = document.createElement("img");
-    let title = document.createElement("h2");
-    title.innerText = "Consuélate con un gatito";   
-    divTitle.append(title);
-    img.src = cat[0].url;
-    divcat.appendChild(img);   
-
-    // QUOTE
-    const quoteDiv = document.getElementById("quote");
-    const authorDiv = document.getElementById("author");
-    
-    const quoteRes = await fetch('https://api.quotable.io/random');
-    const data = await quoteRes.json();
-    quoteDiv.innerHTML = `<h2>${data.content}</h2>`;
-    authorDiv.innerHTML = `<h3>—${data.author}</h3><br/><br/>`;
-  }
-  catch(e) { 
-    console.log(e);
-  }
-})();
-```
-```html
-</script>
-
-</div>
-```
+See the code at [https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/edit/main/pages/404.md](https://github.com/ULL-ESIT-GRADOII-PL/ull-esit-gradoii-pl.github.io/edit/main/pages/404.md)
 
 que se verá así 
 [{{site.baseurl}}/noexiste]({{site.baseurl}}/noexiste).
 
-La página hace un request a [The Cat API](https://thecatapi.com/) para mostrar una imagen de  gatitos obtenida al azar.
+La página además de mostrar el mensaje de error hace un par de requests: 
+
+1. Un request a [The Cat API](https://thecatapi.com/) para mostrar una imagen de gatitos obtenida al azar.
+2. Un request a <https://api.quotable.io/random> para mostrar una cita al azar
 
 ### Que es el DOM
 
@@ -177,3 +102,20 @@ let cat = await response.json();
 
 Véase el capítulo [Promises]({{ site.baseurl}}/assets/temas/introduccion-a-javascript/promises#promises) para mas información
 
+### API keys
+
+See:
+
+* Stackoverflow: [Hide api key for a Github page](https://stackoverflow.com/questions/21939713/hide-api-key-for-a-github-page)
+
+The question is:
+
+*I have a github page for my organization where I would like to call data from a 3rd party api where I need an auth token. Can I publish this github page without having the auth token displayed on the public repo?*
+
+And here is the most voted answer:
+
+> In short, no. If your GitHub repo is public, all its assets are public. You can make the repo private and it will still publish on GitHub Pages if named with the `username.github.io` convention or if it has a `gh-pages` branch. While that's an option, that's not necessarily the right thing to do.
+
+> If your key is in your GitHub Pages repo, it sounds like it's used for client-side API calls in JavaScript. If so, your auth token is publicly visible whether it's in your public repo or sent in your client-side files to the browser. This is usually fine. The third-party API might have generated the auth token based on your website's domain, and restrict calls using that token to pages originating on your domain. Otherwise, they might require the auth token only for logging requests and monitoring usage.
+
+> If the auth token is truly meant to be private, then you may need to write private server-side code to call the third-party API. Your GitHub Pages site could then hit your service for the data it needs. I've had to do that before where the web API had security concerns, but I still needed to retrieve non-sensitive data from the client-side.
