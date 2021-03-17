@@ -11,6 +11,7 @@ rubrica:
   - Contiene Data files y esta bien configurado el `config.yml`
   - Se ha experimentado con los Layouts
   - Se hace uso de las Collections 
+  - La *User Experience*,la navegación y la estética son aceptables
   - Pruebas
   - Se ha añadido una GitHub Action para las pruebas
   - "Opcional: Ha añadido un sistema de comentarios"
