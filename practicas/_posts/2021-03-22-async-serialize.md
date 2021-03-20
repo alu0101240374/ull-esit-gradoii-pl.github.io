@@ -319,7 +319,7 @@ module.exports = {
 };
 ```
 
-Una de las cosas  que ha hecho webpack es que ha empaquetado las dependencias instaladas en `node_modules/*` y el fichero `src/index.js` en el fichero `dist/main.js`
+Una de las cosas  que ha hecho webpack es que ha empaquetado las dependencias instaladas en `node_modules/*` y el fichero `src/index.js` en el fichero `dist/main.js`:
 
 ```
 ➜  load-script-seq git:(master) ✗ sed -ne '1,13p' dist/main.js 
