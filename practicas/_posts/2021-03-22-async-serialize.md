@@ -415,10 +415,8 @@ En Webpack cuando estamos aplicando una serie de loaders o de transformaciones a
     +  },
     };
    ```
-   
-   Un *source map* es una correspondencia que se realiza entre el código original y el código transformado.
 
-   Véase [source-map-loader](https://webpack.js.org/loaders/source-map-loader/)
+Un *source map* es una correspondencia que se realiza entre el código original y el código transformado. Véase [source-map-loader](https://webpack.js.org/loaders/source-map-loader/)
 
 ## Referencias
 
