@@ -418,6 +418,8 @@ En Webpack cuando estamos aplicando una serie de loaders o de transformaciones a
 
 Un *source map* es una correspondencia que se realiza entre el código original y el código transformado. Véase [source-map-loader](https://webpack.js.org/loaders/source-map-loader/)
 
+Véase el blog [How to debug a webpack app in the browser](https://blog.jakoblind.no/debug-webpack-app-browser/)
+
 ## Referencias
 
 * [Repo ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack)
