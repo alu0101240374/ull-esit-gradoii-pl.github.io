@@ -900,7 +900,7 @@ If  both  files  exist  and  a  file  is  ignored  by `.gitignore` but not by
 **By default npm will publish to the public registry**.
 
 This can be overridden **by specifying  a  different  default registry**
-or using a [npm scope in the name]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html##scoped-packages).
+or using a [npm scope in the name]({{site.baseurl}}/assets/temas/introduccion-a-javascript/nodejspackages.html#scoped-packages).
 
 You can associate a scope with a registry at login, e.g.
 

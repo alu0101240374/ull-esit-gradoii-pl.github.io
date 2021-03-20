@@ -1,4 +1,8 @@
 ---
+practicas_asociadas: 
+  name: p2-t1-vscode
+  campus:
+  assignment: 
 ---
 
 ### Visual Studio Code
@@ -106,6 +110,3 @@
 * [http://asciiflow.com/](http://asciiflow.com/) Aplicación Web que nos permite dibujar aprovechando los caractéres 
 
 
-### Prácticas
- 
-- <a href="practicas/p2-t1-vscode/" target="_blank">Descripción de la Práctica p2-t1-vscode</a>

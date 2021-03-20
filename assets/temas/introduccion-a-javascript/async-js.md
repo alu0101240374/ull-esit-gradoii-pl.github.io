@@ -88,7 +88,7 @@ hi!
 in2
 ```
 
-#### ¿Como lograría resolver este problema si no dispusiera de `async.js`?
+¿Como lograría resolver este problema si no dispusiera de `async.js`?
 
 ## Filter
 
@@ -288,11 +288,11 @@ async.series([
 Completed in 618ms
 ```
 
-## queue
+## Queue
 
 See [Async.js: queue](http://caolan.github.io/async/v3/docs.html#queue)
 
-Creates a `queue` object with the specified `concurrency`. Tasks added to the `queue` are processed in parallel (up to the `concurrency` limit). If all `worker`s are in progress, the task is queued until one becomes available. Once a `worker` completes a `task`, that `task`'s callback is called.
+Creates a `queue` object with the specified `concurrency`. Tasks added to the `queue` are processed in parallel (up to the `concurrency` limit). If all worker's are in progress, the task is queued until one becomes available. Once a `worker` completes a `task`, that `task`'s callback is called.
 
 ```
 [~/.../async-js-book/Asyncjs]$ cat queue-example.js
