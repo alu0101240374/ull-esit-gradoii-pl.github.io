@@ -221,6 +221,19 @@ series(
 
 Puede ver el resultado de la ejecución en el [despliegue en `gh-pages`](https://ull-esit-pl.github.io/async-js-series-webpack/). Abriendo la ventana del desarrollador verá los mensajes en la cónsola.
 
+También puede verlo en local ejecutando `npx webpack serve` o bien `npm run start:dev` que ejecuta un servidor con el resultado de la compilación en el puerto 9000:
+
+```
+  load-script-seq git:(master) ✗ npm run start:dev
+
+> sol@1.0.1 start:dev /Users/casianorodriguezleon/campus-virtual/2021/learning/asyncjs-learning/load-script-seq
+> webpack serve
+
+ℹ ｢wds｣: Project is running at http://localhost:9000/
+  ...
+ℹ ｢wdm｣: Compiled successfully.
+```
+
 ## Bundlers
 
 Cuando instalamos la dependencia del módulo [Async]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js) este acaba en el directorio `node_modules/`. 
