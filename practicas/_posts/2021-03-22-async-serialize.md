@@ -418,9 +418,12 @@ En Webpack cuando estamos aplicando una serie de loaders o de transformaciones a
 
 Un *source map* es una correspondencia que se realiza entre el código original y el código transformado. Véase [source-map-loader](https://webpack.js.org/loaders/source-map-loader/)
 
-<!--
-Véase el blog [How to debug a webpack app in the browser](https://blog.jakoblind.no/debug-webpack-app-browser/)
--->
+![]({{ site.baseurl}}/assets/images/debugging-webpack.png)
+
+Véase el vídeo Webpack dev server y source maps: tutorial práctico:
+
+{% include video id="bZD8qcJIEIE" provider="youtube" %}
+
 
 
 ## Referencias
