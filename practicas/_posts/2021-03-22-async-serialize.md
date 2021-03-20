@@ -121,7 +121,10 @@ y que carga los scripts especificados en el array **en secuencia** y llama a la 
 ## Serialización de Callbacks
 
 Generalize la solución anterior para que secuencialice cualquier array de funciones asíncronas.
-Esto es, debe funcionar tal como lo hace la función `series`  del módulo [Async.js]({{site.baseurl}}/tema2-async/async-js)).
+Esto es, debe funcionar tal como lo hace la función `series`  del módulo [Async.js]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js)).
+
+Estudie el módulo [Async.js]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js)) y resuma en el informe lo aprendido.
+
 Esta es la forma de uso de la función `series`:
 
 ```js
