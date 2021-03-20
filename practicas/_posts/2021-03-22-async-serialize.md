@@ -278,7 +278,7 @@ dist
 0 directories, 7 files
 ```
 
-Todo este proceso de ha sido gobernado por el fichero de configuración `webpack.config.js`
+Todo este proceso ha sido gobernado por el fichero de configuración `webpack.config.js`
 
 ```
 ➜  load-script-seq git:(master) ✗ cat webpack.config.js 
