@@ -234,6 +234,8 @@ También puede verlo en local ejecutando `npx webpack serve` o bien `npm run sta
 ℹ ｢wdm｣: Compiled successfully.
 ```
 
+![]({{ site.baseurl }}/assets/images/webpack-async.png)
+
 ## Bundlers
 
 Cuando instalamos la dependencia del módulo [Async]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js) este acaba en el directorio `node_modules/`. 
