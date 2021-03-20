@@ -225,7 +225,7 @@ Puede ver el resultado de la ejecución en el [despliegue en `gh-pages`](https:/
 
 Cuando instalamos la dependencia del módulo [Async]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js) este acaba en el directorio `node_modules/`. 
 Para usarlo desde el navegador es conveniente usar un *bundler*. 
-Un bundler en JavaScript es una herramienta que pone stodo el código y  sus dependencias juntas en unos pocos archivos. Hay muchos de ellos en estos días, siendo los más populares [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org), [Rollup](https://rollupjs.org/guide/en/) ... Históricamente, JavaScript no ha tenido un estándar para requerir dependencias de su código y de ahí la necesidad de los *bundlers*.
+Un bundler en JavaScript es una herramienta que pone todo el código y  sus dependencias juntas en unos pocos archivos. Hay muchos de ellos en estos días, siendo los más populares [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org), [Rollup](https://rollupjs.org/guide/en/) ... Históricamente, JavaScript no ha tenido un estándar para requerir dependencias de su código y de ahí la necesidad de los *bundlers*.
 
 ## Webpack
 
