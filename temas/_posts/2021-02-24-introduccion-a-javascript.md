@@ -11,8 +11,6 @@ sections:
       url: editors
     - title: "GitHub Command Line Interface"
       url: gh
-    - title: Jekyll
-      url: jekyll
     - title: "GitHub Actions"
       url: github-actions
     - title: "GitHub Apps"
@@ -38,12 +36,22 @@ sections:
       url: functional
     - title: "Diseño, Principios"
       url: design
+  typescript:
+    - title: "Introduction to TypeScript"
+      url: typescript
+  web:  
+    - title: Jekyll
+      url: jekyll
     - title: "JAM Stack"
       url: jam
     - title: "Build Tools"
       url: build-tools
-    - title: TypeScript
-      url: typescript
+    - title: DOM
+      url: dom
+    - title: Authentication
+      url: authentication
+    - title: CORS
+      url: Cors
 ---
 
 ## Herramientas
@@ -62,4 +70,19 @@ sections:
 
 {% endfor %}
 
+## Web Programming
+
+{% for section in page.sections.web %}
+
+### [{{section.title}}]({{site.baseurl}}/assets/temas/introduccion-a-javascript/{{section.url}})
+
+{% endfor %}
+
+## TypeScript
+
+{% for section in page.sections.typescript %}
+
+### [{{section.title}}]({{site.baseurl}}/assets/temas/introduccion-a-javascript/{{section.url}})
+
+{% endfor %}
 
