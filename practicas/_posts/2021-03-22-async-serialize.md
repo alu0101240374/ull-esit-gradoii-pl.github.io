@@ -430,7 +430,7 @@ Véase el vídeo Webpack dev server y source maps: tutorial práctico:
 
 * [Repo ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack)
 * La sección [The Async Module]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js) de estos apuntes
-* [A pure ESM version of Async](https://www.npmjs.com/package/async-es)
+* npm [async-es: A pure ESM version of Async](https://www.npmjs.com/package/async-es)
 * [Webpack: Getting started](https://webpack.js.org/guides/getting-started/)
 * [Webpack devserver](https://webpack.js.org/configuration/dev-server/)
 
