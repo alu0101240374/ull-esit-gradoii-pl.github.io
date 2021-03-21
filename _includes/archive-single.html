@@ -27,7 +27,7 @@
       {% else %}
         {% assign postCat = post.categories[0] %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ site.singular[postCat] | default: "Draft" }}: {{ title }}</a> 
-        {% if nowunix < posttime %} Soon!{% endif %}
+        {% if nowunix < posttime %} Coming!{% endif %}
       {% endif %}
     </h2>
      
