@@ -23,6 +23,7 @@ Se dispone de una función `loadScript` que permite la carga de un script:
       }
 ```
 
+
 Que puede ser usada para cargar varios scripts. Supongamos que el segundo script usa funciones definidas en el primero. Tenemos que asegurarnos que el segundo script sólo se carga una vez terminada la carga del primero. 
 
 En este ejemplo de uso [load-script.html](https://github.com/ULL-ESIT-PL/async-js-series-webpack/blob/master/load-script.html) cargamos tres scripts, 
@@ -93,6 +94,30 @@ cada uno de los scripts cargados usa el código del anterior. Es necesario anida
 Puede ver este código en funcionamiento visitando [https://ull-esit-pl.github.io/async-js-series-webpack/load-script.html](https://ull-esit-pl.github.io/async-js-series-webpack/load-script.html). Si lo hace, recuerde abrir las herramientas de desarrollador para ver los mensajes en la cónsola. Juegue con el debugger para entender el funcionamiento.
 
 Puede encontrar mas detalles sobre este ejercicio en el tutorial del profesor en [https://github.com/ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack).
+
+
+## JavaScript is Single Thread but the Browser Isn't
+
+Un detalle importante en este código ocurre en la asignación `script.src = src;`
+
+```js
+      function loadScript(src, callback) {
+        let script = document.createElement('script');
+      
+        script.onload = () => callback(null, script);
+        script.onerror = () => callback(new Error(`Script load error for ${src}`));
+        script.src = src; /* Fires the concurrent load of the script */
+
+        document.head.append(script);
+      }
+```
+
+Tan pronto como el intérprete JS la ejecuta, el browser lanza una thread para la carga de la imagen.
+Mientras, el intérprete JS continúa su ejecución secuencial con la línea `document.head.append(script);` etc.
+
+Cuando la thread de carga de la imagen termina, la correspondiente estructura de datos con la callback (`onload`si todo fue bien u `onerror` si no se pudo cargar el script) y sus parámetros es insertada en la Callback Queue al final de la misma (es una cola FIFO).
+
+![]({{site.baseurl}}/assets/images/event-loop.png)
 
 
 ## Escriba una función `loadScripts` 
