@@ -331,31 +331,34 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry:  path.resolve('.', 'src', 'index.js'),
+  entry:  path.resolve('.', 'src', 'index.js'), // /Users/casianorodriguezleon/campus-virtual/2021/learning/asyncjs-learning/load-script-seq/src/index.js'
   mode: 'development',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'), // __dirname contains the path of the folder where this file resides
+    clean: true // clean the dist/ folder before each build
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+    compress: false,
     port: 9000
   },
   plugins: [
-    new CopyPlugin({ patterns: [
+    new CopyPlugin({ patterns: [ // to: by default is compiler.options.output	which is 'dist/'
+      { from: "index.html" },
       { from: 'script-*.js' },
       { from: "favicon.ico" },
       { from: "load-script.html"}
     ]}),
   ],
-  devtool: 'eval-cheap-module-source-map',
-  module: {
+  devtool: 'eval-cheap-module-source-map', // The devtool option controls if and how source maps are generated.
+  module: { // Determines how the different types of modules within a project will be treated
     rules: [
-      {
-        test: /\.js$/,
-        enforce: 'pre',
-        use: ['source-map-loader'],
+      { // A loader is a node module that exports a function
+        // This function is called when a resource should be transformed by the loader
+        test: /\.js$/, // Include all modules that pass test assertion
+        enforce: 'pre', // Specifies the category of the loader. No value means normal loader.
+        use: ['source-map-loader'], 
       },
     ],
   },
@@ -366,10 +369,19 @@ module.exports = {
 
 When you run webpack from the command line, 
 
-1. Looks for the entry file in your `webpack.config.js` file `src/index.js` and
+1. Looks for the `entry` in your `webpack.config.js` file: `src/index.js` and
 2. Builds a dependency graph analyzing the dependencies
+
+   ```js
+   import { series } from "async-es";
+   ```
+
+   - Our project may have installed dependencies in the `node_modules` folder that should not be included in our client-side JavaScript production bundle 
+   - Example: `devDependencies` that are used for testing and building. 
+   - Example: Dependencies used only by   our backend like express
+3. Every time webpack finds a new module it runs the module through the *loader* defined in the webpack config file
 3. It also removes the *dead code* that is not used (for example functions that are never called)
-4. It traverses the dependency graph and it applies the plugins as defined in the config file, 
+4. It traverses the dependency graph, pasting the code together and applying the plugins as defined in the config file, 
 5. Finally it spits out the bundle to the path defined in the output section of the webpack config: `dist/main.js`
 
 ```
@@ -476,6 +488,7 @@ mySeries(
 * npm [async-es: A pure ESM version of Async](https://www.npmjs.com/package/async-es)
 * [Webpack: Getting started](https://webpack.js.org/guides/getting-started/)
 * [Webpack devserver](https://webpack.js.org/configuration/dev-server/)
+* Blog [How webpack decides what to bundle](https://blog.jakoblind.no/how-webpack-decides-what-to-bundle/) by Jakob Lind
 
 <!--
 ## Soluciones
