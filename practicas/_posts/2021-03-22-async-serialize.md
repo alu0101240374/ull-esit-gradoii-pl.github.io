@@ -443,7 +443,7 @@ Linting is a good example because the build should fail before it does anything 
 ```js
 {
   test: /\.js$/,
-  enforce: "pre", // "post" too
+  enforce: "pre", 
   use: "eslint-loader",
 }
 ```
