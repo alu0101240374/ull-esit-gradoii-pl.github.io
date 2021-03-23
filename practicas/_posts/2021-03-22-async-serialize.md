@@ -362,7 +362,15 @@ module.exports = {
 };
 ```
 
-Una de las cosas  que ha hecho webpack es que ha empaquetado las dependencias instaladas en `node_modules/*` y el fichero `src/index.js` en el fichero `dist/main.js`:
+### Packaging all modules in a single JS file
+
+When you run webpack from the command line, 
+
+1. Looks for the entry file in your `webpack.config.js` file `src/index.js` and
+2. Builds a dependency graph analyzing the dependencies
+3. It also removes the *dead code* that is not used (for example functions that are never called)
+4. It traverses the dependency graph and it applies the plugins as defined in the config file, 
+5. Finally it spits out the bundle to the path defined in the output section of the webpack config: `dist/main.js`
 
 ```
 ➜  load-script-seq git:(master) ✗ sed -ne '1,13p' dist/main.js 
@@ -390,11 +398,13 @@ Webpack enables use of <a href="https://webpack.js.org/concepts/loaders">loaders
 
 Loaders are transformations that are applied to the source code of a module. They allow you to pre-process files as you `import` or *load* them. 
 
-Loaders are activated by using `loadername!` prefixes in `require()` statements, or are automatically applied via regex from your webpack configuration. For example:
+Loaders are activated by using `loadername!` prefixes in `require()` statements. For example:
 
 ```js
 require('html-loader!./file.html');
 ```
+
+or are automatically applied via regex from your webpack configuration like [above]()
 
 Loaders can 
 
