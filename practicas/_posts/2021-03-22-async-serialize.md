@@ -438,7 +438,7 @@ const config = {
 
 The `enforce` field can come in handy here. It can be set to either `pre` or `post` to push processing either before or after other loaders. 
 
-Linting is a good example because the build should fail before it does anything else:
+Linting is a good example because we want the build to fail before it does anything else:
 
 ```js
 {
