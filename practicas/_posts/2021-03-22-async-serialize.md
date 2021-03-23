@@ -265,9 +265,10 @@ También puede verlo en local ejecutando `npx webpack serve` o bien `npm run sta
 
 Cuando instalamos la dependencia del módulo [Async]({{site.baseurl}}/assets/temas/introduccion-a-javascript/async-js) este acaba en el directorio `node_modules/`. 
 Para usarlo desde el navegador es conveniente usar un *bundler*. 
-Un bundler en JavaScript es una herramienta que pone todo el código y  sus dependencias juntas en unos pocos archivos. Hay muchos de ellos en estos días, siendo los más populares [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org), [Rollup](https://rollupjs.org/guide/en/) ... Históricamente, JavaScript no ha tenido un estándar para requerir dependencias de su código y de ahí la necesidad de los *bundlers*.
+Un bundler en JavaScript es una herramienta que pone todo el código y  sus dependencias juntas en unos pocos archivos. Hay muchos de ellos en estos días, siendo los más populares [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org), [Rollup](https://rollupjs.org/guide/en/),
+[Parcel](https://parceljs.org/) ... Históricamente, JavaScript no ha tenido un estándar para requerir dependencias de su código y de ahí la necesidad de los *bundlers*.
 
-## Webpack
+### Webpack
 
 Siga el tutorial [Getting Started with Webpack](https://webpack.js.org/guides/getting-started/) y familiarícese con webpack. Resuma lo aprendido en el informe.
 
@@ -317,6 +318,8 @@ dist
 
 0 directories, 7 files
 ```
+
+### webpack.config.js
 
 Todo este proceso ha sido gobernado por el fichero de configuración `webpack.config.js`
 
@@ -380,6 +383,51 @@ Una de las cosas  que ha hecho webpack es que ha empaquetado las dependencias in
 /***/ "./node_modules/async-es/asyncify.js":
 ```
 
+
+### Webpack Loaders
+
+Webpack enables use of <a href="https://webpack.js.org/concepts/loaders">loaders</a> to preprocess files. 
+
+Loaders are transformations that are applied to the source code of a module. They allow you to pre-process files as you `import` or *load* them. 
+
+Loaders are activated by using `loadername!` prefixes in `require()` statements, or are automatically applied via regex from your webpack configuration. For example:
+
+```js
+require('html-loader!./file.html');
+```
+
+Loaders can 
+
+* transform files from a different language (like TypeScript) to JavaScript or 
+* load inline images as data URLs. 
+* Loaders even allow you to do things like `import` CSS files directly from your JavaScript modules
+
+### Debugging con Webpack
+
+En Webpack cuando estamos aplicando una serie de loaders o de transformaciones a nuestro código, el código generado dista mucho del original: El debugging se convierte en un problema.  Para facilitar la depuración es conveniente  configurar `/webpack.config.js` con  la opción `devtool` puesta a `eval-cheap-module-source-map`
+
+    ```js
+    +  devtool: 'eval-cheap-module-source-map',
+    +  module: {
+    +    rules: [
+    +      {
+    +        test: /\.js$/,
+    +        enforce: 'pre',
+    +        use: ['source-map-loader'],
+    +      },
+    +    ],
+    +  },
+    };
+   ```
+
+Un *source map* es una correspondencia que se realiza entre el código original y el código transformado. Véase [source-map-loader](https://webpack.js.org/loaders/source-map-loader/)
+
+![]({{ site.baseurl}}/assets/images/debugging-webpack.png)
+
+Véase el vídeo Webpack dev server y source maps: tutorial práctico:
+
+{% include video id="bZD8qcJIEIE" provider="youtube" %}
+
 ## Escriba su solución como un módulo es6
 
 Reescriba su solución al apartado [Serialización de Callbacks](#serialización-de-callbacks) en un módulo `src/lib/solution.js`
@@ -410,46 +458,6 @@ mySeries(
   (err, results) => out.innerHTML = results.map(s => s.src).join("<br/>")
 );
 ```
-
-## Loaders
-
-Webpack enables use of <a href="https://webpack.js.org/concepts/loaders">loaders</a> to preprocess files. 
-
-Loaders are transformations that are applied to the source code of a module. They allow you to pre-process files as you `import` or “load” them. Thus, loaders are kind of like “tasks” in other build tools and provide a powerful way to handle front-end build steps. 
-
-Loaders can 
-
-* transform files from a different language (like TypeScript) to JavaScript or 
-* load inline images as data URLs. 
-* Loaders even allow you to do things like `import` CSS files directly from your JavaScript modules
-
-## Debugging con Webpack
-
-En Webpack cuando estamos aplicando una serie de loaders o de transformaciones a nuestro código, el código generado dista mucho del original: El debugging se convierte en un problema.  Para facilitar la depuración es conveniente  configurar `/webpack.config.js` con  la opción `devtool` puesta a `eval-cheap-module-source-map`
-
-    ```js
-    +  devtool: 'eval-cheap-module-source-map',
-    +  module: {
-    +    rules: [
-    +      {
-    +        test: /\.js$/,
-    +        enforce: 'pre',
-    +        use: ['source-map-loader'],
-    +      },
-    +    ],
-    +  },
-    };
-   ```
-
-Un *source map* es una correspondencia que se realiza entre el código original y el código transformado. Véase [source-map-loader](https://webpack.js.org/loaders/source-map-loader/)
-
-![]({{ site.baseurl}}/assets/images/debugging-webpack.png)
-
-Véase el vídeo Webpack dev server y source maps: tutorial práctico:
-
-{% include video id="bZD8qcJIEIE" provider="youtube" %}
-
-
 
 ## Referencias
 

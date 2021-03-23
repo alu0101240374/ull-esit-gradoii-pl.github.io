@@ -395,8 +395,7 @@ Ejecución:
 
 #### Exercise:
 
-We have a text and need to replace all double quotes `"..."` with single quotes: `'...
-'`. (We are not considering escaped double quotes inside)
+We have a text and need to replace all double quotes `"..."` with single quotes: `'...'`. (We are not considering escaped double quotes inside)
 
 What is the output for this regexp?:
 
