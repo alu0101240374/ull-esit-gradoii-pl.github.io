@@ -426,7 +426,12 @@ Loaders can
 
 It's good to keep in mind that webpack's loaders are always evaluated from right to left and from bottom to top (when using separate definitions). 
 
-The right-to-left rule is easier to remember when you think about loaders as functions. You can read definition `use: ["style-loader", "css-loader"]` as `style(css(input))` based on this rule. 
+The right-to-left rule is easier to remember when you think about loaders as functions. You can read definition 
+```js
+use: ["style-loader", "css-loader"]
+``` 
+as `style(css(input))` based on this rule. 
+
 Example:
 
 ```js
