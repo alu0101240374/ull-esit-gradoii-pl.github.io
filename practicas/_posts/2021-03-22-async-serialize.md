@@ -424,6 +424,30 @@ Loaders can
 * load inline images as data URLs. 
 * Loaders even allow you to do things like `import` CSS files directly from your JavaScript modules
 
+It's good to keep in mind that webpack's loaders are always evaluated from right to left and from bottom to top (when using separate definitions). 
+
+The right-to-left rule is easier to remember when you think about loaders as functions. You can read definition `use: ["style-loader", "css-loader"]` as `style(css(input))` based on this rule. 
+Example:
+
+```js
+const config = {
+  test: /\.css$/,
+  use: ["style-loader", "css-loader"],
+};
+```
+
+The `enforce` field can come in handy here. It can be set to either `pre` or `post` to push processing either before or after other loaders. 
+
+Linting is a good example because the build should fail before it does anything else:
+
+```js
+{
+  test: /\.js$/,
+  enforce: "pre", // "post" too
+  use: "eslint-loader",
+}
+```
+
 ### Debugging con Webpack
 
 En Webpack cuando estamos aplicando una serie de loaders o de transformaciones a nuestro código, el código generado dista mucho del original: El debugging se convierte en un problema.  Para facilitar la depuración es conveniente  configurar `/webpack.config.js` con  la opción `devtool` puesta a `eval-cheap-module-source-map`
@@ -489,6 +513,7 @@ mySeries(
 * [Webpack: Getting started](https://webpack.js.org/guides/getting-started/)
 * [Webpack devserver](https://webpack.js.org/configuration/dev-server/)
 * Blog [How webpack decides what to bundle](https://blog.jakoblind.no/how-webpack-decides-what-to-bundle/) by Jakob Lind
+* [Webpack book: Loader Definitions](https://survivejs.com/webpack/loading/loader-definitions/)
 
 <!--
 ## Soluciones
