@@ -416,7 +416,7 @@ Loaders are activated by using `loadername!` prefixes in `require()` statements.
 require('html-loader!./file.html');
 ```
 
-or are automatically applied via regex from your webpack configuration like [above]()
+or are automatically applied via regex from your webpack configuration like [above](#webpackconfigjs)
 
 Loaders can 
 
