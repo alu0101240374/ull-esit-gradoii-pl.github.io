@@ -157,12 +157,31 @@ null
 null
 ```
 
+<!--
 #### Forward References
 
-Forward references can also be used, but be sure the referenced parenthesis
+In Ruby and Perl forward references can also be used, but be sure the referenced parenthesis
 has matched when is going to be used. This usually means that the forward reference
 is inside some repetition group. For example, this regexp matches with `train` only if 
 it is prefixed by at least one `choo`:
+
+```ruby
+$ irb
+irb(main):052:0> regex = /(\2train|(choo))+/
+=> /(\2train|(choo))+/
+irb(main):053:0> 'choochootrain' =~ regex
+=> 0
+irb(main):054:0> $&
+=> "choochootrain"
+irb(main):055:0> $1
+=> "chootrain"
+irb(main):056:0> $2
+=> "choo"
+irb(main):004:0> 'train' =~ regex
+=> nil
+```
+
+This is not the case in JavaScript:
 
 ```js
 [~/.../github-actions/225-github-actions-demo(master)]$ node
@@ -179,23 +198,17 @@ Type ".help" for more information.
   input: 'choochootrain',
   groups: undefined
 ]
+> regex.exec('train')
+[
+  'train',
+  'train',
+  undefined,
+  index: 0,
+  input: 'train',
+  groups: undefined
+]
 ```
 
-It works also in other languages as Ruby and Perl:
-
-```ruby
-$ irb
-irb(main):052:0> regex = /(\2train|(choo))+/
-=> /(\2train|(choo))+/
-irb(main):053:0> 'choochootrain' =~ regex
-=> 0
-irb(main):054:0> $&
-=> "choochootrain"
-irb(main):055:0> $1
-=> "chootrain"
-irb(main):056:0> $2
-=> "choo"
-```
 
 #### By Name
 
