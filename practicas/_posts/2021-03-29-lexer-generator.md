@@ -10,7 +10,7 @@ rubrica:
 Usando el repo de la asignación de esta tarea construya un paquete npm y 
 publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-2021`  y con nombre el nombre de su repo `lexgen-code-aluAtGitHub`
 
-La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module). 
+Una parte de los conceptos y habilidades a ejercitar con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module). 
 
 El módulo deberá exportar una función que construye analizadores léxicos:
 
@@ -242,6 +242,7 @@ a la expresión regular creada para que Unicode sea soportado. ¿Como debe cambi
 
 ## Referencias
 
+* Tema [Expresiones Regulares y Análisis Léxico]({{site.baseurl}}/temas/expresiones-regulares-y-analisis-lexico)  
 * Sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/assets/temas/introduccion-a-javascript/creating-and-publishing-npm-module)
 * [Jest]({{site.baseurl}}/assets/temas/introduccion-a-javascript/jest)
 * Sección [GitHub Registry]({{site.baseurl}}/assets/temas/introduccion-a-javascript/github-registry)
