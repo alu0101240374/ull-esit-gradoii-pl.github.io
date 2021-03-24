@@ -274,7 +274,7 @@ On September 2009 [I](https://www.perlmonks.org/?node_id=626604) wrote a small p
 that illustrates (in Perl) how to solve a set of diophantine equations
 using Perl Extended Regular Expressions. 
 
-#### Exercise
+#### Exercise: Write a function  that solves Diophantine Equations
 
 Write a program that using a regular expression computes a integer solution
 to the diophantine equation $$4x+5y=77$$
