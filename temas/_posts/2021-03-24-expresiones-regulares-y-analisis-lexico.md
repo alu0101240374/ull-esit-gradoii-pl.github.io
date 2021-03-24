@@ -188,20 +188,6 @@ Welcome to Node.js v13.5.0.
 Type ".help" for more information.
 > regex = /(\2train|(choo))+/
 /(\2train|(choo))+/
-> regex.exec('choochootrain')
-[
-  'choochootrain',
-  'train',
-  undefined,
-  index: 0,
-  input: 'choochootrain',
-  groups: undefined
-]
-```
-
-See how the second parenthesis has not matched (`undefined`). In fact, it does match `train` (The `\2` is assumed empty):
-
-```js
 > regex.exec('train')
 [
   'train',
@@ -212,6 +198,9 @@ See how the second parenthesis has not matched (`undefined`). In fact, it does m
   groups: undefined
 ]
 ```
+
+In fact, it does match `train` (The `\2` is assumed empty):
+
 
 
 #### By Name
