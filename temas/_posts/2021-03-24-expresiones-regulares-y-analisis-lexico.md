@@ -161,7 +161,7 @@ null
 
 In Ruby and Perl forward references can also be used, but be sure the referenced parenthesis
 has matched when is going to be used. This usually means that the forward reference
-is inside some repetition group. For example, this regexp matches with `train` only if 
+is inside some repetition group. For example, in Ruby this regexp matches with `train` only if 
 it is prefixed by at least one `choo`:
 
 ```ruby
@@ -399,7 +399,7 @@ Ejecución:
 
 ### Greed and Lazy Operators
 
-#### Exercise:
+#### Exercise: Replace all double quotes with single quotes:
 
 We have a text and need to replace all double quotes `"..."` with single quotes: `'...'`. (We are not considering escaped double quotes inside)
 
@@ -414,7 +414,7 @@ str.match(regexp);
 See [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy) at 
 the Modern JavaScript book
 
-#### Exercise:
+#### Exercise: Write a function that removes all comments
 
 Write a function that removes all comments from a piece of JavaScript code. 
 
