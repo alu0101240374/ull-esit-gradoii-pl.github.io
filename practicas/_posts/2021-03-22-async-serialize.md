@@ -3,6 +3,10 @@ title: AsyncSerialize
 published: true
 categories: ["practicas"]
 rubrica: 
+  - La solución a `loadscripts` funciona correctamente
+  - La solución a `mySeries` funciona correctamente
+  - La solución se ha aislado en un módulo ES6 y funciona correctamente
+  - Se ha usado WebPack correctamente y se comprende su funcionamiento
 ---
 
 ## Introducción
