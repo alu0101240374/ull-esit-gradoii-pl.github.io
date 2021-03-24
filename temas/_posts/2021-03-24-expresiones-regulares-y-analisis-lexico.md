@@ -157,7 +157,6 @@ null
 null
 ```
 
-<!--
 #### Forward References
 
 In Ruby and Perl forward references can also be used, but be sure the referenced parenthesis
