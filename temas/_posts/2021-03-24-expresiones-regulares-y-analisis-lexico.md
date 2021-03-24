@@ -197,6 +197,11 @@ Type ".help" for more information.
   input: 'choochootrain',
   groups: undefined
 ]
+```
+
+See how the second parenthesis has not matched (`undefined`). In fact, it does match `train` (The `\2` is assumed empty):
+
+```js
 > regex.exec('train')
 [
   'train',
