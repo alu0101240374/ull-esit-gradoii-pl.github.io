@@ -825,12 +825,14 @@ A  web app with a lexical analyzer of INI files:
 * Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
 * Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
 
+<!--
 ### Práctica p3-t2-regexp
 
 Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
 * [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
 
+-->
 
 ## Unicode, UTF-16 and JavaScript
 
