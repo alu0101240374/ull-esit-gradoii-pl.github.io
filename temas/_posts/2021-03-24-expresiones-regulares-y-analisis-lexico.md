@@ -807,11 +807,11 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 
 #### Otra Solución al Parsing de los Ficheros **ini**
 
-A client web app with a lexical analyzer of INI files:
+A  web app with a lexical analyzer of INI files:
 
-- [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
+- [Parsing ini files](http://crguezl.github.io/pl-grado-ini-files/): deployment 
 - [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
-- [ini.js](https://github.com/crguezl/pl-grado-ini-files/blob/gh-pages/ini.js)
+- [ini.js](https://github.com/crguezl/pl-grado-ini-files/blob/gh-pages/ini.js) entry file
 
 
 ### Ejercicios
