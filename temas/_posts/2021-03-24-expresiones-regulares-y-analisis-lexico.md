@@ -657,11 +657,6 @@ while (match = number.exec(input)) {
 //   Found 88 at 40
 ```
 
-#### Otra Solución al Parsing de los Ficheros **ini**
-
-- [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
-- [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
-
 
 ### Sticky flag "y", searching at position
 
@@ -809,6 +804,15 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 ### Parsing Ficheros **ini**
 
 - [Parsing an INI file](https://eloquentjavascript.net/09_regexp.html#ini) Eloquent JavaScript
+
+#### Otra Solución al Parsing de los Ficheros **ini**
+
+A client web app with a lexical analyzer of INI files:
+
+- [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
+- [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
+- [ini.js](https://github.com/crguezl/pl-grado-ini-files/blob/gh-pages/ini.js)
+
 
 ### Ejercicios
 
