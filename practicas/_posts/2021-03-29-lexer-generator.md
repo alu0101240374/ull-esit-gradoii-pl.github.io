@@ -22,7 +22,8 @@ El módulo deberá exportar una función que construye analizadores léxicos:
 const buildLexer =require('@ULL-ESIT-PL-2021/lexgen-code-aluAtGitHub');
 ```
 
-La función `buildLexer` se llamará con un objeto que describe el léxico del lenguaje y retornará una función `lexer` que es la que hace el análisis léxico:
+La función `buildLexer` se llamará con un array de pares `[ [`nombreToken1`: /regexpToken1/], [`nombreToken2`: /regexpToken2/],... ]` 
+que describe el léxico del lenguaje y retornará una función `lexer` que es el análisizador léxico:
 
 ```js
 const SPACE = /(?<SPACE>\s+|\/\/.*)/;
