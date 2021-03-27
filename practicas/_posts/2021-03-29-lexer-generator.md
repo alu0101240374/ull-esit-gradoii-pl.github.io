@@ -43,10 +43,11 @@ Se establecen las siguientes consideraciones semánticas:
 * Si un token tiene de nombre `SPACE` sus matching serán ignorados y no se añadirán a la lista de tokens 
 * El nombre de token `ERROR` es *palabra reservada* y no debería ser usado por los clientes de la librería y es automáticamente generado por los analizadores léxicos producidos en caso de que se produzca un error. [Véase el último ejemplo con errores en la sección Pruebas](#pruebas)
 
-Este es un ejemplo de como usar la librería:
+Este es un ejemplo mas concreto de como usar la librería:
 
 ```js
 const buildLexer = require('@ull-esit-pl-1920/p10-t2-lexgen-code-aluXXX');
+
 const SPACE = /(?<SPACE>\s+|\/\/.*)/;
 const RESERVEDWORD = /(?<RESERVEDWORD>\b(const|let)\b)/;
 const ID = /(?<ID>\b([a-z_]\w*))\b/;
