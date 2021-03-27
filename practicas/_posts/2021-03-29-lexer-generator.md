@@ -41,7 +41,7 @@ const lexer = buildLexer(myTokens);
 Se establecen las siguientes consideraciones semánticas:
 
 * Si un token tiene de nombre `SPACE` sus matching serán ignorados y no se añadirán a la lista de tokens 
-* El token `ERROR` es especial y es automáticamente retornado por el analizador léxico generado en el caso de que la  entrada contenga un error
+* El token `ERROR` es especial y es automáticamente retornado por el analizador léxico generado `lexer` en el caso de que la  entrada contenga un error
 
 Este es un ejemplo mas concreto de como usar la librería:
 
@@ -91,6 +91,8 @@ expected = [
   { type: 'ERROR', value: '42*c' }
 ];
 ```
+
+Esta entrada es errónea por cuanto no hemos definido el token para los números.
 
 Véase también el último ejemplo con errores en la [sección Pruebas](#pruebas)
 
