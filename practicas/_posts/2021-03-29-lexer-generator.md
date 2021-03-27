@@ -95,7 +95,7 @@ expected = [
 ## Prerequisitos
 
 Tóme esta práctica con calma por cuanto me parece es  complicada en el estado de conocimientos de RegExps en el que estamos. 
-Nos han faltado un par de clases para establecer las bases necesarias.
+Nos ha faltado una clase para establecer las bases necesarias.
 
 En este vídeo se introducen los conceptos de expresiones regulares que son necesarios
 para la realización de esta práctica. Especialmente 
