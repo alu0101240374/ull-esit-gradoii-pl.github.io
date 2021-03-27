@@ -106,7 +106,7 @@ para la realización de esta práctica. Especialmente
 
 {% include video provider="youtube" id="xCNs1fT1KOc" %} <!-- 2020/03/24 -->
 
-En este vídeo se explica como realizar la práctica:
+En  los primeros 25 minutos de este vídeo se explica como realizar la práctica:
 
 * Analizadores Léxicos: 03:00
 
