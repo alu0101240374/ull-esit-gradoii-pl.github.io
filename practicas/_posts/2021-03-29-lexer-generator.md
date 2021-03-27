@@ -25,7 +25,7 @@ const buildLexer =require('@ULL-ESIT-PL-2021/lexgen-code-aluAtGitHub');
 La función `buildLexer` se llamará con un array de pares 
 
 ```js 
-[ 
+const myTokens = [ 
   [`nombreToken1`: /regexpToken1/], 
   [`nombreToken2`: /regexpToken2/],
   ... 
@@ -33,6 +33,10 @@ La función `buildLexer` se llamará con un array de pares
 ``` 
 
 que describe el léxico del lenguaje y retornará una función `lexer` que es el análisizador léxico:
+
+```js
+const lexer = buildLexer(myTokens);
+```
 
 Se establecen las siguientes consideraciones semánticas:
 
