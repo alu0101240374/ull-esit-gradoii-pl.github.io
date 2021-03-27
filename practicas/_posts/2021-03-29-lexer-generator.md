@@ -93,7 +93,7 @@ expected = [
 ```
 
 Esta entrada es errónea por cuanto no hemos definido el token para los números.
-El token `ERROR`es especial en cuanto con que casa con cualquier entrada errónea.
+El token `ERROR` es especial en cuanto con que casa con cualquier entrada errónea.
 
 Véase también el último ejemplo con errores en la [sección Pruebas](#pruebas)
 
