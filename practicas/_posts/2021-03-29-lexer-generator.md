@@ -2,7 +2,11 @@
 title: Lexer Generator
 published: true
 categories: ["practicas"]
-rubrica: 
+rubrica:
+video:
+  clase20200401: gO49wnWoE_s 
+  clase20200325: 4jmsZbEpW7g
+  clase20200324: xCNs1fT1KOc
 ---
 
 ## Objetivos
@@ -35,6 +39,26 @@ cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de toke
   { type: 'STRING', value: '"value"' }
 ];
 ```
+
+## Prerequisitos
+
+Tóme esta práctica con calma por cuanto me parece es  complicada en el estado de conocimientos de RegExps en el que estamos. 
+Nos han faltado un par de clases para establecer las bases necesarias.
+
+En este vídeo se introducen los conceptos de expresiones regulares que son necesarios
+para la realización de esta práctica. Especialmente 
+
+* `lastindex` en el minuto 19:30 
+* El uso de la sticky flag `/y` a partir del minuto 30
+* Construcción de analizador léxico minuto 33:45
+
+{% include video provider="youtube" id="xCNs1fT1KOc" %} <!-- 2020/03/24 -->
+
+En este vídeo se explica como realizar la práctica:
+
+{% include video provider="youtube" id="4jmsZbEpW7g" %} <!-- 2020/03/25-->
+
+Estúdielos antes de seguir adelante
 
 ## Descripción del Lenguaje Léxico: parámetros de entrada de la función 
 
