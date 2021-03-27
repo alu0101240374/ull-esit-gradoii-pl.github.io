@@ -24,8 +24,19 @@ const buildLexer =require('@ULL-ESIT-PL-2021/lexgen-code-aluAtGitHub');
 
 La función `buildLexer` se llamará con un objeto que describe el léxico del lenguaje y retornará una función `lexer` que es la que hace el análisis léxico:
 
-```
-lexer = buildLexer(myTokens)
+```js
+const SPACE = /(?<SPACE>\s+|\/\/.*)/;
+const RESERVEDWORD = /(?<RESERVEDWORD>\b(const|let)\b)/;
+const ID = /(?<ID>\b([a-z_]\w*))\b/;
+const STRING = /(?<STRING>"([^\\"]|\\.")*")/;
+const OP = /(?<OP>[+*\/=-])/;
+
+const myTokens = [
+  ['SPACE', SPACE], ['RESERVEDWORD', RESERVEDWORD], ['ID', ID],
+  ['STRING', STRING], ['OP', OP]
+];
+
+const lexer = buildLexer(myTokens);
 ```
 
 cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de tokens de esa cadena conforme a la descripción léxica proveída:
