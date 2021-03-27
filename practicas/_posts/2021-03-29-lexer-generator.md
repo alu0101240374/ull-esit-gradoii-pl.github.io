@@ -61,9 +61,7 @@ cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de toke
 
 ```js
 str = 'const varName = "value"';
-ins(str);
 r = lexer(str);
-ins(r);
 let expected = [
   { type: 'RESERVEDWORD', value: 'const' },
   { type: 'ID', value: 'varName' },
@@ -80,9 +78,7 @@ Cuando se encuentra una entrada errónea `lexer ` produce un token con nombre `E
 
 ```js
 str = ' // Entrada con errores\nlet x = 42*c';
-ins(str);
 r = lexer(str);
-ins(r);
 expected = [
   { type: 'RESERVEDWORD', value: 'let' },
   { type: 'ID', value: 'x' },
