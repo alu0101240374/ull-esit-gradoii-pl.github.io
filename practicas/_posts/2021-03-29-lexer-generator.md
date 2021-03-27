@@ -56,6 +56,8 @@ para la realización de esta práctica. Especialmente
 
 En este vídeo se explica como realizar la práctica:
 
+* Analizadores Léxicos: 03:00
+
 {% include video provider="youtube" id="4jmsZbEpW7g" %} <!-- 2020/03/25-->
 
 Estúdielos antes de seguir adelante
