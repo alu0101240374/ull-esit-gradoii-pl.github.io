@@ -32,7 +32,7 @@ const myTokens = [
 ]
 ``` 
 
-que describe el léxico del lenguaje y retornará una función `lexer` que es el análizador léxico:
+que describe el léxico del lenguaje y retornará una función `lexer` que es el analizador léxico:
 
 ```js
 const lexer = buildLexer(myTokens);
