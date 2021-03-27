@@ -22,10 +22,27 @@ El módulo deberá exportar una función que construye analizadores léxicos:
 const buildLexer =require('@ULL-ESIT-PL-2021/lexgen-code-aluAtGitHub');
 ```
 
-La función `buildLexer` se llamará con un array de pares `[ [`nombreToken1`: /regexpToken1/], [`nombreToken2`: /regexpToken2/],... ]` 
+La función `buildLexer` se llamará con un array de pares 
+
+```js 
+[ 
+  [`nombreToken1`: /regexpToken1/], 
+  [`nombreToken2`: /regexpToken2/],
+  ... 
+]
+``` 
+
 que describe el léxico del lenguaje y retornará una función `lexer` que es el análisizador léxico:
 
+Se establecen las siguientes consideraciones semánticas:
+
+* Si un token tiene de nombre `SPACE` sus matching serán ignorados y no se añadirán a la lista de tokens 
+* El nombre de token `ERROR` es *palabra reservada* y no debería ser usado por los clientes de la librería y es automáticamente generado por los analizadores léxicos producidos en caso de que se produzca un error. [Véase el último ejemplo con errores en la sección Pruebas](#pruebas)
+
+Este es un ejemplo de como usar la librería:
+
 ```js
+const buildLexer = require('@ull-esit-pl-1920/p10-t2-lexgen-code-aluXXX');
 const SPACE = /(?<SPACE>\s+|\/\/.*)/;
 const RESERVEDWORD = /(?<RESERVEDWORD>\b(const|let)\b)/;
 const ID = /(?<ID>\b([a-z_]\w*))\b/;
@@ -43,12 +60,34 @@ const lexer = buildLexer(myTokens);
 cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de tokens de esa cadena conforme a la descripción léxica proveída:
 
 ```js
-> lexer('const varName = "value"');
-[
+str = 'const varName = "value"';
+ins(str);
+r = lexer(str);
+ins(r);
+let expected = [
   { type: 'RESERVEDWORD', value: 'const' },
   { type: 'ID', value: 'varName' },
   { type: 'OP', value: '=' },
   { type: 'STRING', value: '"value"' }
+];
+
+test(str, () => {
+  expect(r).toEqual(expected);
+});
+```
+
+Cuando se encuentra una entrada errónea `lexer ` produce un token con nombre `ERROR`:
+
+```js
+str = ' // Entrada con errores\nlet x = 42*c';
+ins(str);
+r = lexer(str);
+ins(r);
+expected = [
+  { type: 'RESERVEDWORD', value: 'let' },
+  { type: 'ID', value: 'x' },
+  { type: 'OP', value: '=' },
+  { type: 'ERROR', value: '42*c' }
 ];
 ```
 
@@ -97,12 +136,6 @@ const myTokens = [
   ['STRING', STRING], ['OP', OP]
 ];
 ```
-
-Se establecen las siguientes consideraciones semánticas:
-
-* Si un token tiene de nombre `SPACE` sus matching serán ignorados y no se añadirán a la lista de tokens 
-* El nombre de token `ERROR` no puede ser usado por los clientes de la librería y es automáticamente generado por los analizadores léxicos producidos en caso de que se produzca un error. 
-* [Véase el último ejemplo con errores en la sección Pruebas](#pruebas)
 
 ## Sugerencias
 
