@@ -9,16 +9,9 @@ sections:
     subsections:
       - title: Nearley.JS
         url: "earley/nearley"
+  - title: LR Parsers
+  - title: PEG Parsers
 ---
 
 
-{% for section in page.sections %}
-
-## {{ section.title }}
-
-{% for subsection in section.subsections %}
-### [{{subsection.title}}]({{site.baseurl}}/assets/temas/{{page.slug}}/{{subsection.url}})
-{% endfor %}
-{% endfor %}
-
-
+{% include tema.md %}

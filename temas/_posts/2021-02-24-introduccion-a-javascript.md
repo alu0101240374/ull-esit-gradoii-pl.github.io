@@ -59,12 +59,4 @@ sections:
 ---
 
 
-{% for section in page.sections %}
-
-## {{ section.title }}
-
-{% for subsection in section.subsections %}
-### [{{subsection.title}}]({{site.baseurl}}/assets/temas/introduccion-a-javascript/{{subsection.url}})
-{% endfor %}
-{% endfor %}
-
+{% include tema.md %}
