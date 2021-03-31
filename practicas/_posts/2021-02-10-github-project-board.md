@@ -1,5 +1,6 @@
 ---
 title: GitHub Project Board
+date: 2021-02-10 01:00:00
 rubrica:
   - "Proyecto Kanban creado a nivel de Organización"
   - "Lo estoy usando para informar del avance en mis prácticas"

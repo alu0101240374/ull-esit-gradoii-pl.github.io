@@ -1,19 +1,27 @@
 ---
 layout: single
 title: "Introduccion a Procesadores de Lenguajes"
+excerpt: "Guia Docente e Introducción a los Compiladores"
 published: true
+sections:
+  - title: Organización de PL y Primeros Pasos
+    url: guia-docente
+  - title: What is PL About?
+    url: what-is-pl-about
 ---
 
-## Primeros Pasos
+{% for section in page.sections %}
 
-* [Organización de PL y Primeros Pasos]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/guia-docente.html)
+## {{ section.title }}
 
-## What is PL About?
+{% if section.url%}
+* [{{ section.title }}]({{site.baseurl}}/assets/temas/{{page.slug}}/{{section.url}})
+{% endif %}
 
-* [What is PL about?]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/what-is-pl-about.html)
+  {% for subsection in section.subsections %}
 
+### [{{subsection.title}}]({{site.baseurl}}/assets/temas/{{page.slug}}/{{subsection.url}})
 
-<!--
-* [Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial]({{site.baseurl}}/assets/temas/tema0-introduccion-a-pl/covid19.html)
--->
+  {% endfor %}
+{% endfor %}
 

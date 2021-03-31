@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Code
 published: true
+date: 2021-02-10 02:00:00
 rubrica:
   - "Instalado SSH plugin para VSCode y funciona con máquina del iaas"
   - "<code>LiveShare</code> instalado y funcionando correctamente"
