@@ -7,6 +7,8 @@ sections:
     subsections:
   - title: Earley Parsers
     subsections:
+      - title: The Earley Algorithm
+        url: earley/algorithm
       - title: Nearley.JS
         url: "earley/nearley"
   - title: LR Parsers
